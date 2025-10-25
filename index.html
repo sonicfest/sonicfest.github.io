@@ -24,12 +24,26 @@
         padding: 20px;
       }
 
+      /* Cuadro principal con efecto neón animado */
       .main-container {
         background: rgba(0, 0, 0, 0.6);
         border-radius: 25px;
         padding: 40px 25px;
         max-width: 800px;
         box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+        border: 3px solid #00ccff;
+        animation: neonGlow 2.5s ease-in-out infinite alternate;
+      }
+
+      @keyframes neonGlow {
+        0% {
+          box-shadow: 0 0 10px #00ccff, 0 0 20px #00ccff, 0 0 40px #00ccff;
+          border-color: #00ccff;
+        }
+        100% {
+          box-shadow: 0 0 20px #00ffff, 0 0 50px #00ffff, 0 0 80px #00ffff;
+          border-color: #00ffff;
+        }
       }
 
       h1 {
@@ -37,12 +51,14 @@
         font-weight: 800;
         color: #ffcc00;
         margin-bottom: 10px;
+        text-shadow: 0 0 10px #ffcc00, 0 0 20px #ff9900;
       }
 
       h2 {
         font-size: 1.8rem;
         color: #ffffff;
         margin-bottom: 15px;
+        text-shadow: 0 0 10px #00ffff;
       }
 
       p {
