@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sonic Fest Argentina</title>
+
+    <link href="https://fonts.cdnfonts.com/css/sonic-1-title" rel="stylesheet">
+
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Sonic 1 Title', sans-serif;
+        background-image: url('Images/TELA2025.png');
+        background-repeat: repeat;
+        background-size: auto;
+        color: white;
+        text-align: center;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      /* Cuadro principal con efecto neón animado */
+      .main-container {
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 25px;
+        padding: 40px 25px;
+        max-width: 800px;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+        border: 3px solid #00ccff;
+        animation: neonGlow 2.5s ease-in-out infinite alternate;
+      }
+
+      @keyframes neonGlow {
+        0% {
+          box-shadow: 0 0 10px #00ccff, 0 0 20px #00ccff, 0 0 40px #00ccff;
+          border-color: #00ccff;
+        }
+        100% {
+          box-shadow: 0 0 20px #00ffff, 0 0 50px #00ffff, 0 0 80px #00ffff;
+          border-color: #00ffff;
+        }
+      }
+
+      h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        color: #ffcc00;
+        margin-bottom: 10px;
+        text-shadow: 0 0 10px #ffcc00, 0 0 20px #ff9900;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+        color: #ffffff;
+        margin-bottom: 15px;
+        text-shadow: 0 0 10px #00ffff;
+      }
+
+      p {
+        max-width: 650px;
+        font-size: 1.3rem;
+        margin: 20px auto 40px;
+        line-height: 1.6;
+        color: #f0f0f0;
+      }
+
+      a.button {
+        display: inline-block;
+        background-color: #ffcc00;
+        color: black;
+        text-decoration: none;
+        padding: 15px 30px;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 1.2rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        transition: transform 0.2s ease, background 0.2s ease;
+        margin: 20px 0;
+      }
+
+      a.button:hover {
+        background-color: #ffd633;
+        transform: scale(1.05);
+      }
+
+      .socials {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .socials a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 10px 20px;
+        border-radius: 30px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.2s, transform 0.2s;
+      }
+
+      .socials a img {
+        width: 24px;
+        height: 24px;
+      }
+
+      .socials a:hover {
+        background: rgba(255, 255, 255, 0.5);
+        transform: scale(1.05);
+      }
+
+      footer {
+        font-size: 0.9rem;
+        color: #fff;
+        opacity: 0.8;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <h1>¡Sonic Fest Argentina!</h1>
+      <h2>🎧 Riders Party 2025</h2>
+
+      <p>
+        🇦🇷 ¡El evento oficial de Sonic en Argentina!<br>
+        Música, luces, visuales y toda la energía del universo de Sonic.<br><br>
+        🌀 <strong>Próxima fecha:</strong> 23/11/2025 · +18<br>
+        💥 Fiesta electrónica temática especial <strong>Sonic Riders</strong>.
+      </p>
+
+      <a
+        class="button"
+        href="https://alpogo.com/evento/sonic-fest-riders-party-21135"
+        target="_blank"
+        rel="noopener noreferrer"
+      >🎟️ Comprar entradas</a>
+
+      <div class="socials">
+        <a href="https://www.instagram.com/sonicfestok?igsh=MnpnMTlzNzcxbHV2" target="_blank">
+          <img src="Images/INSTAGRAM.png" alt="Instagram"> Instagram
+        </a>
+        <a href="https://discord.com/invite/FwZ6xXezKY" target="_blank">
+          <img src="Images/DISCORD.png" alt="Discord"> Discord
+        </a>
+      </div>
+
+      <footer>© 2025 Sonic Fest Argentina</footer>
+    </div>
+  </body>
+</html>
