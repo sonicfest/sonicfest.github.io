@@ -25,7 +25,6 @@
         color: white;
       }
 
-      /* Imagen de fondo con overlay oscuro */
       body::before {
         content: "";
         position: fixed;
@@ -39,7 +38,6 @@
         z-index: -1;
       }
 
-      /* Barra de navegación */
       nav {
         width: 100%;
         background-color: #3658b3;
@@ -86,6 +84,10 @@
         text-transform: uppercase;
       }
 
+      p.description .violet {
+        color: violet;
+      }
+
       .main-image {
         width: 50%;
         max-width: 400px;
@@ -115,10 +117,17 @@
 
       .socials {
         display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
         margin-bottom: 40px;
+      }
+
+      .socials span {
+        color: white;
+        font-weight: bold;
+        margin-bottom: 5px;
+        text-transform: uppercase;
       }
 
       .socials a {
@@ -154,18 +163,16 @@
   </head>
 
   <body>
-    <!-- Menú de navegación -->
     <nav>
       <a href="https://sonicfest.com.ar/prox.html">⚡PRÓXIMOS EVENTOS</a>
       <a href="https://sonicfest.com.ar/fiestas.html">📷FIESTAS PASADAS</a>
       <a href="https://sonicfest.com.ar/tienda.html">🛒 TIENDA</a>
     </nav>
 
-    <div class="header-title">¡Bienvenidos a la Sonic Fest!</div>
+    <div class="header-title">¡Bienvenidos a la <span class="violet">SONIC FEST</span>!</div>
 
     <p class="description">
-      EVENTOS TEMÁTICOS DE SONIC EN ARGENTINA. 
-      CONVENCIONES PARA TODAS LAS EDADES, Y BOLICHES +18 CON MÚSICA DE SONIC 
+      EVENTOS TEMÁTICOS DE <span class="violet">SONIC FEST</span> EN ARGENTINA 🇦🇷. CONVENCIONES PARA TODAS LAS EDADES, Y BOLICHES +18
     </p>
 
     <a
@@ -177,14 +184,14 @@
       🎟️COMPRAR ENTRADAS SONIC FEST RIDERS PARTY 23/11 +18🎟️
     </a>
 
-    <!-- Flyer debajo del botón -->
     <img src="Images/RIDERS.png" alt="Sonic Riders Flyer" class="main-image">
 
-    <!-- Botones de redes sociales debajo del flyer -->
     <div class="socials">
+      <span>ENTERATE DE LA PRÓXIMA:</span>
       <a href="https://www.instagram.com/sonicfestok/" target="_blank">
         <img src="Images/INSTAGRAM.png" alt="Instagram"> INSTAGRAM
       </a>
+      <span>CONOCER SONIQUER@S PARA ARMAR GRUPOS, HACER PREVIAS Y MÁS</span>
       <a href="https://discord.com/invite/FwZ6xXezKY" target="_blank">
         <img src="Images/DISCORD.png" alt="Discord"> DISCORD
       </a>
