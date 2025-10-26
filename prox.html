@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sonic Fest Argentina</title>
+
+    <!-- Fuente tipo Sonic -->
+    <link href="https://fonts.cdnfonts.com/css/sonic-1-title" rel="stylesheet">
+
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Sonic 1 Title', sans-serif;
+        background-image: url('Images/TELA2025.png');
+        background-repeat: repeat;
+        background-size: auto;
+        color: black;
+        text-align: center;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      /* Barra de navegación */
+      nav {
+        width: 100%;
+        background-color: #3658b3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0 30px;
+        transition: color 0.2s, transform 0.2s;
+      }
+
+      nav a:hover {
+        color: #ffcc00;
+        transform: scale(1.05);
+      }
+
+      h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        margin-top: 100px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        max-width: 700px;
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+        line-height: 1.5;
+      }
+
+      .main-image {
+        width: 80%;
+        max-width: 800px;
+        margin-bottom: 30px;
+        border-radius: 20px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      }
+
+      a.button {
+        display: inline-block;
+        background-color: #ffcc00;
+        color: black;
+        text-decoration: none;
+        padding: 15px 30px;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 1.2rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        transition: transform 0.2s ease, background 0.2s ease;
+        margin-bottom: 40px;
+      }
+
+      a.button:hover {
+        background-color: #ffd633;
+        transform: scale(1.05);
+      }
+
+      footer {
+        font-size: 0.9rem;
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Menú de navegación -->
+    <nav>
+      <a href="https://sonicfest.com.ar/prox.html">PRÓXIMOS EVENTOS</a>
+      <a href="https://sonicfest.com.ar/fiestas.html">📷FIESTAS PASADAS</a>
+      <a href="https://sonicfest.com.ar/tienda.html">🛒 TIENDA</a>
+    </nav>
+
+    <img src="Images/RIDERS.png" alt="Sonic Riders" class="main-image">
+
+    <h1>SONIC FEST ESPECIAL SONIC RIDERS</h1>
+
+    <p>
+      Próximo 23/11/2025 23:59 hs en el Uniclub<br>
+      Fiesta temática de Sonic de Sonic Riders. Decoraciones y música temática.<br>
+      • Música de Sonic de todas las eras<br>
+      • Bloque Crush 40<br>
+      • DJ en vivo Cathedralis<br>
+      • Show en vivo The Badniks<br>
+      • Stands para comprar cosas de Sonic: KayllatheCat, Retrotools, Leocirius y Sonic Fest
+    </p>
+
+    <a
+      class="button"
+      href="https://alpogo.com/evento/sonic-fest-riders-party-21135"
+      target="_blank"
+      rel="noopener noreferrer"
+      >🎟️ COMPRAR ENTRADAS 🎟️</a
+    >
+
+    <footer>© 2025 Sonic Fest Argentina</footer>
+  </body>
+</html>
