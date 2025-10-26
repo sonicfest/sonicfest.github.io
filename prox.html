@@ -20,24 +20,56 @@
         min-height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         padding: 20px;
       }
 
+      /* Barra de navegación */
+      nav {
+        width: 100%;
+        background-color: #3658b3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0 30px;
+        transition: color 0.2s, transform 0.2s;
+      }
+
+      nav a:hover {
+        color: #ffcc00;
+        transform: scale(1.05);
+      }
+
       .header-title {
+        background-color: rgba(128,128,128,0.7);
         color: #ffcc00;
         font-size: 2rem;
         font-weight: bold;
         margin-top: 100px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        border-radius: 10px;
         text-transform: uppercase;
       }
 
       .main-image {
-        width: 80%;
-        max-width: 800px;
-        margin-bottom: 30px;
+        width: 60%;
+        max-width: 500px;
+        margin-bottom: 20px;
         border-radius: 20px;
         box-shadow: 0 4px 15px rgba(0,0,0,0.5);
       }
@@ -53,7 +85,7 @@
         font-size: 1.2rem;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
         transition: transform 0.2s ease, background 0.2s ease;
-        margin: 20px 0;
+        margin: 10px 0;
       }
 
       a.button:hover {
@@ -61,14 +93,22 @@
         transform: scale(1.05);
       }
 
-      .back-button {
-        position: absolute;
-        bottom: 30px;
+      footer {
+        font-size: 0.9rem;
+        color: white;
+        margin-top: 40px;
       }
     </style>
   </head>
 
   <body>
+    <!-- Menú de navegación -->
+    <nav>
+      <a href="https://sonicfest.com.ar/prox.html">PRÓXIMOS EVENTOS</a>
+      <a href="https://sonicfest.com.ar/fiestas.html">📷FIESTAS PASADAS</a>
+      <a href="https://sonicfest.com.ar/tienda.html">🛒 TIENDA</a>
+    </nav>
+
     <div class="header-title">PRÓXIMOS</div>
 
     <img src="Images/RIDERS.png" alt="Sonic Riders Flyer" class="main-image">
@@ -83,10 +123,12 @@
     </a>
 
     <a
-      class="button back-button"
+      class="button"
       href="https://sonicfest.com.ar"
     >
       ATRÁS
     </a>
+
+    <footer>© 2025 Sonic Fest Argentina</footer>
   </body>
 </html>
