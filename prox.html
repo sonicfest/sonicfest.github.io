@@ -25,47 +25,13 @@
         padding: 20px;
       }
 
-      /* Barra de navegación */
-      nav {
-        width: 100%;
-        background-color: #3658b3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 15px 0;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 100;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-      }
-
-      nav a {
-        color: white;
-        text-decoration: none;
-        font-size: 1.2rem;
-        font-weight: bold;
-        margin: 0 30px;
-        transition: color 0.2s, transform 0.2s;
-      }
-
-      nav a:hover {
+      .header-title {
         color: #ffcc00;
-        transform: scale(1.05);
-      }
-
-      h1 {
-        font-size: 3rem;
-        font-weight: 800;
+        font-size: 2rem;
+        font-weight: bold;
         margin-top: 100px;
-        margin-bottom: 20px;
-      }
-
-      p {
-        max-width: 700px;
-        font-size: 1.2rem;
-        margin-bottom: 40px;
-        line-height: 1.5;
+        margin-bottom: 30px;
+        text-transform: uppercase;
       }
 
       .main-image {
@@ -87,7 +53,7 @@
         font-size: 1.2rem;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
         transition: transform 0.2s ease, background 0.2s ease;
-        margin-bottom: 40px;
+        margin: 20px 0;
       }
 
       a.button:hover {
@@ -95,43 +61,32 @@
         transform: scale(1.05);
       }
 
-      footer {
-        font-size: 0.9rem;
-        opacity: 0.8;
+      .back-button {
+        position: absolute;
+        bottom: 30px;
       }
     </style>
   </head>
 
   <body>
-    <!-- Menú de navegación -->
-    <nav>
-      <a href="https://sonicfest.com.ar/prox.html">PRÓXIMOS EVENTOS</a>
-      <a href="https://sonicfest.com.ar/fiestas.html">📷FIESTAS PASADAS</a>
-      <a href="https://sonicfest.com.ar/tienda.html">🛒 TIENDA</a>
-    </nav>
+    <div class="header-title">PRÓXIMOS</div>
 
-    <img src="Images/RIDERS.png" alt="Sonic Riders" class="main-image">
-
-    <h1>SONIC FEST ESPECIAL SONIC RIDERS</h1>
-
-    <p>
-      Próximo 23/11/2025 23:59 hs en el Uniclub<br>
-      Fiesta temática de Sonic de Sonic Riders. Decoraciones y música temática.<br>
-      • Música de Sonic de todas las eras<br>
-      • Bloque Crush 40<br>
-      • DJ en vivo Cathedralis<br>
-      • Show en vivo The Badniks<br>
-      • Stands para comprar cosas de Sonic: KayllatheCat, Retrotools, Leocirius y Sonic Fest
-    </p>
+    <img src="Images/RIDERS.png" alt="Sonic Riders Flyer" class="main-image">
 
     <a
       class="button"
       href="https://alpogo.com/evento/sonic-fest-riders-party-21135"
       target="_blank"
       rel="noopener noreferrer"
-      >🎟️ COMPRAR ENTRADAS 🎟️</a
     >
+      🎟️COMPRAR ENTRADAS SONIC FEST RIDERS PARTY 23/11 +18🎟️
+    </a>
 
-    <footer>© 2025 Sonic Fest Argentina</footer>
+    <a
+      class="button back-button"
+      href="https://sonicfest.com.ar"
+    >
+      ATRÁS
+    </a>
   </body>
 </html>
