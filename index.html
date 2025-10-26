@@ -67,12 +67,17 @@
       }
 
       .header-title {
-        color: white;
         font-size: 2rem;
         font-weight: bold;
         margin-top: 100px;
         margin-bottom: 10px;
         text-transform: uppercase;
+      }
+
+      .header-title .gradient {
+        background: linear-gradient(90deg, violet, deeppink);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
 
       p.description {
@@ -82,10 +87,6 @@
         text-align: justify;
         color: white;
         text-transform: uppercase;
-      }
-
-      p.description .violet {
-        color: violet;
       }
 
       .main-image {
@@ -169,10 +170,12 @@
       <a href="https://sonicfest.com.ar/tienda.html">🛒 TIENDA</a>
     </nav>
 
-    <div class="header-title">¡Bienvenidos a la <span class="violet">SONIC FEST</span>!</div>
+    <div class="header-title">
+      ¡Bienvenidos a la <span class="gradient">SONIC FEST</span>!
+    </div>
 
     <p class="description">
-      EVENTOS TEMÁTICOS DE <span class="violet">SONIC FEST</span> EN ARGENTINA 🇦🇷. CONVENCIONES PARA TODAS LAS EDADES, Y BOLICHES +18
+      EVENTOS TEMÁTICOS DE SONIC EN ARGENTINA 🇦🇷. CONVENCIONES PARA TODAS LAS EDADES, Y BOLICHES +18
     </p>
 
     <a
