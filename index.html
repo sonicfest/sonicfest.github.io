@@ -168,13 +168,15 @@
       }
 
       /* === Estilo del colapsable === */
-      .faq-section {
-        background: rgba(0, 0, 0, 0.4);
-        border-radius: 20px;
-        padding: 20px;
-        max-width: 600px;
-        width: 90%;
-      }
+   .faq-section {
+  background: rgba(0, 0, 0, 0.55); /* un poco más oscuro (0.4 → 0.55) */
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 600px;
+  width: 90%;
+  backdrop-filter: blur(4px); /* añade un suave desenfoque detrás */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* resalta mejor sobre fondos claros */
+}
 
       details {
         border-top: 1px solid #6ee2ff;
