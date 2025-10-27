@@ -135,7 +135,7 @@
         display: inline-flex;
         align-items: center;
         gap: 10px;
-        background-color: #5865F2; /* color oficial Discord */
+        background-color: #5865F2;
         color: white;
         text-decoration: none;
         padding: 15px 30px;
@@ -154,6 +154,56 @@
       a.discord-button img {
         height: 24px;
         width: 24px;
+      }
+
+      /* === Sección FAQ === */
+      .faq-section {
+        background: rgba(0, 0, 0, 0.55);
+        border-radius: 20px;
+        padding: 20px;
+        max-width: 600px;
+        width: 90%;
+        backdrop-filter: blur(4px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        margin-top: 30px;
+      }
+
+      details {
+        border-top: 1px solid #6ee2ff;
+        border-bottom: 1px solid #6ee2ff;
+        padding: 15px 0;
+        margin-bottom: 10px;
+      }
+
+      summary {
+        list-style: none;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1rem;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #b8e6ff;
+      }
+
+      summary::after {
+        content: "+";
+        font-size: 1.5rem;
+        color: #6ee2ff;
+        transition: transform 0.3s ease;
+      }
+
+      details[open] summary::after {
+        content: "–";
+        transform: rotate(180deg);
+      }
+
+      details p {
+        margin: 10px 0 0 0;
+        color: #ccc;
+        line-height: 1.5;
+        text-align: justify;
       }
 
       footer {
@@ -176,9 +226,16 @@
 
     <img src="Images/RIDERS.png" alt="Sonic Riders Flyer" class="main-image">
 
-    <p class="flyer-description">
-      FIESTA TEMÁTICA DE SONIC RIDERS. VENÍ CON TU OUTFIT DE SONIC, COSPLAY DE SONIC O TU EXTREME GEAR, PLATA PARA COMPRAR COSAS DE SONIC Y GANAS DE BAILAR! LOS PRIMEROS 100 TIENEN PIN DE REGALO.
-    </p>
+    <!-- NUEVO DESPLEGABLE -->
+    <div class="faq-section">
+      <details>
+        <summary>📘 SOBRE QUÉ TRATA</summary>
+        <p>
+          FIESTA TEMÁTICA DE SONIC RIDERS. VENÍ CON TU OUTFIT DE SONIC, COSPLAY DE SONIC O TU EXTREME GEAR, 
+          PLATA PARA COMPRAR COSAS DE SONIC Y GANAS DE BAILAR! LOS PRIMEROS 100 TIENEN PIN DE REGALO.
+        </p>
+      </details>
+    </div>
 
     <a
       class="button"
@@ -198,12 +255,7 @@
       <img src="Images/DISCORD.png" alt="Discord"> DISCORD SONIC FEST
     </a>
 
-    <a
-      class="button"
-      href="https://sonicfest.com.ar"
-    >
-      ATRÁS
-    </a>
+    <a class="button" href="https://sonicfest.com.ar">ATRÁS</a>
 
     <footer>2025 Sonic Fest®</footer>
   </body>
