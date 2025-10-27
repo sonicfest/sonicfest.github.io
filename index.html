@@ -130,7 +130,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 15px;
         margin-bottom: 40px;
         max-width: 600px;
       }
@@ -138,45 +138,60 @@
       .socials span {
         color: white;
         font-weight: bold;
-        margin-bottom: 5px;
         text-transform: uppercase;
         text-align: justify;
       }
 
-      .socials a {
-        display: flex;
+      /* === NUEVO estilo de botones sociales === */
+      .socials a.social-button {
+        display: inline-flex;
         align-items: center;
         gap: 10px;
-        background: rgba(0, 0, 0, 0.4);
-        padding: 10px 20px;
-        border-radius: 30px;
+        padding: 15px 30px;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 1.2rem;
         color: white;
         text-decoration: none;
-        font-weight: bold;
-        transition: background 0.2s, transform 0.2s;
-        text-transform: uppercase;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        transition: transform 0.2s ease, background 0.2s ease;
       }
 
-      .socials a img {
+      .socials a.social-button img {
         width: 24px;
         height: 24px;
       }
 
-      .socials a:hover {
-        background: rgba(255, 255, 255, 0.3);
+      /* Botón Instagram estilo gradiente */
+      .socials a.instagram-button {
+        background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+      }
+
+      .socials a.instagram-button:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+      }
+
+      /* Botón Discord */
+      .socials a.discord-button {
+        background-color: #5865F2;
+      }
+
+      .socials a.discord-button:hover {
+        background-color: #4752C4;
         transform: scale(1.05);
       }
 
-      /* === Estilo del colapsable === */
-   .faq-section {
-  background: rgba(0, 0, 0, 0.55); /* un poco más oscuro (0.4 → 0.55) */
-  border-radius: 20px;
-  padding: 20px;
-  max-width: 600px;
-  width: 90%;
-  backdrop-filter: blur(4px); /* añade un suave desenfoque detrás */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* resalta mejor sobre fondos claros */
-}
+      /* === Sección FAQ === */
+      .faq-section {
+        background: rgba(0, 0, 0, 0.55);
+        border-radius: 20px;
+        padding: 20px;
+        max-width: 600px;
+        width: 90%;
+        backdrop-filter: blur(4px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      }
 
       details {
         border-top: 1px solid #6ee2ff;
@@ -252,11 +267,12 @@
 
     <div class="socials">
       <span>ENTERATE DE LA PRÓXIMA:</span>
-      <a href="https://www.instagram.com/sonicfestok/" target="_blank">
+      <a href="https://www.instagram.com/sonicfestok/" target="_blank" class="social-button instagram-button">
         <img src="Images/INSTAGRAM.png" alt="Instagram"> INSTAGRAM SONIC FEST
       </a>
+
       <span>CONOCER SONIQUER@S PARA ARMAR GRUPOS, HACER PREVIAS Y MÁS</span>
-      <a href="https://discord.com/invite/FwZ6xXezKY" target="_blank">
+      <a href="https://discord.com/invite/FwZ6xXezKY" target="_blank" class="social-button discord-button">
         <img src="Images/DISCORD.png" alt="Discord"> DISCORD SONIC FEST
       </a>
     </div>
