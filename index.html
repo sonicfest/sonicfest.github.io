@@ -132,6 +132,7 @@
         align-items: center;
         gap: 10px;
         margin-bottom: 40px;
+        max-width: 600px;
       }
 
       .socials span {
@@ -139,6 +140,7 @@
         font-weight: bold;
         margin-bottom: 5px;
         text-transform: uppercase;
+        text-align: justify;
       }
 
       .socials a {
@@ -163,6 +165,53 @@
       .socials a:hover {
         background: rgba(255, 255, 255, 0.3);
         transform: scale(1.05);
+      }
+
+      /* === Estilo del colapsable === */
+      .faq-section {
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 20px;
+        padding: 20px;
+        max-width: 600px;
+        width: 90%;
+      }
+
+      details {
+        border-top: 1px solid #6ee2ff;
+        border-bottom: 1px solid #6ee2ff;
+        padding: 15px 0;
+        margin-bottom: 10px;
+      }
+
+      summary {
+        list-style: none;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1rem;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #b8e6ff;
+      }
+
+      summary::after {
+        content: "+";
+        font-size: 1.5rem;
+        color: #6ee2ff;
+        transition: transform 0.3s ease;
+      }
+
+      details[open] summary::after {
+        content: "–";
+        transform: rotate(180deg);
+      }
+
+      details p {
+        margin: 10px 0 0 0;
+        color: #ccc;
+        line-height: 1.5;
+        text-align: justify;
       }
 
       footer {
@@ -208,6 +257,29 @@
       <a href="https://discord.com/invite/FwZ6xXezKY" target="_blank">
         <img src="Images/DISCORD.png" alt="Discord"> DISCORD SONIC FEST
       </a>
+    </div>
+
+    <!-- Sección de colapsables -->
+    <div class="faq-section">
+      <details>
+        <summary>🔒POLÍTICA DE SEGURIDAD E INTEGRIDAD SONIC FEST</summary>
+        <p>En construcción</p>
+      </details>
+
+      <details>
+        <summary>¿HAY GUARDAROPAS?</summary>
+        <p>SÍ, SIEMPRE. PODÉS GUARDAR TU MOCHILA O TU CAMPERA. LLEVÁ EFECTIVO PARA PAGARLO.</p>
+      </details>
+
+      <details>
+        <summary>¿QUÉ NECESITO PARA ENTRAR?</summary>
+        <p>TENÉS QUE TENER EL DNI Y SER MAYOR DE 18 AÑOS. PODÉS VESTIRTE COMO QUIERAS. COPATE Y TRAÉ TU REMERA O COSPLAY DE SONIC!</p>
+      </details>
+
+      <details>
+        <summary>¿PUEDO VENIR CON OBJETOS?</summary>
+        <p>SÍ, VENÍ CON TU PELUCHE, EXTREME GEAR CASERA, O UNA ESPADA EXCALIBUR IMPRESA EN 3D. NO PUEDE SER OBJETO PUNZANTE O HERRAMIENTAS PELIGROSAS.</p>
+      </details>
     </div>
 
     <footer>2025 Sonic Fest®</footer>
