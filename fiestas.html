@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sonic Fest Argentina - Galería</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" type="image/png" href="favicon3.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Righteous', cursive;
+        background: url('Images/TELA2025.png') repeat;
+        background-size: auto;
+        filter: brightness(0.7);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        width: 100%;
+        background-color: #3658b3;
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0 30px;
+        transition: color 0.2s, transform 0.2s;
+      }
+
+      nav a:hover {
+        color: #ffcc00;
+        transform: scale(1.05);
+      }
+
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 100px;
+        padding: 0;
+      }
+
+      .gallery img, .gallery video {
+        width: 250px;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+      }
+
+      footer {
+        font-size: 0.9rem;
+        color: white;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <a href="https://sonicfest.com.ar/prox.html">⚡PRÓXIMOS EVENTOS</a>
+      <a href="https://sonicfest.com.ar/fiestas.html">📷FIESTAS PASADAS</a>
+      <a href="https://sonicfest.com.ar/tienda.html">🛒 TIENDA</a>
+    </nav>
+
+    <div class="gallery">
+      <!-- Imágenes -->
+      <img src="Images/A0.png" alt="Foto A0">
+      <img src="Images/A1.png" alt="Foto A1">
+      <img src="Images/A2.png" alt="Foto A2">
+      <img src="Images/A3.png" alt="Foto A3">
+      <img src="Images/A4.png" alt="Foto A4">
+      <img src="Images/A5.png" alt="Foto A5">
+      <img src="Images/A6.png" alt="Foto A6">
+      <img src="Images/A7.png" alt="Foto A7">
+      <img src="Images/A8.png" alt="Foto A8">
+      <img src="Images/A9.png" alt="Foto A9">
+
+      <!-- Videos -->
+      <video src="Images/V1.mp4" controls></video>
+      <video src="Images/V2.mp4" controls></video>
+      <video src="Images/V3.mp4" controls></video>
+      <video src="Images/V4.mp4" controls></video>
+      <video src="Images/V5.mp4" controls></video>
+      <video src="Images/V6.mp4" controls></video>
+    </div>
+
+    <footer>2025 Sonic Fest®</footer>
+  </body>
+</html>
