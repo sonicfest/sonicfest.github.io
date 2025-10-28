@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sonic Fest Argentina</title>
+    <title>Sonic Fest Entradas</title>
 
     <!-- Favicons -->
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -33,7 +33,7 @@
         color: black;
       }
 
-      /* Imagen de fondo con overlay oscuro */
+      /* Imagen de fondo */
       body::before {
         content: "";
         position: fixed;
@@ -81,7 +81,7 @@
         font-size: 2rem;
         font-weight: bold;
         margin-top: 100px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         text-transform: uppercase;
       }
 
@@ -130,7 +130,7 @@
         transform: scale(1.05);
       }
 
-      /* Botón especial para Discord */
+      /* Botón Discord */
       a.discord-button {
         display: inline-flex;
         align-items: center;
@@ -156,54 +156,48 @@
         width: 24px;
       }
 
-      /* === Sección FAQ === */
+      /* === DESPLEGABLE MODIFICADO === */
       .faq-section {
-        background: rgba(0, 0, 0, 0.55);
+        background: rgba(255, 255, 255, 0.08); /* gris muy tenue */
         border-radius: 20px;
-        padding: 20px;
+        padding: 15px;
         max-width: 600px;
         width: 90%;
-        backdrop-filter: blur(4px);
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-        margin-top: 30px;
+        backdrop-filter: blur(3px);
+        box-shadow: none;
+        margin-top: 10px; /* justo debajo del PRÓXIMOS */
       }
 
       details {
-        border-top: 1px solid #6ee2ff;
-        border-bottom: 1px solid #6ee2ff;
-        padding: 15px 0;
-        margin-bottom: 10px;
+        border: none;
+        padding: 10px 0;
+        margin: 0;
       }
 
       summary {
         list-style: none;
         cursor: pointer;
         font-weight: bold;
-        font-size: 1rem;
+        font-size: 2rem; /* igual que PRÓXIMO */
         text-transform: uppercase;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: #b8e6ff;
+        color: #d96dff; /* violeta-rosado */
+        text-align: center;
       }
 
       summary::after {
-        content: "+";
-        font-size: 1.5rem;
-        color: #6ee2ff;
-        transition: transform 0.3s ease;
+        content: "";
       }
 
       details[open] summary::after {
-        content: "–";
-        transform: rotate(180deg);
+        content: "";
       }
 
       details p {
-        margin: 10px 0 0 0;
-        color: #ccc;
+        margin: 10px auto 0 auto;
+        color: #ffffff;
         line-height: 1.5;
         text-align: justify;
+        max-width: 500px;
       }
 
       footer {
@@ -215,7 +209,6 @@
   </head>
 
   <body>
-    <!-- Menú de navegación -->
     <nav>
       <a href="https://sonicfest.com.ar/prox.html">⚡PRÓXIMOS EVENTOS</a>
       <a href="https://sonicfest.com.ar/fiestas.html">📷FIESTAS PASADAS</a>
@@ -224,18 +217,18 @@
 
     <div class="header-title">PRÓXIMOS</div>
 
-    <img src="Images/RIDERS.png" alt="Sonic Riders Flyer" class="main-image">
-
-    <!-- NUEVO DESPLEGABLE -->
+    <!-- NUEVO DESPLEGABLE ABAJO DEL PRÓXIMOS -->
     <div class="faq-section">
       <details>
-        <summary>📘 SONIC FEST RIDERS PARTY </summary>
+        <summary>SONIC FEST RIDERS PARTY</summary>
         <p>
           FIESTA TEMÁTICA DE SONIC RIDERS. VENÍ CON TU OUTFIT DE SONIC, COSPLAY DE SONIC O TU EXTREME GEAR, 
           PLATA PARA COMPRAR COSAS DE SONIC Y GANAS DE BAILAR! LOS PRIMEROS 100 TIENEN PIN DE REGALO.
         </p>
       </details>
     </div>
+
+    <img src="Images/RIDERS.png" alt="Sonic Riders Flyer" class="main-image">
 
     <a
       class="button"
@@ -246,7 +239,6 @@
       🎟️COMPRAR ENTRADAS SONIC FEST RIDERS PARTY 23/11 +18🎟️
     </a>
 
-    <!-- Texto y botón de Discord -->
     <p class="discord-text">
       UNITE A NUESTRO SERVIDOR DE DISCORD PARA CONOCER GENTE QUE VIENE A LA FIESTA Y HACER LA PREVIA!
     </p>
