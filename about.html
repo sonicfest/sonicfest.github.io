@@ -84,20 +84,36 @@
         margin-bottom: 20px;
         text-transform: uppercase;
         text-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+        animation: glowTitle 3s ease-in-out infinite alternate;
+      }
+
+      @keyframes glowTitle {
+        from { text-shadow: 0 0 10px rgba(255,204,0,0.5); }
+        to { text-shadow: 0 0 25px rgba(255,255,100,1); }
       }
 
       .about-section {
-        background: rgba(255, 255, 255, 0.08);
+        background: rgba(0, 0, 0, 0.65); /* Más oscuro que antes */
         border-radius: 20px;
         padding: 35px;
         max-width: 800px;
         width: 90%;
-        backdrop-filter: blur(4px);
-        box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        backdrop-filter: blur(5px);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.6);
         margin-bottom: 30px;
         text-align: justify;
         color: white;
         text-transform: uppercase;
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeIn 1.2s ease-out forwards;
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
 
       .about-section p {
@@ -175,8 +191,11 @@
 
       <h3>PRÓXIMOS EVENTOS</h3>
       <p>⚡ <strong>SONIC RIDERS PARTY (23/11)</strong> EN UNICLUB, CON MÚSICA DE TODAS LAS ERAS, SORTEOS, REGALOS Y LA PARTICIPACIÓN DE BANDAS COMO <strong>THE BADNICKS</strong>.</p>
+      <p>🌴 <strong>PLANETARY FEST</strong> FRENTE AL PLANETARIO DE BUENOS AIRES: UN PICNIC TROPICAL CON 6 HORAS DE MÚSICA DE SONIC EN VIVO, TOTALMENTE GRATUITO.</p>
 
-      <p>[<a href="https://sonicfest.com.ar" style="color:#ffcc00;">SONICFEST.COM.AR</a>] • [<a href="https://ccmatienzo.com.ar" style="color:#ffcc00;">CCMATIENZO.COM.AR</a>] • [<a href="https://tiktok.com" style="color:#ffcc00;">TIKTOK.COM</a>] • [<a href="https://allevents.in" style="color:#ffcc00;">ALLEVENTS.IN</a>]</p>
+      <p>[<a href="https://sonicfest.com.ar" style="color:#ffcc00;">SONICFEST.COM.AR</a>] • 
+         [<a href="https://www.instagram.com/sonicfestok/" style="color:#ffcc00;">INSTAGRAM</a>] • 
+         [<a href="https://www.youtube.com/@SonicFestOK" style="color:#ffcc00;">YOUTUBE</a>]</p>
 
       <h3>SEGURIDAD Y BIENESTAR</h3>
       <p>🛡️ TODOS LOS EVENTOS CUENTAN CON SEGURIDAD, GUARDARROPAS Y POLÍTICAS CLARAS PARA GARANTIZAR UN AMBIENTE SEGURO Y DIVERTIDO PARA TODOS LOS ASISTENTES.</p>
