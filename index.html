@@ -8,7 +8,7 @@
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" type="image/png" href="favicon2.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -88,6 +88,11 @@
         background: linear-gradient(90deg, violet, deeppink);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        text-decoration: none;
+      }
+
+      .header-title .gradient:hover {
+        opacity: 0.9;
       }
 
       p.description {
@@ -97,6 +102,23 @@
         text-align: justify;
         color: white;
         text-transform: uppercase;
+      }
+
+      .expo-button {
+        display: inline-block;
+        margin-left: 8px;
+        background: linear-gradient(90deg, violet, deeppink);
+        color: white;
+        font-size: 0.9rem;
+        padding: 5px 12px;
+        border-radius: 12px;
+        text-decoration: none;
+        transition: transform 0.2s ease, filter 0.2s ease;
+      }
+
+      .expo-button:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1);
       }
 
       .main-image {
@@ -142,7 +164,6 @@
         text-align: justify;
       }
 
-      /* === NUEVO estilo de botones sociales === */
       .socials a.social-button {
         display: inline-flex;
         align-items: center;
@@ -162,7 +183,6 @@
         height: 24px;
       }
 
-      /* Botón Instagram estilo gradiente */
       .socials a.instagram-button {
         background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
       }
@@ -172,7 +192,6 @@
         filter: brightness(1.1);
       }
 
-      /* Botón Discord */
       .socials a.discord-button {
         background-color: #5865F2;
       }
@@ -182,7 +201,6 @@
         transform: scale(1.05);
       }
 
-      /* === Sección FAQ === */
       .faq-section {
         background: rgba(0, 0, 0, 0.55);
         border-radius: 20px;
@@ -247,11 +265,12 @@
     </nav>
 
     <div class="header-title">
-      ¡Bienvenidos a la <span class="gradient">SONIC FEST</span>!
+      ¡Bienvenidos a la <a href="https://www.sonicfest.com.ar/about" class="gradient" target="_blank" rel="noopener noreferrer">SONIC FEST</a>!
     </div>
 
     <p class="description">
       FIESTAS DE SONIC EN ARGENTINA 🇦🇷. Y CONVENCIONES DE SONIC EN ARGENTINA PARA TODAS LAS EDADES (SONIC EXPO FEST)
+      <a href="https://www.sonicfest.com.ar/expo" target="_blank" class="expo-button">VER MÁS</a>
     </p>
 
     <a
@@ -281,11 +300,15 @@
       </a>
     </div>
 
-    <!-- Sección de colapsables -->
     <div class="faq-section">
       <details>
         <summary>🔒POLÍTICA DE SEGURIDAD E INTEGRIDAD SONIC FEST</summary>
         <p>En construcción</p>
+      </details>
+
+      <details>
+        <summary>📘SOBRE NOSOTROS</summary>
+        <p><a href="https://www.sonicfest.com.ar/about" target="_blank" style="color:#6ee2ff; text-decoration:none;">Ir a la página de información de Sonic Fest</a></p>
       </details>
 
 
