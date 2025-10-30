@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SONIC EXPO FEST - ARGENTINA</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Fuente Righteous -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Righteous', cursive;
+        text-align: center;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px;
+        position: relative;
+        color: white;
+      }
+
+      /* Imagen de fondo tipo mosaico */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('Images/EXPO.png') repeat;
+        background-size: auto;
+        filter: brightness(0.5);
+        z-index: -1;
+      }
+
+      /* Barra de navegación roja */
+      nav {
+        width: 100%;
+        background-color: #ff003c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0 30px;
+        transition: color 0.2s, transform 0.2s;
+      }
+
+      nav a:hover {
+        color: #ffcc00;
+        transform: scale(1.05);
+      }
+
+      .header-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-top: 100px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        color: #ffcc00;
+        text-shadow: 0 0 10px rgba(255,204,0,0.7);
+        animation: glowTitle 3s ease-in-out infinite alternate;
+      }
+
+      @keyframes glowTitle {
+        from { text-shadow: 0 0 10px rgba(255,204,0,0.5); }
+        to { text-shadow: 0 0 25px rgba(255,255,100,1); }
+      }
+
+      p.description {
+        max-width: 600px;
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        text-align: justify;
+        color: white;
+        text-transform: uppercase;
+      }
+
+      /* Botón Instagram */
+      .socials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 40px;
+        max-width: 600px;
+      }
+
+      .socials a.social-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 30px;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: white;
+        text-decoration: none;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        transition: transform 0.2s ease, filter 0.2s ease;
+      }
+
+      .socials a.social-button img {
+        width: 24px;
+        height: 24px;
+      }
+
+      .socials a.instagram-button {
+        background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+      }
+
+      .socials a.instagram-button:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+      }
+
+      /* Sección desplegable (FAQ) */
+      .faq-section {
+        background: rgba(0, 0, 0, 0.65);
+        border-radius: 20px;
+        padding: 20px;
+        max-width: 700px;
+        width: 90%;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+      }
+
+      details {
+        border-top: 1px solid #ffcc00;
+        border-bottom: 1px solid #ffcc00;
+        padding: 15px 0;
+        margin-bottom: 10px;
+      }
+
+      summary {
+        list-style: none;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1rem;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #ffcc00;
+      }
+
+      summary::after {
+        content: "+";
+        font-size: 1.5rem;
+        color: #ffcc00;
+        transition: transform 0.3s ease;
+      }
+
+      details[open] summary::after {
+        content: "–";
+        transform: rotate(180deg);
+      }
+
+      details p {
+        margin: 10px 0 0 0;
+        color: #ddd;
+        line-height: 1.5;
+        text-align: justify;
+      }
+
+      footer {
+        font-size: 0.9rem;
+        color: white;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <a href="https://sonicfest.com.ar/prox.html">⚡PRÓXIMOS EVENTOS</a>
+      <a href="https://sonicfest.com.ar/fiestas.html">📷FIESTAS PASADAS</a>
+      <a href="https://sonicfest.com.ar/tienda.html">🛒 TIENDA</a>
+    </nav>
+
+    <div class="header-title">BIENVENIDOS A LA SONIC EXPO FEST</div>
+
+    <p class="description">
+      CONVENCIONES DE SONIC EN ARGENTINA PARA TODAS LAS EDADES 🇦🇷
+    </p>
+
+    <div class="socials">
+      <a href="https://www.instagram.com/sonicfestok/" target="_blank" class="social-button instagram-button">
+        <img src="Images/INSTAGRAM.png" alt="Instagram"> INSTAGRAM SONIC FEST
+      </a>
+    </div>
+
+    <div class="faq-section">
+      <details>
+        <summary>📘SOBRE NOSOTROS</summary>
+        <p><a href="https://www.sonicfest.com.ar/about" target="_blank" style="color:#ffcc00; text-decoration:none;">¿QUÉ ES SONIC FEST?</a></p>
+      </details>
+
+      <details>
+        <summary>🔒POLÍTICA DE INTEGRIDAD Y SEGURIDAD SONIC FEST</summary>
+        <p>En construcción</p>
+      </details>
+
+      <details>
+        <summary>🛡️SEGURIDAD</summary>
+        <p>SÍ, EN TODOS LOS EVENTOS DE SONIC FEST Y SONIC EXPO FEST HAY PERSONAL DE SEGURIDAD, CONTROL DE ACCESO Y SUPERVISIÓN DEL ESTABLECIMIENTO. SI NOTÁS UNA SITUACIÓN INSEGURA O PERSONA SOSPECHOSA, ACERCATE AL PERSONAL DE SEGURIDAD PARA RECIBIR ASISTENCIA INMEDIATA.</p>
+      </details>
+    </div>
+
+    <footer>2025 SONIC FEST®</footer>
+  </body>
+</html>
