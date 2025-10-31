@@ -94,7 +94,7 @@
       }
 
       .expo-logo {
-        width: 250px; /* tamaño mediano */
+        width: 250px;
         max-width: 80%;
         margin: 20px 0;
         filter: drop-shadow(0 0 10px rgba(255,204,0,0.6));
@@ -107,6 +107,24 @@
         text-align: justify;
         color: white;
         text-transform: uppercase;
+      }
+
+      /* Botón estilo SONIC FEST */
+      .expo-button {
+        display: inline-block;
+        margin-left: 8px;
+        background: linear-gradient(90deg, violet, deeppink);
+        color: white;
+        font-size: 0.9rem;
+        padding: 5px 12px;
+        border-radius: 12px;
+        text-decoration: none;
+        transition: transform 0.2s ease, filter 0.2s ease;
+      }
+
+      .expo-button:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1);
       }
 
       /* Botón Instagram */
@@ -213,11 +231,12 @@
 
     <div class="header-title">BIENVENIDOS A LA SONIC EXPO FEST</div>
 
-    <!-- Logo agregado debajo del título -->
     <img src="Images/ExpoLogo.png" alt="Logo Sonic Expo Fest" class="expo-logo">
 
     <p class="description">
-      CONVENCIONES DE SONIC EN ARGENTINA PARA TODAS LAS EDADES 🇦🇷
+      CONVENCIONES DE SONIC EN ARGENTINA PARA TODAS LAS EDADES 🇦🇷  
+      Y FIESTAS DE SONIC 
+      <a href="https://www.sonicfest.com.ar" target="_blank" class="expo-button">(SONIC FEST)</a>
     </p>
 
     <div class="socials">
