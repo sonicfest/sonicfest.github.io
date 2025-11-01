@@ -55,14 +55,48 @@
         transform: scale(1.05);
       }
 
-      .intro {
+      .faq-section {
+        background: rgba(0, 0, 0, 0.55);
+        border-radius: 20px;
+        padding: 15px 20px;
+        width: 90%;
+        max-width: 600px;
         margin-top: 110px;
-        text-align: center;
-        font-size: 1.1rem;
-        line-height: 1.5;
+        backdrop-filter: blur(4px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
       }
 
-      .intro a {
+      details {
+        border-top: 1px solid #6ee2ff;
+        border-bottom: 1px solid #6ee2ff;
+        padding: 10px 0;
+      }
+
+      summary {
+        list-style: none;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1rem;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #b8e6ff;
+      }
+
+      summary::after {
+        content: "+";
+        font-size: 1.5rem;
+        color: #6ee2ff;
+        transition: transform 0.3s ease;
+      }
+
+      details[open] summary::after {
+        content: "–";
+        transform: rotate(180deg);
+      }
+
+      details a {
         color: #6ee2ff;
         text-decoration: underline;
         font-weight: bold;
@@ -99,12 +133,15 @@
       <a href="https://sonicfest.com.ar/tienda.html">🛒 TIENDA</a>
     </nav>
 
-    <div class="intro">
-      Mirá también las fotos de la <br>
-      👉 <a href="https://www.sonicfest.com.ar/fotoscolombo" target="_blank">SONIC FEST CASA COLOMBO 23/3/2024</a>
+    <div class="faq-section">
+      <details>
+        <summary>📸 FOTOS FIESTAS 2024 Y 2025</summary>
+        <p>
+          👉 <a href="https://www.sonicfest.com.ar/fotoscolombo" target="_blank">SONIC FEST CASA COLOMBO 23/3/2024</a>
+        </p>
+      </details>
     </div>
 
-    <div class="gallery">
       <!-- Imágenes -->
       <img src="Images/A0.png" alt="A0">
       <img src="Images/A1.png" alt="A1">
@@ -128,7 +165,6 @@
       <video src="Images/V5.mp4" controls></video>
       <video src="Images/V6.mp4" controls></video>
       <video src="Images/V7.mp4" controls></video>
-    </div>
 
     <footer>2025 Sonic Fest®</footer>
   </body>
