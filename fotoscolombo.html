@@ -83,22 +83,27 @@
         text-align: center;
       }
 
-      .gallery img {
+      .gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .gallery img,
+      .gallery iframe {
         width: 90%;
         max-width: 800px;
         height: auto;
         margin-bottom: 25px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
       }
 
-      iframe {
-        width: 90%;
-        max-width: 800px;
-        height: 450px;
-        margin-bottom: 30px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+      .gallery img:hover,
+      .gallery iframe:hover {
+        transform: scale(1.02);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.8);
       }
 
       a.button {
