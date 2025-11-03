@@ -1,0 +1,153 @@
+<!DOCTYPE html> 
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SONIC FEST - COMPRAR ENTRADAS ARGENTINA</title>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/png" href="favicon3.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Fuente Righteous -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Righteous', cursive;
+        text-align: center;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px;
+        position: relative;
+        color: white;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('Images/TELA2025.png') repeat;
+        background-size: auto;
+        filter: brightness(0.5);
+        z-index: -1;
+      }
+
+      nav {
+        width: 100%;
+        background-color: #3658b3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0 30px;
+        transition: color 0.2s, transform 0.2s;
+      }
+
+      nav a:hover {
+        color: #ffcc00;
+        transform: scale(1.05);
+      }
+
+      .flyer-description {
+        font-size: 2rem;
+        margin-top: 120px;
+        margin-bottom: 30px;
+        color: yellow;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      .gallery img {
+        width: 90%;
+        max-width: 800px;
+        height: auto;
+        margin-bottom: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+      }
+
+      a.button {
+        display: inline-block;
+        background-color: #ffcc00;
+        color: black;
+        text-decoration: none;
+        padding: 15px 30px;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 1.2rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        transition: transform 0.2s ease, background 0.2s ease;
+        margin: 20px 0 40px 0;
+      }
+
+      a.button:hover {
+        background-color: #ffd633;
+        transform: scale(1.05);
+      }
+
+      footer {
+        font-size: 0.9rem;
+        color: white;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <a href="https://sonicfest.com.ar/prox.html">⚡PRÓXIMOS EVENTOS</a>
+      <a href="https://sonicfest.com.ar/fiestas.html">📷FIESTAS PASADAS</a>
+      <a href="https://sonicfest.com.ar/tienda.html">🛒 TIENDA</a>
+    </nav>
+
+    <p class="flyer-description">
+      FOTOS SONIC FEST - MATIENZO 2025
+    </p>
+
+    <div class="gallery">
+      <img src="Anteriores/Matienzo/IMG-20251101-WA0181.jpg" alt="Foto 0181" />
+      <img src="Anteriores/Matienzo/IMG-20251103-WA0062.jpg" alt="Foto 0062" />
+      <img src="Anteriores/Matienzo/IMG-20251103-WA0065.jpg" alt="Foto 0065" />
+      <img src="Anteriores/Matienzo/IMG-20251103-WA0066.jpg" alt="Foto 0066" />
+      <img src="Anteriores/Matienzo/IMG-20251103-WA0068.jpg" alt="Foto 0068" />
+      <img src="Anteriores/Matienzo/IMG-20251103-WA0070.jpg" alt="Foto 0070" />
+      <img src="Anteriores/Matienzo/IMG-20251103-WA0071.jpg" alt="Foto 0071" />
+      <img src="Anteriores/Matienzo/IMG-20251103-WA0072.jpg" alt="Foto 0072" />
+      <img src="Anteriores/Matienzo/IMG-20251103-WA0073.jpg" alt="Foto 0073" />
+      <img src="Anteriores/Matienzo/IMG-20251103-WA0074.jpg" alt="Foto 0074" />
+    </div>
+
+    <a class="button" href="https://sonicfest.com.ar">ATRÁS</a>
+
+    <footer>2025 Sonic Fest®</footer>
+  </body>
+</html>
