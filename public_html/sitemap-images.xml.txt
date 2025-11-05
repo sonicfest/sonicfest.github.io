@@ -1,0 +1,80 @@
+from pathlib import Path
+
+# Define image lists
+images_main = [
+"A0.png","A1.png","A2.png","A3.png","A4.png","A5.png","A6.png","A7.png","A8.png","A9.png",
+"B1.jpg","B2.jpg","B3.jpg",
+"CAPA1.png","CAPA2.png","CAPA3.png","CHAOS.png","DISCORD.png","EXPO.png","ExpoFlyer1.jpg","ExpoFlyer2.jpg",
+"ExpoLogo.png","INSTAGRAM.png","LLAVERO1.png","LLAVERO2.png","PIN.png","REMERAS1.png","REMERAS2.png",
+"RIDERS.png","Reglas0.png","Reglas1.png","Reglas3.png","Reglas4.png","Reglas5.png","Reglas6.png",
+"Reglas7.png","Reglas8.png","Reglas9.png","TAZAS.png","TELA2025.png"
+]
+
+colombo = [
+"IMG-20250907-WA0033.jpg","IMG-20250907-WA0034.jpg","IMG-20250907-WA0035.jpg","IMG-20250907-WA0036.jpg",
+"IMG-20250907-WA0037.jpg","IMG-20250907-WA0038.jpg","IMG-20250907-WA0039.jpg","IMG-20250907-WA0040.jpg",
+"IMG-20250907-WA0041.jpg","IMG-20250907-WA0042.jpg","IMG-20250907-WA0043.jpg","IMG-20250907-WA0044.jpg",
+"IMG-20250907-WA0045.jpg","IMG-20250907-WA0046.jpg","IMG-20250907-WA0047.jpg","IMG-20250907-WA0048.jpg",
+"IMG-20250907-WA0049.jpg","IMG-20250907-WA0050.jpg","IMG-20250907-WA0051.jpg","IMG-20250907-WA0052.jpg",
+"IMG-20250907-WA0053.jpg","IMG-20250907-WA0054.jpg","IMG-20250907-WA0055.jpg","IMG-20250907-WA0056.jpg",
+"IMG-20250907-WA0057.jpg","IMG-20250907-WA0058.jpg","IMG-20250907-WA0059.jpg","IMG-20250907-WA0060.jpg",
+"IMG-20250907-WA0061.jpg","IMG-20250907-WA0062.jpg","IMG-20250907-WA0063.jpg","IMG-20250907-WA0064.jpg",
+"IMG-20250907-WA0065.jpg","IMG-20250907-WA0066.jpg","IMG-20250907-WA0067.jpg","IMG-20250907-WA0068.jpg",
+"IMG-20250907-WA0069.jpg","IMG-20250907-WA0070.jpg","IMG-20250907-WA0071.jpg","IMG-20250907-WA0072.jpg",
+"IMG-20250907-WA0073.jpg","IMG-20250907-WA0074.jpg","IMG-20250907-WA0075.jpg","IMG-20250907-WA0076.jpg",
+"IMG-20250907-WA0079.jpg"
+]
+
+matienzo = [
+"IMG-20251101-WA0181.jpg","IMG-20251103-WA0062.jpg","IMG-20251103-WA0065.jpg","IMG-20251103-WA0066.jpg",
+"IMG-20251103-WA0068.jpg","IMG-20251103-WA0070.jpg","IMG-20251103-WA0071.jpg","IMG-20251103-WA0072.jpg",
+"IMG-20251103-WA0073.jpg","IMG-20251103-WA0074.jpg"
+]
+
+# Build XML
+sitemap = ['<?xml version="1.0" encoding="UTF-8"?>',
+'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">']
+
+# Main images on homepage
+sitemap.append('  <url>')
+sitemap.append('    <loc>https://www.sonicfest.com.ar/</loc>')
+for f in images_main:
+    name = Path(f).stem
+    sitemap.append('    <image:image>')
+    sitemap.append(f'      <image:loc>https://www.sonicfest.com.ar/Images/{f}</image:loc>')
+    sitemap.append(f'      <image:title>Sonic Fest {name}</image:title>')
+    sitemap.append(f'      <image:caption>Sonic Fest Argentina — Imagen {name}</image:caption>')
+    sitemap.append('    </image:image>')
+sitemap.append('  </url>')
+
+# Colombo
+sitemap.append('  <url>')
+sitemap.append('    <loc>https://www.sonicfest.com.ar/fiestas.html</loc>')
+for f in colombo:
+    name = Path(f).stem
+    sitemap.append('    <image:image>')
+    sitemap.append(f'      <image:loc>https://www.sonicfest.com.ar/Anteriores/Colombo/{f}</image:loc>')
+    sitemap.append(f'      <image:title>Sonic Fest Casa Colombo {name}</image:title>')
+    sitemap.append(f'      <image:caption>Fotos de la primera edición en Casa Colombo — Sonic Fest Argentina</image:caption>')
+    sitemap.append('    </image:image>')
+sitemap.append('  </url>')
+
+# Matienzo
+sitemap.append('  <url>')
+sitemap.append('    <loc>https://www.sonicfest.com.ar/fiestas.html</loc>')
+for f in matienzo:
+    name = Path(f).stem
+    sitemap.append('    <image:image>')
+    sitemap.append(f'      <image:loc>https://www.sonicfest.com.ar/Anteriores/Matienzo/{f}</image:loc>')
+    sitemap.append(f'      <image:title>Sonic Fest Matienzo {name}</image:title>')
+    sitemap.append(f'      <image:caption>Fotos del evento Matienzo — Sonic Fest Argentina</image:caption>')
+    sitemap.append('    </image:image>')
+sitemap.append('  </url>')
+
+sitemap.append('</urlset>')
+
+output_path = "/mnt/data/sitemap-images.xml"
+with open(output_path, "w", encoding="utf-8") as f:
+    f.write("\n".join(sitemap))
+
+output_path
