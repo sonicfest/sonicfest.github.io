@@ -69,6 +69,7 @@
         transform: scale(1.05);
       }
 
+      /* --- DESPLEGABLE FOTOS --- */
       .faq-section {
         background: rgba(0, 0, 0, 0.55);
         border-radius: 20px;
@@ -80,6 +81,39 @@
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
       }
 
+      details {
+        border-top: 1px solid #6ee2ff;
+        border-bottom: 1px solid #6ee2ff;
+        padding: 10px 0;
+      }
+      summary {
+        list-style: none;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #b8e6ff;
+      }
+      summary::after {
+        content: "+";
+        font-size: 1.5rem;
+        color: #6ee2ff;
+        transition: transform 0.3s ease;
+      }
+      details[open] summary::after {
+        content: "–";
+        transform: rotate(180deg);
+      }
+      details a {
+        color: #6ee2ff;
+        text-decoration: underline;
+        font-weight: bold;
+      }
+
+      /* GALERÍA */
       .gallery {
         display: flex;
         flex-wrap: wrap;
@@ -129,8 +163,16 @@
       <a href="https://sonicfest.com.ar/tienda.html">🛒 TIENDA</a>
     </nav>
 
+    <!-- DESPLEGABLE AGREGADO -->
+    <div class="faq-section">
+      <details>
+        <summary>📸 FOTOS FIESTAS 2024 Y 2025</summary>
+        <p> 👉 <a href="https://www.sonicfest.com.ar/fotoscolombo" target="_blank">SONIC FEST CASA COLOMBO 23/3/2024</a> </p>
+        <p> 👉 <a href="https://www.sonicfest.com.ar/fotosmatienzo" target="_blank">SONIC ADVENTURE FEST 3/3/2025</a> </p>
+      </details>
+    </div>
+
     <div class="gallery">
-      <!-- Imágenes optimizadas con alt SEO -->
       <img src="Images/A0.png" alt="Sonic Fest Argentina flyer fiesta gamer Buenos Aires">
       <img src="Images/A1.png" alt="Fiesta temática de Sonic en Argentina fans comunidad">
       <img src="Images/A2.png" alt="Sonic Fest evento cosplay música baile Buenos Aires">
@@ -144,7 +186,6 @@
       <img src="Images/B2.jpg" alt="Cosplay Sonic en evento Sonic Fest Buenos Aires">
       <img src="Images/B3.jpg" alt="Escenario y luces Sonic Fest Argentina fiesta gamer">
 
-      <!-- Videos (sin alt, pero tienen título para SEO) -->
       <video src="Images/V1.mp4" controls title="Video fiesta Sonic Fest Argentina"></video>
       <video src="Images/V2.mp4" controls title="Evento Sonic Buenos Aires fans"></video>
       <video src="Images/V3.mp4" controls title="Sonic Fest música y cosplay Argentina"></video>
