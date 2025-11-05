@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Página principal con imágenes del directorio raíz /images -->
+  <url>
+    <loc>https://www.sonicfest.com.ar/</loc>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/A0.png</image:loc>
+      <image:caption>Sonic Fest - Imagen promocional</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/A1.png</image:loc>
+      <image:caption>Sonic Fest - Imagen promocional</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/A2.png</image:loc>
+      <image:caption>Sonic Fest - Imagen promocional</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/A3.png</image:loc>
+      <image:caption>Sonic Fest - Imagen promocional</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/A4.png</image:loc>
+      <image:caption>Sonic Fest - Imagen promocional</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/A5.png</image:loc>
+      <image:caption>Sonic Fest - Imagen promocional</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/A6.png</image:loc>
+      <image:caption>Sonic Fest - Imagen promocional</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/A7.png</image:loc>
+      <image:caption>Sonic Fest - Imagen promocional</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/A8.png</image:loc>
+      <image:caption>Sonic Fest - Imagen promocional</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/A9.png</image:loc>
+      <image:caption>Sonic Fest - Imagen promocional</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/B1.jpg</image:loc>
+      <image:caption>Sonic Fest - Fotografía del evento</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/B2.jpg</image:loc>
+      <image:caption>Sonic Fest - Fotografía del evento</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/B3.jpg</image:loc>
+      <image:caption>Sonic Fest - Fotografía del evento</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/CAPA1.png</image:loc>
+      <image:caption>Sonic Fest - Capa promocional</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/CAPA2.png</image:loc>
+      <image:caption>Sonic Fest - Capa promocional</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/CAPA3.png</image:loc>
+      <image:caption>Sonic Fest - Capa promocional</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/CHAOS.png</image:loc>
+      <image:caption>Sonic Fest - Chaos</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/DISCORD.png</image:loc>
+      <image:caption>Sonic Fest - Discord</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/EXPO.png</image:loc>
+      <image:caption>Sonic Fest - Expo</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/ExpoFlyer1.jpg</image:loc>
+      <image:caption>Sonic Fest - Flyer de la exposición</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/ExpoFlyer2.jpg</image:loc>
+      <image:caption>Sonic Fest - Flyer de la exposición</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/ExpoLogo.png</image:loc>
+      <image:caption>Sonic Fest - Logo de la exposición</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/INSTAGRAM.png</image:loc>
+      <image:caption>Sonic Fest - Instagram</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/LLAVERO1.png</image:loc>
+      <image:caption>Sonic Fest - Llavero merchandising</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/LLAVERO2.png</image:loc>
+      <image:caption>Sonic Fest - Llavero merchandising</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/PIN.png</image:loc>
+      <image:caption>Sonic Fest - Pin merchandising</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/REMERAS1.png</image:loc>
+      <image:caption>Sonic Fest - Remeras merchandising</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/REMERAS2.png</image:loc>
+      <image:caption>Sonic Fest - Remeras merchandising</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/RIDERS.png</image:loc>
+      <image:caption>Sonic Fest - Riders</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/Reglas0.png</image:loc>
+      <image:caption>Sonic Fest - Reglas del evento</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/Reglas1.png</image:loc>
+      <image:caption>Sonic Fest - Reglas del evento</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/Reglas3.png</image:loc>
+      <image:caption>Sonic Fest - Reglas del evento</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/Reglas4.png</image:loc>
+      <image:caption>Sonic Fest - Reglas del evento</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/Reglas5.png</image:loc>
+      <image:caption>Sonic Fest - Reglas del evento</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/Reglas6.png</image:loc>
+      <image:caption>Sonic Fest - Reglas del evento</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/Reglas7.png</image:loc>
+      <image:caption>Sonic Fest - Reglas del evento</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/Reglas8.png</image:loc>
+      <image:caption>Sonic Fest - Reglas del evento</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/Reglas9.png</image:loc>
+      <image:caption>Sonic Fest - Reglas del evento</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/TAZAS.png</image:loc>
+      <image:caption>Sonic Fest - Tazas merchandising</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/images/TELA2025.png</image:loc>
+      <image:caption>Sonic Fest - Tela 2025</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Imágenes de eventos anteriores - Matienzo -->
+  <url>
+    <loc>https://www.sonicfest.com.ar/anteriores.html</loc>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/matienzo/IMG-20251101-WA0181.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Matienzo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/matienzo/IMG-20251103-WA0062.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Matienzo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/matienzo/IMG-20251103-WA0065.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Matienzo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/matienzo/IMG-20251103-WA0066.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Matienzo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/matienzo/IMG-20251103-WA0068.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Matienzo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/matienzo/IMG-20251103-WA0070.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Matienzo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/matienzo/IMG-20251103-WA0071.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Matienzo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/matienzo/IMG-20251103-WA0072.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Matienzo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/matienzo/IMG-20251103-WA0073.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Matienzo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/matienzo/IMG-20251103-WA0074.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Matienzo - Fotografía</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Imágenes de eventos anteriores - Colombo -->
+  <url>
+    <loc>https://www.sonicfest.com.ar/anteriores.html</loc>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0033.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0034.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0035.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0036.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0037.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0038.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0039.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0040.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0041.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0042.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0043.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0044.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0045.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0046.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0047.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0048.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0049.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0050.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0051.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0052.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0053.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0054.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0055.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0056.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0057.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0058.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0059.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0060.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0061.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0062.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0063.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0064.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0065.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0066.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0067.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0068.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0069.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0070.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0071.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0072.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0073.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0074.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0075.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0076.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/anteriores/Colombo/IMG-20250907-WA0079.jpg</image:loc>
+      <image:caption>Sonic Fest - Evento Colombo - Fotografía</image:caption>
+    </image:image>
+  </url>
+
+</urlset>
