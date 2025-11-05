@@ -1,0 +1,265 @@
+# Escribo el sitemap-images.xml en /mnt/data usando el contenido previamente generado,
+# renombrando el archivo y dejando exactamente la misma estructura.
+sitemap_path = "/mnt/data/sitemap-images.xml"
+sitemap_xml = """<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.sonicfest.com.ar/</loc>
+    <lastmod>2025-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/A0.png</image:loc>
+      <image:title>Sonic Fest Argentina foto A0 evento fans cultura</image:title>
+      <image:caption>Sonic Fest Argentina foto A0 evento fans cultura — Sonic Fest en Argentina, fotos de eventos y comunidad</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/A1.png</image:loc>
+      <image:title>Sonic Fest Argentina foto A1 evento fans cultura</image:title>
+      <image:caption>Sonic Fest Argentina foto A1 evento fans cultura — Sonic Fest en Argentina, fotos de eventos y comunidad</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/A2.png</image:loc>
+      <image:title>Sonic Fest Argentina foto A2 evento fans cultura</image:title>
+      <image:caption>Sonic Fest Argentina foto A2 evento fans cultura — Sonic Fest en Argentina, fotos de eventos y comunidad</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/A3.png</image:loc>
+      <image:title>Sonic Fest Argentina foto A3 evento fans cultura</image:title>
+      <image:caption>Sonic Fest Argentina foto A3 evento fans cultura — Sonic Fest en Argentina, fotos de eventos y comunidad</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/A4.png</image:loc>
+      <image:title>Sonic Fest Argentina foto A4 evento fans cultura</image:title>
+      <image:caption>Sonic Fest Argentina foto A4 evento fans cultura — Sonic Fest en Argentina, fotos de eventos y comunidad</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/A5.png</image:loc>
+      <image:title>Sonic Fest Argentina foto A5 evento fans cultura</image:title>
+      <image:caption>Sonic Fest Argentina foto A5 evento fans cultura — Sonic Fest en Argentina, fotos de eventos y comunidad</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/A6.png</image:loc>
+      <image:title>Sonic Fest Argentina foto A6 evento fans cultura</image:title>
+      <image:caption>Sonic Fest Argentina foto A6 evento fans cultura — Sonic Fest en Argentina, fotos de eventos y comunidad</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/A7.png</image:loc>
+      <image:title>Sonic Fest Argentina foto A7 evento fans cultura</image:title>
+      <image:caption>Sonic Fest Argentina foto A7 evento fans cultura — Sonic Fest en Argentina, fotos de eventos y comunidad</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/A8.png</image:loc>
+      <image:title>Sonic Fest Argentina foto A8 evento fans cultura</image:title>
+      <image:caption>Sonic Fest Argentina foto A8 evento fans cultura — Sonic Fest en Argentina, fotos de eventos y comunidad</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/A9.png</image:loc>
+      <image:title>Sonic Fest Argentina foto A9 evento fans cultura</image:title>
+      <image:caption>Sonic Fest Argentina foto A9 evento fans cultura — Sonic Fest en Argentina, fotos de eventos y comunidad</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/B1.jpg</image:loc>
+      <image:title>Sonic Fest Argentina foto B1 evento fans cultura</image:title>
+      <image:caption>Sonic Fest Argentina foto B1 evento fans cultura — Sonic Fest en Argentina, fotos de eventos y comunidad</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/B2.jpg</image:loc>
+      <image:title>Sonic Fest Argentina foto B2 evento fans cultura</image:title>
+      <image:caption>Sonic Fest Argentina foto B2 evento fans cultura — Sonic Fest en Argentina, fotos de eventos y comunidad</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/B3.jpg</image:loc>
+      <image:title>Sonic Fest Argentina foto B3 evento fans cultura</image:title>
+      <image:caption>Sonic Fest Argentina foto B3 evento fans cultura — Sonic Fest en Argentina, fotos de eventos y comunidad</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/CAPA1.png</image:loc>
+      <image:title>Sonic Fest Argentina CAPA1 imagen promocional</image:title>
+      <image:caption>Sonic Fest Argentina CAPA1 — imagen promocional</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/CAPA2.png</image:loc>
+      <image:title>Sonic Fest Argentina CAPA2 imagen promocional</image:title>
+      <image:caption>Sonic Fest Argentina CAPA2 — imagen promocional</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/CAPA3.png</image:loc>
+      <image:title>Sonic Fest Argentina CAPA3 imagen promocional</image:title>
+      <image:caption>Sonic Fest Argentina CAPA3 — imagen promocional</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/CHAOS.png</image:loc>
+      <image:title>Sonic Fest Argentina CHAOS imagen</image:title>
+      <image:caption>Sonic Fest Argentina CHAOS — imagen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/DISCORD.png</image:loc>
+      <image:title>Sonic Fest Argentina DISCORD imagen</image:title>
+      <image:caption>Sonic Fest Argentina DISCORD — imagen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/EXPO.png</image:loc>
+      <image:title>Sonic Fest Argentina EXPO imagen</image:title>
+      <image:caption>Sonic Fest Argentina EXPO — imagen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/ExpoFlyer1.jpg</image:loc>
+      <image:title>Sonic Fest Argentina ExpoFlyer1</image:title>
+      <image:caption>ExpoFlyer1 — Sonic Fest</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/ExpoFlyer2.jpg</image:loc>
+      <image:title>Sonic Fest Argentina ExpoFlyer2</image:title>
+      <image:caption>ExpoFlyer2 — Sonic Fest</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/ExpoLogo.png</image:loc>
+      <image:title>Sonic Fest Argentina ExpoLogo</image:title>
+      <image:caption>ExpoLogo — Sonic Fest</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/INSTAGRAM.png</image:loc>
+      <image:title>Sonic Fest Argentina INSTAGRAM</image:title>
+      <image:caption>INSTAGRAM — Sonic Fest</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/LLAVERO1.png</image:loc>
+      <image:title>Sonic Fest Argentina LLAVERO1</image:title>
+      <image:caption>LLAVERO1 — Sonic Fest</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/LLAVERO2.png</image:loc>
+      <image:title>Sonic Fest Argentina LLAVERO2</image:title>
+      <image:caption>LLAVERO2 — Sonic Fest</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/PIN.png</image:loc>
+      <image:title>Sonic Fest Argentina PIN</image:title>
+      <image:caption>PIN — Sonic Fest</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/REMERAS1.png</image:loc>
+      <image:title>Sonic Fest Argentina REMERAS1</image:title>
+      <image:caption>REMERAS1 — Sonic Fest</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/REMERAS2.png</image:loc>
+      <image:title>Sonic Fest Argentina REMERAS2</image:title>
+      <image:caption>REMERAS2 — Sonic Fest</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/RIDERS.png</image:loc>
+      <image:title>Sonic Fest Argentina RIDERS</image:title>
+      <image:caption>RIDERS — Sonic Fest</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/Reglas0.png</image:loc>
+      <image:title>Sonic Fest Argentina Reglas0</image:title>
+      <image:caption>Reglas0 — Sonic Fest</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/Reglas1.png</image:loc>
+      <image:title>Sonic Fest Argentina Reglas1</image:title>
+      <image:caption>Reglas1 — Sonic Fest</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/Reglas3.png</image:loc>
+      <image:title>Sonic Fest Argentina Reglas3</image:title>
+      <image:caption>Reglas3 — Sonic Fest</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/Reglas4.png</image:loc>
+      <image:title>Sonic Fest Argentina Reglas4</image:title>
+      <image:caption>Reglas4 — Sonic Fest</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/Reglas5.png</image:loc>
+      <image:title>Sonic Fest Argentina Reglas5</image:title>
+      <image:caption>Reglas5 — Sonic Fest</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/Reglas6.png</image:loc>
+      <image:title>Sonic Fest Argentina Reglas6</image:title>
+      <image:caption>Reglas6 — Sonic Fest</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/Reglas7.png</image:loc>
+      <image:title>Sonic Fest Argentina Reglas7</image:title>
+      <image:caption>Reglas7 — Sonic Fest</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/Reglas8.png</image:loc>
+      <image:title>Sonic Fest Argentina Reglas8</image:title>
+      <image:caption>Reglas8 — Sonic Fest</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/Reglas9.png</image:loc>
+      <image:title>Sonic Fest Argentina Reglas9</image:title>
+      <image:caption>Reglas9 — Sonic Fest</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/TAZAS.png</image:loc>
+      <image:title>Sonic Fest Argentina TAZAS</image:title>
+      <image:caption>TAZAS — Sonic Fest</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sonicfest.com.ar/Images/TELA2025.png</image:loc>
+      <image:title>Sonic Fest Argentina TELA2025</image:title>
+      <image:caption>TELA2025 — Sonic Fest</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.sonicfest.com.ar/fiestas.html</loc>
+    <lastmod>2025-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+"""
+# append Colombo images
+colombo = [
+"IMG-20250907-WA0033.jpg","IMG-20250907-WA0034.jpg","IMG-20250907-WA0035.jpg","IMG-20250907-WA0036.jpg",
+"IMG-20250907-WA0037.jpg","IMG-20250907-WA0038.jpg","IMG-20250907-WA0039.jpg","IMG-20250907-WA0040.jpg",
+"IMG-20250907-WA0041.jpg","IMG-20250907-WA0042.jpg","IMG-20250907-WA0043.jpg","IMG-20250907-WA0044.jpg",
+"IMG-20250907-WA0045.jpg","IMG-20250907-WA0046.jpg","IMG-20250907-WA0047.jpg","IMG-20250907-WA0048.jpg",
+"IMG-20250907-WA0049.jpg","IMG-20250907-WA0050.jpg","IMG-20250907-WA0051.jpg","IMG-20250907-WA0052.jpg",
+"IMG-20250907-WA0053.jpg","IMG-20250907-WA0054.jpg","IMG-20250907-WA0055.jpg","IMG-20250907-WA0056.jpg",
+"IMG-20250907-WA0057.jpg","IMG-20250907-WA0058.jpg","IMG-20250907-WA0059.jpg","IMG-20250907-WA0060.jpg",
+"IMG-20250907-WA0061.jpg","IMG-20250907-WA0062.jpg","IMG-20250907-WA0063.jpg","IMG-20250907-WA0064.jpg",
+"IMG-20250907-WA0065.jpg","IMG-20250907-WA0066.jpg","IMG-20250907-WA0067.jpg","IMG-20250907-WA0068.jpg",
+"IMG-20250907-WA0069.jpg","IMG-20250907-WA0070.jpg","IMG-20250907-WA0071.jpg","IMG-20250907-WA0072.jpg",
+"IMG-20250907-WA0073.jpg","IMG-20250907-WA0074.jpg","IMG-20250907-WA0075.jpg","IMG-20250907-WA0076.jpg",
+"IMG-20250907-WA0079.jpg"
+]
+for f in colombo:
+    sitemap_xml += f'    <image:image>\n      <image:loc>https://www.sonicfest.com.ar/Anteriores/Colombo/{f}</image:loc>\n'
+    sitemap_xml += f'      <image:title>Sonic Fest Casa Colombo foto {Path(f).stem} Buenos Aires fans bailando</image:title>\n'
+    sitemap_xml += f'      <image:caption>Sonic Fest Casa Colombo foto {Path(f).stem} — Fotos de la primera edición en Casa Colombo, Sonic Fest Argentina</image:caption>\n'
+    sitemap_xml += '    </image:image>\n'
+
+# append Matienzo images
+matienzo = [
+"IMG-20251101-WA0181.jpg","IMG-20251103-WA0062.jpg","IMG-20251103-WA0065.jpg","IMG-20251103-WA0066.jpg",
+"IMG-20251103-WA0068.jpg","IMG-20251103-WA0070.jpg","IMG-20251103-WA0071.jpg","IMG-20251103-WA0072.jpg",
+"IMG-20251103-WA0073.jpg","IMG-20251103-WA0074.jpg"
+]
+for f in matienzo:
+    sitemap_xml += f'    <image:image>\n      <image:loc>https://www.sonicfest.com.ar/Anteriores/Matienzo/{f}</image:loc>\n'
+    sitemap_xml += f'      <image:title>Sonic Fest Matienzo foto {Path(f).stem} fans fiesta Argentina</image:title>\n'
+    sitemap_xml += f'      <image:caption>Sonic Fest Matienzo foto {Path(f).stem} — Imágenes del evento Matienzo, Sonic Fest Argentina</image:caption>\n'
+    sitemap_xml += '    </image:image>\n'
+
+sitemap_xml += "  </url>\n"
+
+# add some other pages without images
+for page,prio in [("/prox.html",0.6),("/tienda.html",0.6),("/about.html",0.5),("/reglasexpo",0.4)]:
+    sitemap_xml += f'  <url>\n    <loc>https://www.sonicfest.com.ar{page}</loc>\n    <lastmod>2025-11-05</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>{prio}</priority>\n  </url>\n'
+
+sitemap_xml += "</urlset>\n"
+
+# write file
+with open(sitemap_path, "w", encoding="utf-8") as f:
+    f.write(sitemap_xml)
+
+print("sitemap-images.xml creado en /mnt/data/sitemap-images.xml")
