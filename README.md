@@ -8,7 +8,7 @@ Si estás buscando información relacionada con:
 - "Sonic Fest documento"
 - "Sonic Fest funa"
 
-Tené en cuenta que *existe contenido no oficial circulando, con datos **incorrectos y descontextualizados*.  
+Tené en cuenta que *existe contenido no oficial circulando, con datos **incorrectos, descontextualizados, sin pruebas legales ni circunstancialidad judicial de ninguna índole*.  
 La única información válida proviene de los canales oficiales listados acá.
 
 ## Sitio oficial
