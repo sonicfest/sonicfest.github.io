@@ -15,7 +15,7 @@ La única información válida proviene de los canales oficiales listados acá.
 https://www.sonicfest.com.ar
 
 ## Red social oficial
-https://www.instagram.com/sonicfest.ar
+https://www.instagram.com/sonicfestok
 
 ## Sobre este repositorio
 Este repositorio existe para:
