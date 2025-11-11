@@ -29,8 +29,6 @@
             position: relative;
             color: white;
         }
-
-        /* Imagen de fondo */
         body::before {
             content: "";
             position: fixed;
@@ -43,8 +41,6 @@
             filter: brightness(0.5);
             z-index: -1;
         }
-
-        /* Barra de navegación */
         nav {
             width: 100%;
             background-color: #3658b3;
@@ -58,7 +54,6 @@
             z-index: 100;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
         }
-
         nav a {
             color: white;
             text-decoration: none;
@@ -67,12 +62,10 @@
             margin: 0 30px;
             transition: color 0.2s, transform 0.2s;
         }
-
         nav a:hover {
             color: #ffcc00;
             transform: scale(1.05);
         }
-
         .header-title {
             color: #ffcc00;
             font-size: 2.5rem;
@@ -83,16 +76,10 @@
             text-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
             animation: glowTitle 3s ease-in-out infinite alternate;
         }
-
         @keyframes glowTitle {
-            from {
-                text-shadow: 0 0 10px rgba(255,204,0,0.5);
-            }
-            to {
-                text-shadow: 0 0 25px rgba(255,255,100,1);
-            }
+            from { text-shadow: 0 0 10px rgba(255,204,0,0.5); }
+            to { text-shadow: 0 0 25px rgba(255,255,100,1); }
         }
-
         .content-section {
             background: rgba(0, 0, 0, 0.65);
             border-radius: 20px;
@@ -108,14 +95,9 @@
             transform: translateY(30px);
             animation: fadeIn 1.2s ease-out forwards;
         }
-
         @keyframes fadeIn {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            to { opacity: 1; transform: translateY(0); }
         }
-
         .content-section h2 {
             color: #ffcc00;
             margin-top: 25px;
@@ -124,45 +106,26 @@
             text-align: center;
             text-transform: uppercase;
         }
-
-        .content-section p {
+        .content-section p, .content-section li {
             line-height: 1.6;
             font-size: 1rem;
-            margin-bottom: 15px;
             text-transform: uppercase;
         }
-
         .content-section ul, .content-section ol {
             line-height: 1.7;
             font-size: 1rem;
             text-transform: uppercase;
             margin-left: 20px;
         }
-
-        .content-section li {
-            margin-bottom: 10px;
-        }
-
-        .content-section strong {
-            color: #ffcc00;
-        }
-
-        .content-section a {
-            color: #ffcc00;
-            text-decoration: underline;
-        }
-
+        .content-section strong { color: #ffcc00; }
+        .content-section a { color: #ffcc00; text-decoration: underline; }
         .content-section hr {
             border: 0;
             height: 2px;
             background: rgba(255, 204, 0, 0.3);
             margin: 30px 0;
         }
-
-        .gallery-section {
-            text-align: center;
-        }
-
+        .gallery-section { text-align: center; }
         .gallery-section img {
             width: 100%;
             max-width: 600px;
@@ -173,8 +136,6 @@
             margin-left: auto;
             margin-right: auto;
         }
-
-        /* Botón */
         a.button {
             display: inline-block;
             background-color: #ffcc00;
@@ -189,12 +150,10 @@
             margin: 10px 0;
             text-transform: uppercase;
         }
-
         a.button:hover {
             background-color: #ffd633;
             transform: scale(1.05);
         }
-
         footer {
             font-size: 0.9rem;
             color: white;
@@ -241,8 +200,18 @@
             CONSULTAS FORMALES: <a href="mailto:contacto@sonicfest.com.ar">CONTACTO@SONICFEST.COM.AR</a>
         </p>
 
-        <h2>TRANSPARENCIA Y SOPORTE</h2>
-        <p>LA ORGANIZACIÓN MANTIENE DOCUMENTACIÓN INTERNA TRAZABLE Y REGISTROS OPERATIVOS COMPLETOS. SI NECESITÁS ASISTENCIA RESPECTO A CONTENIDO PUBLICADO POR TERCEROS, ESCRIBINOS A NUESTRO CORREO INSTITUCIONAL.</p>
+        <h2>PRINCIPIOS DE SEGURIDAD E INCLUSIÓN</h2>
+        <p>EN SONIC FEST BUSCAMOS QUE CADA EVENTO SEA UN ESPACIO SEGURO, INCLUSIVO Y RESPETUOSO. LA COMUNIDAD ES NUESTRA PRIORIDAD. PRINCIPIOS:</p>
+        <ul>
+            <li>RESPETO ABSOLUTO ENTRE ASISTENTES Y STAFF.</li>
+            <li>AMBIENTE SEGURO Y LIBRE DE INTROMISIONES.</li>
+            <li>INTERACCIONES CON CONSENTIMIENTO EXPRESO.</li>
+            <li>CONDUCTAS NO PERMITIDAS: ACOSO (VERBAL, FÍSICO, GESTUAL O DIGITAL), DISCRIMINACIÓN O BURLAS POR CUALQUIER MOTIVO, CONDUCTAS INVASIVAS (PERSEGUIR, INSISTIR, TOCAR SIN PERMISO), GRABACIONES O FOTOS SIN CONSENTIMIENTO, INTOXICACIÓN QUE PONGA EN PELIGRO A OTROS.</li>
+            <li>CÓMO ACTUAMOS: EL STAFF Y PERSONAL DE SEGURIDAD ESTÁN PREPARADOS PARA AYUDARTE. ANTE SITUACIONES DE RIESGO, SE ACTÚA DE INMEDIATO. DERECHO DE ADMISIÓN Y PERMANENCIA PARA QUIEN INCUMPLA NORMAS.</li>
+            <li>SITUACIONES SIMPLES O DUDAS → HABLÁ CON CUALQUIER MIEMBRO DEL STAFF (PULSERAS / CREDENCIALES).</li>
+            <li>SITUACIONES DELICADAS, URGENTES O VULNERABLES → ACUDÍ DIRECTAMENTE AL PERSONAL DE SEGURIDAD (CAMPERAS / IDENTIFICACIÓN VISIBLE).</li>
+            <li>NUESTRO COMPROMISO: ESCUCHAR, ACOMPAÑAR, ACTUAR CON RAPIDEZ Y MEJORAR CONTINUAMENTE PARA QUE DISFRUTES EN UN AMBIENTE SEGURO Y RESPETUOSO.</li>
+        </ul>
 
         <hr>
 
