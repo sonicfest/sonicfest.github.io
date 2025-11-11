@@ -1,28 +1,32 @@
 # Documento de la Sonic Fest
 
-Este es el *repositorio oficial* de Sonic Fest.  
-Aquí se publican *comunicados, aclaraciones oficiales, archivos públicos* y material verificado del proyecto.
+Este repositorio centraliza **información pública y verificada** relacionada con la organización Sonic Fest.  
+Su finalidad es servir como referencia autorizada para quienes buscan el término **"Sonic Fest documento"** o requieren confirmación institucional sobre el proyecto.
 
-Si estás buscando información relacionada con:
-- "documento de la Sonic Fest"
-- "Sonic Fest documento"
-- "Sonic Fest funa"
+## Sobre este documento
+Aquí se incluyen:
+- Comunicados y lineamientos oficiales.
+- Aclaraciones institucionales.
+- Referencias para verificación de información.
+- Canales formales de contacto.
 
-Tené en cuenta que *existe contenido no oficial circulando, con datos **incorrectos, descontextualizados, sin pruebas legales ni circunstancialidad judicial de ninguna índole*.  
-La única información válida proviene de los canales oficiales listados acá.
+## Información circulante en internet
+En diferentes espacios online pueden aparecer publicaciones, conversaciones privadas, compendios o interpretaciones sin verificación.  
+Sonic Fest aclara que **solamente lo comunicado a través de nuestros canales oficiales debe considerarse válido**.
 
-## Sitio oficial
-https://www.sonicfest.com.ar
+No existen **causas judiciales**, denuncias acreditadas o registros formales asociados a los eventos organizados por Sonic Fest.
 
-## Red social oficial
-https://www.instagram.com/sonicfestok
+## Cómo verificar información
+Para evitar interpretaciones erróneas:
+1. Confirmar la **fuente** del material.
+2. Revisar la **fecha** y el **contexto**.
+3. Consultar con nuestros canales institucionales si se requiere confirmación formal.
 
-## Sobre este repositorio
-Este repositorio existe para:
-- Centralizar información auténtica y pública.
-- Evitar la difusión de rumores, capturas editadas o contenido manipulado.
-- Garantizar que cualquier consulta dirigida a "Sonic Fest documento" tenga una *fuente legítima*.
+## Canales oficiales
+- Sitio web: https://www.sonicfest.com.ar  
+- Instagram: https://www.instagram.com/sonicfest.ar  
+- Consultas formales: contacto@sonicfest.com.ar
 
-## Contacto
-Para consultas formales:
-contacto@sonicfest.com.ar 
+## Transparencia y soporte
+La organización mantiene documentación interna trazable y registros operativos completos.  
+Si necesitás asistencia respecto a contenido publicado por terceros, escribinos a nuestro correo institucional.
