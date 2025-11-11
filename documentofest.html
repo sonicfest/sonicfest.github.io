@@ -1,181 +1,267 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Documento de la Sonic Fest - Oficial</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento de la Sonic Fest - Oficial</title>
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" type="image/png" href="favicon3.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- Fuente Righteous -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Righteous', cursive;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+            color: white;
+        }
 
-  <!-- Favicons -->
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" type="image/png" href="favicon3.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+        /* Imagen de fondo */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('Images/TELA2025.png') repeat;
+            background-size: auto;
+            filter: brightness(0.5);
+            z-index: -1;
+        }
 
-  <!-- Fuente -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        /* Barra de navegación */
+        nav {
+            width: 100%;
+            background-color: #3658b3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+        }
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Righteous', cursive;
-      min-height: 100vh;
-      padding: 20px;
-      position: relative;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: left;
-    }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 0 30px;
+            transition: color 0.2s, transform 0.2s;
+        }
 
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: url('Images/TELA2025.png') repeat;
-      background-size: auto;
-      filter: brightness(0.4);
-      z-index: -1;
-    }
+        nav a:hover {
+            color: #ffcc00;
+            transform: scale(1.05);
+        }
 
-    nav {
-      width: 100%;
-      background-color: #3658b3;
-      display: flex;
-      justify-content: center;
-      padding: 15px 0;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 100;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, .4);
-    }
+        .header-title {
+            color: #ffcc00;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-top: 100px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+            animation: glowTitle 3s ease-in-out infinite alternate;
+        }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 30px;
-      font-size: 1.1rem;
-      font-weight: bold;
-      transition: .2s;
-    }
-    nav a:hover { color: #ffcc00; transform: scale(1.05); }
+        @keyframes glowTitle {
+            from {
+                text-shadow: 0 0 10px rgba(255,204,0,0.5);
+            }
+            to {
+                text-shadow: 0 0 25px rgba(255,255,100,1);
+            }
+        }
 
-    .content {
-      max-width: 900px;
-      margin-top: 140px;
-      background: rgba(0,0,0,0.45);
-      padding: 35px;
-      border-radius: 15px;
-      font-size: 1.15rem;
-      line-height: 1.55;
-    }
+        .content-section {
+            background: rgba(0, 0, 0, 0.65);
+            border-radius: 20px;
+            padding: 35px;
+            max-width: 900px;
+            width: 90%;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+            margin-bottom: 30px;
+            text-align: left;
+            color: white;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 1.2s ease-out forwards;
+        }
 
-    h1, h2 { text-align: center; }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-    table img {
-      width: 600px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,.5);
-      margin-bottom: 20px;
-    }
+        .content-section h2 {
+            color: #ffcc00;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            text-align: center;
+            text-transform: uppercase;
+        }
 
-    a.button {
-      display: block;
-      text-align: center;
-      background: #ffcc00;
-      color: black;
-      padding: 14px 25px;
-      border-radius: 25px;
-      margin-top: 40px;
-      text-decoration: none;
-      font-size: 1.2rem;
-      font-weight: bold;
-      transition: .2s;
-    }
-    a.button:hover { background: #ffd633; transform: scale(1.05); }
+        .content-section p {
+            line-height: 1.6;
+            font-size: 1rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
 
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      font-size: .9rem;
-    }
-  </style>
+        .content-section ul, .content-section ol {
+            line-height: 1.7;
+            font-size: 1rem;
+            text-transform: uppercase;
+            margin-left: 20px;
+        }
+
+        .content-section li {
+            margin-bottom: 10px;
+        }
+
+        .content-section strong {
+            color: #ffcc00;
+        }
+
+        .content-section a {
+            color: #ffcc00;
+            text-decoration: underline;
+        }
+
+        .content-section hr {
+            border: 0;
+            height: 2px;
+            background: rgba(255, 204, 0, 0.3);
+            margin: 30px 0;
+        }
+
+        .gallery-section {
+            text-align: center;
+        }
+
+        .gallery-section img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Botón */
+        a.button {
+            display: inline-block;
+            background-color: #ffcc00;
+            color: black;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            transition: transform 0.2s ease, background 0.2s ease;
+            margin: 10px 0;
+            text-transform: uppercase;
+        }
+
+        a.button:hover {
+            background-color: #ffd633;
+            transform: scale(1.05);
+        }
+
+        footer {
+            font-size: 0.9rem;
+            color: white;
+            margin-top: 40px;
+            text-transform: uppercase;
+        }
+    </style>
 </head>
-
 <body>
+    <nav>
+        <a href="https://sonicfest.com.ar/prox.html">⚡PRÓXIMOS EVENTOS</a>
+        <a href="https://sonicfest.com.ar/fiestas.html">📷FIESTAS PASADAS</a>
+        <a href="https://sonicfest.com.ar/tienda.html">🛒 TIENDA</a>
+    </nav>
 
-<nav>
-  <a href="https://sonicfest.com.ar/prox.html">⚡PRÓXIMOS EVENTOS</a>
-  <a href="https://sonicfest.com.ar/fiestas.html">📷FIESTAS PASADAS</a>
-  <a href="https://sonicfest.com.ar/tienda.html">🛒 TIENDA</a>
-</nav>
+    <div class="header-title">DOCUMENTO OFICIAL DE LA SONIC FEST</div>
 
-<div class="content">
+    <div class="content-section">
+        <p>ESTE REPOSITORIO CENTRALIZA <strong>INFORMACIÓN PÚBLICA Y VERIFICADA</strong> RELACIONADA CON LA ORGANIZACIÓN SONIC FEST. SU FINALIDAD ES SERVIR COMO REFERENCIA AUTORIZADA PARA QUIENES BUSCAN EL TÉRMINO <strong>"SONIC FEST DOCUMENTO"</strong> O REQUIEREN CONFIRMACIÓN INSTITUCIONAL SOBRE EL PROYECTO.</p>
 
-<h1>Documento Oficial de la Sonic Fest</h1>
+        <h2>SOBRE ESTE DOCUMENTO</h2>
+        <ul>
+            <li>COMUNICADOS Y LINEAMIENTOS OFICIALES.</li>
+            <li>ACLARACIONES INSTITUCIONALES.</li>
+            <li>REFERENCIAS PARA VERIFICACIÓN DE INFORMACIÓN.</li>
+            <li>CANALES FORMALES DE CONTACTO.</li>
+        </ul>
 
-<p>Este repositorio centraliza <strong>información pública y verificada</strong> relacionada con la organización Sonic Fest.  
-Su finalidad es servir como referencia autorizada para quienes buscan el término <strong>"Sonic Fest documento"</strong> o requieren confirmación institucional sobre el proyecto.</p>
+        <h2>INFORMACIÓN CIRCULANTE EN INTERNET</h2>
+        <p>EN DIFERENTES ESPACIOS ONLINE PUEDEN APARECER PUBLICACIONES, CONVERSACIONES PRIVADAS, COMPENDIOS O INTERPRETACIONES SIN VERIFICACIÓN. SONIC FEST ACLARA QUE <strong>SOLAMENTE LO COMUNICADO A TRAVÉS DE NUESTROS CANALES OFICIALES DEBE CONSIDERARSE VÁLIDO</strong>.</p>
+        <p>NO EXISTEN <strong>CAUSAS JUDICIALES</strong>, DENUNCIAS ACREDITADAS O REGISTROS FORMALES ASOCIADOS A LOS EVENTOS ORGANIZADOS POR SONIC FEST.</p>
 
-<h2>Sobre este documento</h2>
-<ul>
-  <li>Comunicados y lineamientos oficiales.</li>
-  <li>Aclaraciones institucionales.</li>
-  <li>Referencias para verificación de información.</li>
-  <li>Canales formales de contacto.</li>
-</ul>
+        <h2>CÓMO VERIFICAR INFORMACIÓN</h2>
+        <ol>
+            <li>CONFIRMAR LA <strong>FUENTE</strong> DEL MATERIAL.</li>
+            <li>REVISAR LA <strong>FECHA</strong> Y EL <strong>CONTEXTO</strong>.</li>
+            <li>CONSULTAR CON NUESTROS CANALES INSTITUCIONALES SI SE REQUIERE CONFIRMACIÓN FORMAL.</li>
+        </ol>
 
-<h2>Información circulante en internet</h2>
-<p>En diferentes espacios online pueden aparecer publicaciones, conversaciones privadas, compendios o interpretaciones sin verificación.  
-Sonic Fest aclara que <strong>solamente lo comunicado a través de nuestros canales oficiales debe considerarse válido</strong>.</p>
+        <h2>CANALES OFICIALES</h2>
+        <p>
+            SITIO WEB: <a href="https://www.sonicfest.com.ar">HTTPS://WWW.SONICFEST.COM.AR</a><br>
+            INSTAGRAM: <a href="https://www.instagram.com/sonicfestok">HTTPS://WWW.INSTAGRAM.COM/SONICFESTOK</a><br>
+            CONSULTAS FORMALES: <a href="mailto:contacto@sonicfest.com.ar">CONTACTO@SONICFEST.COM.AR</a>
+        </p>
 
-<p>No existen <strong>causas judiciales</strong>, denuncias acreditadas o registros formales asociados a los eventos organizados por Sonic Fest.</p>
+        <h2>TRANSPARENCIA Y SOPORTE</h2>
+        <p>LA ORGANIZACIÓN MANTIENE DOCUMENTACIÓN INTERNA TRAZABLE Y REGISTROS OPERATIVOS COMPLETOS. SI NECESITÁS ASISTENCIA RESPECTO A CONTENIDO PUBLICADO POR TERCEROS, ESCRIBINOS A NUESTRO CORREO INSTITUCIONAL.</p>
 
-<h2>Cómo verificar información</h2>
-<ol>
-  <li>Confirmar la <strong>fuente</strong> del material.</li>
-  <li>Revisar la <strong>fecha</strong> y el <strong>contexto</strong>.</li>
-  <li>Consultar con nuestros canales institucionales si se requiere confirmación formal.</li>
-</ol>
+        <hr>
 
-<h2>Canales oficiales</h2>
-<p>
-Sitio web: https://www.sonicfest.com.ar <br>
-Instagram: https://www.instagram.com/sonicfestok <br>
-Consultas formales: contacto@sonicfest.com.ar
-</p>
+        <h2>GALERÍA REFERENCIAL (MATERIAL INSTITUCIONAL)</h2>
+        <div class="gallery-section">
+            <img src="Images/Reglas0.png" alt="Convenciones de Sonic en Argentina">
+            <img src="Images/Reglas1.png" alt="Sonic Fest documento">
+            <img src="Images/Reglas3.png" alt="Documento de la Sonic Fest">
+            <img src="Images/Reglas4.png" alt="Sonic Fest expo">
+            <img src="Images/Reglas5.png" alt="Sonic Fest Expo Argentina">
+            <img src="Images/Reglas6.png" alt="Sonic Fest documento confiable">
+            <img src="Images/Reglas7.png" alt="Sonic Fest documento oficial diversion">
+            <img src="Images/Reglas8.png" alt="Sonic Fest juntadas argentina">
+            <img src="Images/Reglas9.png" alt="documento de la Sonic Fest boliche Argentina">
+        </div>
+    </div>
 
-<h2>Transparencia y soporte</h2>
-<p>La organización mantiene documentación interna trazable y registros operativos completos.  
-Si necesitás asistencia respecto a contenido publicado por terceros, escribinos a nuestro correo institucional.</p>
+    <a class="button" href="https://sonicfest.com.ar">VOLVER A LA PÁGINA PRINCIPAL</a>
 
-<hr><br>
-
-<h2>Galería Referencial (Material Institucional)</h2>
-
-<img src="Images/Reglas0.png" alt="Convenciones de Sonic en Argentina">
-<img src="Images/Reglas1.png" alt="Sonic Fest documento">
-<img src="Images/Reglas3.png" alt="Documento de la Sonic Fest">
-<img src="Images/Reglas4.png" alt="Sonic Fest expo">
-<img src="Images/Reglas5.png" alt="Sonic Fest Expo Argentina">
-<img src="Images/Reglas6.png" alt="Sonic Fest documento confiable">
-<img src="Images/Reglas7.png" alt="Sonic Fest documento oficial diversion">
-<img src="Images/Reglas8.png" alt="Sonic Fest juntadas argentina">
-<img src="Images/Reglas9.png" alt="documento de la Sonic Fest boliche Argentina">
-
-<a class="button" href="https://sonicfest.com.ar">Volver a la Página Principal</a>
-
-</div>
-
-<footer>2025 Sonic Fest®</footer>
-
+    <footer>2025 SONIC FEST®</footer>
 </body>
 </html>
