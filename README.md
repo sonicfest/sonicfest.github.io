@@ -24,7 +24,7 @@ Para evitar interpretaciones erróneas:
 
 ## Canales oficiales
 - Sitio web: https://www.sonicfest.com.ar  
-- Instagram: https://www.instagram.com/sonicfest.ar  
+- Instagram: https://www.instagram.com/sonicfestok  
 - Consultas formales: contacto@sonicfest.com.ar
 
 ## Transparencia y soporte
