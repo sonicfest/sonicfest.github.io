@@ -20,92 +20,89 @@
 
 <style>
 body {
-    margin: 0;
-    font-family: 'Righteous', cursive;
-    text-align: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 20px;
-    position: relative;
-    color: white;
+  margin: 0;
+  font-family: 'Righteous', cursive;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  color: white;
 }
 body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('Images/TELA2025.png') repeat;
-    background-size: auto;
-    filter: brightness(0.5);
-    z-index: -1;
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('Images/TELA2025.png') repeat;
+  background-size: auto;
+  filter: brightness(0.5);
+  z-index: -1;
 }
 nav {
-    width: 100%;
-    background-color: #3658b3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  background-color: #3658b3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 0 30px;
-    transition: color 0.2s, transform 0.2s;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 30px;
+  transition: color 0.2s, transform 0.2s;
 }
 nav a:hover {
-    color: #ffcc00;
-    transform: scale(1.05);
+  color: #ffcc00;
+  transform: scale(1.05);
 }
 .header-title {
-    color: #ffcc00;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-top: 100px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    text-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
-    animation: glowTitle 3s ease-in-out infinite alternate;
+  color: #ffcc00;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+  animation: glowTitle 3s ease-in-out infinite alternate;
 }
 @keyframes glowTitle {
-    from { text-shadow: 0 0 10px rgba(255,204,0,0.5); }
-    to { text-shadow: 0 0 25px rgba(255,255,100,1); }
+  from { text-shadow: 0 0 10px rgba(255,204,0,0.5); }
+  to { text-shadow: 0 0 25px rgba(255,255,100,1); }
 }
 .content-section {
-    background: rgba(0, 0, 0, 0.65);
-    border-radius: 20px;
-    padding: 35px;
-    max-width: 900px;
-    width: 90%;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.6);
-    margin-bottom: 30px;
-    text-align: left;
-    color: white;
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 20px;
+  padding: 35px;
+  max-width: 900px;
+  width: 90%;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+  margin-bottom: 30px;
+  text-align: left;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeIn 1.2s ease-out forwards;
 }
-.content-section h2, .content-section h3 {
-    color: #ffcc00;
-    text-align: center;
-    text-transform: uppercase;
-}
-.content-section strong {
-    color: #ffcc00;
-}
+.content-section h2, .content-section h3 { color: #ffcc00; text-align: center; text-transform: uppercase; }
+.content-section strong { color: #ffcc00; }
 </style>
-</head>
 
+</head>
 <body>
 
 <nav>
@@ -118,69 +115,65 @@ nav a:hover {
 
 <div class="content-section">
 
-<h2>DOCUMENTO OFICIAL DE SONIC FEST — Versión 1.3 (Actualizado: 11/11/2025)</h2>
-<p>Este documento establece los criterios formales de seguridad, acompañamiento y gestión de incidentes en Sonic Fest. Se aplica en todos los eventos organizados por Sonic Fest Argentina.</p>
+<h2>DOCUMENTO OFICIAL DE SONIC FEST — Versión 1.2 (Actualizado: 11/11/2025)</h2>
 
-<h2>1. Roles y Responsabilidades</h2>
-<p><strong>Coordinación General del Evento</strong><br>
-Cargo: Coordinación de Producción y Seguridad<br>
-Correo institucional: <strong>transparencia@sonicfest.com.ar</strong></p>
+<p>Este documento se publica para garantizar transparencia en la organización de Sonic Fest. Se actualiza periódicamente en base a experiencias reales, reportes recibidos y revisión continua de nuestros procedimientos.</p>
 
-<p><strong>Responsable de Atención y Contención en Evento (RACE)</strong><br>
-Cargo: Referente de asistencia inmediata en piso.<br>
-Identificación: Credencial amarilla y pulsera distintiva.</p>
+<h2>1. Alcance y responsabilidad</h2>
+<p>La coordinación general del evento está a cargo de:
+<br><strong>Organización Sonic Fest Argentina</strong>
+<br>Responsable de Producción: <strong>(Mariano Gabriel Saavedra)</strong>
+<br>Contacto institucional: <strong>contacto@sonicfest.com.ar</strong></p>
 
-<p><strong>Responsable de Seguridad Operativa</strong><br>
-Cargo: Enlace entre seguridad del venue y organización.<br>
-Identificación: Credencial roja.</p>
+<p>Este documento aplica a todos los eventos Sonic Fest y Sonic Expo Fest, tanto +18 como aptos para todo público.</p>
 
-<p>La presencia de estos roles es obligatoria en cada Sonic Fest.</p>
-
-<h2>2. Puntos de Asistencia y Canales</h2>
+<h2>2. Compromiso</h2>
 <ul>
-<li><strong>Punto de Atención y Contención:</strong> Señalizado en plano y cartelería dentro del evento.</li>
-<li><strong>Botón de Ayuda al Staff:</strong> Cualquier persona puede decir: <strong>"Necesito SER ACOMPAÑADO/A"</strong> sin dar explicaciones.</li>
-<li><strong>Formulario Post-Evento:</strong> sonicfest.com.ar/acompanamiento</li>
+<li>Escuchar y acompañar a quienes expresen haber vivido situaciones negativas.</li>
+<li>Actuar con seriedad ante cualquier reporte relacionado con seguridad, acoso o conducta inapropiada.</li>
+<li>No minimizar testimonios ni desestimarlos sin proceso.</li>
+<li>Mejorar de manera continua nuestros protocolos y comunicación.</li>
 </ul>
 
-<h2>3. Procedimiento de Actuación (Aplicación Inmediata)</h2>
+<h2>3. Seguridad y funcionamiento</h2>
+<p>Todos los eventos se realizan en salones habilitados, con personal de seguridad matriculado designado por el venue y supervisión directa de la organización.</p>
+
+<h3>Protocolo ante situaciones</h3>
 <ol>
-<li>La persona solicita asistencia a staff, seguridad o en punto de contención.</li>
-<li>El RACE acompaña y traslada a un espacio seguro y privado.</li>
-<li>Separación preventiva inmediata de la persona denunciada del evento.</li>
-<li>Registro del incidente: hora, sector, descripción y testigos si existen.</li>
-<li>Si corresponde, la persona denunciada es retirada por Seguridad Operativa.</li>
-<li>Se informa a la persona afectada sobre seguimiento institucional.</li>
+<li>La persona informa al staff o seguridad (no se requiere justificar el motivo para pedir ayuda).</li>
+<li>Seguridad resguarda de inmediato a quien lo solicite y evalúa la situación.</li>
+<li>Si corresponde, se separa o retira del evento a la persona denunciada.</li>
+<li>Se registra el incidente (día, hora, sector, personas involucradas).</li>
+<li>La organización realiza seguimiento dentro de los 7 días posteriores.</li>
 </ol>
 
-<h2>4. Tiempos y Seguimiento</h2>
+<h2>4. Cómo reportar un hecho fuera del evento</h2>
+<p>Si querés informar algo después del evento:</p>
 <ul>
-<li>Confirmación dentro del evento: hasta 2 horas.</li>
-<li>Respuesta institucional inicial: dentro de 24 horas hábiles post-evento.</li>
-<li>Resolución final: dentro de 7 días corridos.</li>
+<li>Enviá un correo a <strong>contacto@sonicfest.com.ar</strong></li>
+<li>Recibirás un número de caso para seguimiento.</li>
+<li>Tiempo estimado de respuesta: entre 48 y 120 horas.</li>
 </ul>
 
-<h2>5. Informe y Auditoría Pública</h2>
-<p>Se publicará un informe anual con:</p>
+<h2>5. Sobre testimonios y comentarios en redes</h2>
+<p>Todos los testimonios son válidos como expresión de experiencia personal. Para poder actuar institucionalmente, se requiere un reporte formal que permita registrar y dar seguimiento.</p>
+
+<h2>6. Mejora continua</h2>
+<p>Después de cada evento se realiza:</p>
 <ul>
-<li>Cantidad de reportes recibidos.</li>
-<li>Tipos de incidentes (sin identificar personas).</li>
-<li>Acciones y mejoras aplicadas.</li>
+<li>Reunión de evaluación entre staff, seguridad y venue.</li>
+<li>Ajustes de protocolo según casos reales.</li>
+<li>Capacitación específica al personal antes del próximo evento.</li>
 </ul>
-<p>Disponible en <strong>sonicfest.com.ar/transparencia</strong></p>
 
-<h2>6. Testimonios y Redes</h2>
-<p>Los testimonios son válidos como expresión personal, pero para acción institucional es necesario un reporte formal.</p>
-
-<h2>7. Compromiso</h2>
-<p>Sonic Fest es un espacio comunitario. Nos comprometemos a proteger, acompañar y mejorar continuamente.<br>
-<strong>Si necesitás ayuda, pedila. No estás solo/a.</strong></p>
+<h2>7. Mensaje final</h2>
+<p>Sonic Fest nació como un espacio cultural y comunitario. Nuestro objetivo es que todas las personas puedan disfrutar de un entorno seguro, respetuoso y cuidado. Si tenés dudas, preguntá. Si necesitás ayuda, estamos para escucharte.</p>
 
 </div>
 
 <a class="button" href="https://sonicfest.com.ar">VOLVER A LA PÁGINA PRINCIPAL</a>
+
 <footer>2025 SONIC FEST®</footer>
 
 </body>
 </html>
-
