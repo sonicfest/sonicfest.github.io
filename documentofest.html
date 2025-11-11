@@ -1,262 +1,190 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Documento de la Sonic Fest - Oficial</title>
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" type="image/png" href="favicon3.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <!-- Fuente Righteous -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Righteous', cursive;
-            text-align: center;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            padding: 20px;
-            position: relative;
-            color: white;
-        }
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('Images/TELA2025.png') repeat;
-            background-size: auto;
-            filter: brightness(0.5);
-            z-index: -1;
-        }
-        nav {
-            width: 100%;
-            background-color: #3658b3;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 15px 0;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 100;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin: 0 30px;
-            transition: color 0.2s, transform 0.2s;
-        }
-        nav a:hover {
-            color: #ffcc00;
-            transform: scale(1.05);
-        }
-        .header-title {
-            color: #ffcc00;
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-top: 100px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            text-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
-            animation: glowTitle 3s ease-in-out infinite alternate;
-        }
-        @keyframes glowTitle {
-            from { text-shadow: 0 0 10px rgba(255,204,0,0.5); }
-            to { text-shadow: 0 0 25px rgba(255,255,100,1); }
-        }
-        .content-section {
-            background: rgba(0, 0, 0, 0.65);
-            border-radius: 20px;
-            padding: 35px;
-            max-width: 900px;
-            width: 90%;
-            backdrop-filter: blur(5px);
-            box-shadow: 0 4px 20px rgba(0,0,0,0.6);
-            margin-bottom: 30px;
-            text-align: left;
-            color: white;
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeIn 1.2s ease-out forwards;
-        }
-        @keyframes fadeIn {
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .content-section h2 {
-            color: #ffcc00;
-            margin-top: 25px;
-            margin-bottom: 15px;
-            font-size: 1.5rem;
-            text-align: center;
-            text-transform: uppercase;
-        }
-        .content-section p, .content-section li {
-            line-height: 1.6;
-            font-size: 1rem;
-            text-transform: uppercase;
-        }
-        .content-section ul, .content-section ol {
-            line-height: 1.7;
-            font-size: 1rem;
-            text-transform: uppercase;
-            margin-left: 20px;
-        }
-        .content-section strong { color: #ffcc00; }
-        .content-section a { color: #ffcc00; text-decoration: underline; }
-        .content-section hr {
-            border: 0;
-            height: 2px;
-            background: rgba(255, 204, 0, 0.3);
-            margin: 30px 0;
-        }
-        .gallery-section { text-align: center; }
-        .gallery-section img {
-            width: 100%;
-            max-width: 600px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-            margin-bottom: 20px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        a.button {
-            display: inline-block;
-            background-color: #ffcc00;
-            color: black;
-            text-decoration: none;
-            padding: 15px 30px;
-            border-radius: 25px;
-            font-weight: bold;
-            font-size: 1.2rem;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-            transition: transform 0.2s ease, background 0.2s ease;
-            margin: 10px 0;
-            text-transform: uppercase;
-        }
-        a.button:hover {
-            background-color: #ffd633;
-            transform: scale(1.05);
-        }
-        footer {
-            font-size: 0.9rem;
-            color: white;
-            margin-top: 40px;
-            text-transform: uppercase;
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Documento de la Sonic Fest - Oficial</title>
+
+<!-- Favicons -->
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" type="image/png" href="favicon3.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<!-- Fuente -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    color: white;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Images/TELA2025.png') repeat;
+    background-size: auto;
+    filter: brightness(0.5);
+    z-index: -1;
+}
+nav {
+    width: 100%;
+    background-color: #3658b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 30px;
+    transition: color 0.2s, transform 0.2s;
+}
+nav a:hover {
+    color: #ffcc00;
+    transform: scale(1.05);
+}
+.header-title {
+    color: #ffcc00;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+    animation: glowTitle 3s ease-in-out infinite alternate;
+}
+@keyframes glowTitle {
+from { text-shadow: 0 0 10px rgba(255,204,0,0.5); }
+to { text-shadow: 0 0 25px rgba(255,255,100,1); }
+}
+.content-section {
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 20px;
+    padding: 35px;
+    max-width: 900px;
+    width: 90%;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+    margin-bottom: 30px;
+    text-align: left;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1.2s ease-out forwards;
+}
+.content-section h2 {
+    color: #ffcc00;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+</style>
+
 </head>
 <body>
-    <nav>
-        <a href="https://sonicfest.com.ar/prox.html">⚡PRÓXIMOS EVENTOS</a>
-        <a href="https://sonicfest.com.ar/fiestas.html">📷FIESTAS PASADAS</a>
-        <a href="https://sonicfest.com.ar/tienda.html">🛒 TIENDA</a>
-    </nav>
 
-    <div class="header-title">DOCUMENTO OFICIAL DE LA SONIC FEST</div>
+<nav>
+<a href="https://sonicfest.com.ar/prox.html">⚡PRÓXIMOS EVENTOS</a>
+<a href="https://sonicfest.com.ar/fiestas.html">📷FIESTAS PASADAS</a>
+<a href="https://sonicfest.com.ar/tienda.html">🛒 TIENDA</a>
+</nav>
 
-    <div class="content-section">
-        <h2>DOCUMENTO OFICIAL DE SONIC FEST</h2>
-        <p>ESTE REPOSITORIO CENTRALIZA INFORMACIÓN PÚBLICA Y VERIFICABLE RELACIONADA CON LA ORGANIZACIÓN SONIC FEST. SU FINALIDAD ES SERVIR COMO REFERENCIA AUTORIZADA PARA QUIENES BUSCAN INFORMACIÓN VERIFICADA O REQUIEREN CONFIRMACIÓN INSTITUCIONAL.</p>
+<div class="header-title">DOCUMENTO OFICIAL DE SONIC FEST</div>
 
-        <h2>SOBRE ESTE DOCUMENTO</h2>
-        <ul>
-            <li>COMUNICADOS Y LINEAMIENTOS OFICIALES.</li>
-            <li>ACLARACIONES INSTITUCIONALES.</li>
-            <li>PROCEDIMIENTOS DE SEGURIDAD.</li>
-            <li>CANALES FORMALES DE CONTACTO.</li>
-            <li>VERIFICACIÓN DE INFORMACIÓN CIRCULANTE EN INTERNET.</li>
-        </ul>
-        <p>SOLO LO COMUNICADO EN CANALES OFICIALES DEBE CONSIDERARSE VÁLIDO.</p>
-        <p>NO EXISTEN CAUSAS JUDICIALES, DENUNCIAS ACREDITADAS O REGISTROS FORMALES ASOCIADOS A LOS EVENTOS ORGANIZADOS POR SONIC FEST.</p>
+<div class="content-section">
 
-        <h2>PRÁCTICAS Y RESPONSABILIDAD DE SEGURIDAD</h2>
-        <p>SONIC FEST ES UN EVENTO REALIZADO EN SALONES HABILITADOS, Y LA SEGURIDAD SIEMPRE ESTÁ A CARGO DEL VENUE (SALÓN) DONDE SE DESARROLLA EL EVENTO.</p>
+<h2>DOCUMENTO OFICIAL DE SONIC FEST</h2>
+<p>Este documento tiene como objetivo proveer información clara, verificable y responsable sobre la organización de Sonic Fest. Se reconoce que la transparencia es un pilar fundamental en cualquier evento comunitario y cultural, por lo que este documento se actualiza en base a experiencias, reportes y mejoras continuas.</p>
 
-        <p>ESTO SIGNIFICA QUE:</p>
-        <ul>
-            <li>LA EMPRESA DE SEGURIDAD PRESENTE EN CADA FECHA ES CONTRATADA POR EL SALÓN.</li>
-            <li>SOLO EL PERSONAL DE SEGURIDAD HABILITADO DEL SALÓN ESTÁ AUTORIZADO LEGALMENTE PARA INTERVENIR.</li>
-            <li>SONIC FEST COORDINA CON EL SALÓN PROTOCOLOS CLAROS DE PREVENCIÓN Y ACOMPAÑAMIENTO.</li>
-        </ul>
+<h2>1. Sobre este documento</h2>
+<ul>
+<li>Comunicados oficiales.</li>
+<li>Políticas institucionales y criterios de gestión.</li>
+<li>Protocolos de seguridad y acompañamiento.</li>
+<li>Canales de contacto formales para consultas o reportes.</li>
+<li>Información contrastable y fuentes verificables.</li>
+</ul>
+<p>Nuestro compromiso es garantizar información clara y completa. Toda actualización se publica en los canales oficiales para asegurar trazabilidad.</p>
 
-        <h3>RESPONSABLES DE SEGURIDAD</h3>
-        <ul>
-            <li>EMPRESA DE SEGURIDAD ASIGNADA POR EL SALÓN.</li>
-            <li>JEFE/A DE SEGURIDAD DEL SALÓN COMO AUTORIDAD OPERATIVA.</li>
-            <li>COORDINACIÓN DIRECTA CON LA ORGANIZACIÓN SONIC FEST.</li>
-        </ul>
+<h2>2. Reconocimiento y responsabilidad</h2>
+<p>En algunos eventos anteriores se han expresado preocupaciones y experiencias negativas por parte de asistentes. Queremos dejar claro:</p>
+<ul>
+<li>Escuchamos y tomamos en serio cada testimonio.</li>
+<li>No desestimamos experiencias personales.</li>
+<li>Cuando se recibe información concreta, se actúa.</li>
+<li>Si en algún caso previo no se respondió adecuadamente, asumimos la responsabilidad de mejorar.</li>
+</ul>
 
-        <h3>CÓMO SE RESPONDE ANTE SITUACIONES</h3>
-        <ul>
-            <li>SI ALGUNA PERSONA SE SIENTE INCÓMODA O DETECTA UNA CONDUCTA INAPROPIADA, SE COMUNICA AL STAFF O SEGURIDAD.</li>
-            <li>SEGURIDAD INTERVIENE SEGUÍN PROTOCOLOS FORMALES.</li>
-            <li>SI ES NECESARIO, SE RETIRA A LA PERSONA INVOLUCRADA.</li>
-            <li>TODA INTERVENCIÓN SE REGISTRA EN LA BITÁCORA DEL SALÓN.</li>
-        </ul>
+<h2>3. Seguridad del evento</h2>
+<p>Sonic Fest se realiza exclusivamente en salones habilitados, trabajando en conjunto con:</p>
+<ul>
+<li>Empresa de seguridad matriculada designada por el venue.</li>
+<li>Jefatura de seguridad del salón.</li>
+<li>Coordinación directa con el equipo organizador de Sonic Fest.</li>
+</ul>
+<p>Nuestro objetivo es garantizar un entorno cuidado para todas las personas presentes.</p>
 
-        <h3>MEJORAS CONTINUAS</h3>
-        <ul>
-            <li>REUNIÓN POST-EVENTO CON EL SALÓN.</li>
-            <li>SE INCORPORAN SUGERENCIAS DE SEGURIDAD.</li>
-            <li>SE ACTUALIZAN INDICACIONES AL STAFF.</li>
-        </ul>
+<h3>Intervención ante situaciones</h3>
+<ul>
+<li>Si alguien se siente incómodo/a o detecta una conducta inapropiada puede dirigirse al staff o seguridad.</li>
+<li>Seguridad interviene siguiendo protocolos legales.</li>
+<li>Si corresponde, la persona involucrada es acompañada fuera del evento.</li>
+<li>Se registra el hecho y se realiza seguimiento.</li>
+</ul>
 
-        <h2>ACLARACIÓN SOBRE INFORMACIÓN EN INTERNET</h2>
-        <p>CIRCULAN PUBLICACIONES Y RELATOS NO VERIFICADOS.</p>
-        <ul>
-            <li>NO SE REGISTRARON DENUNCIAS FORMALES.</li>
-            <li>NO SE RECIBIERON REPORTES DIRECTOS CON TESTIGOS IDENTIFICABLES.</li>
-            <li>NO HAY CONSTANCIAS EN LOS REGISTROS DE SEGURIDAD.</li>
-        </ul>
-        <p>ESTO NO INVALIDA QUE CUALQUIER PERSONA PUEDA EXPRESAR SU EXPERIENCIA. PARA ACTUAR, NECESITAMOS INFORMACIÓN FORMAL Y VERIFICABLE.</p>
+<h2>4. Mejora continua</h2>
+<ul>
+<li>Reunión de evaluación entre organización y venue.</li>
+<li>Revisión de protocolos según experiencias reales.</li>
+<li>Actualización de indicaciones al staff y seguridad.</li>
+</ul>
 
-        <h2>CANAL ABIERTO PARA TESTIMONIOS REALES</h2>
-        <p>SI VIVISTE UNA SITUACIÓN INCÓMODA O CONFLICTIVA, CONTACTANOS:</p>
-        <p><a href="mailto:transparencia@sonicfest.com.ar">TRANSPARENCIA@SONICFEST.COM.AR</a></p>
-        <p>SE GARANTIZA ESCUCHA DIRECTA, CONFIDENCIALIDAD Y COORDINACIÓN SI ES NECESARIO.</p>
+<h2>5. Sobre la información circulante</h2>
+<p>No invalidamos relatos ni experiencias. Para actuar formalmente, se necesitan reportes con:</p>
+<ul>
+<li>Descripción de lo ocurrido</li>
+<li>Fechas aproximadas</li>
+<li>Testigos o referencias (si es posible)</li>
+</ul>
 
-        <h2>MENSAJE FINAL</h2>
-        <p>SONIC FEST NACIÓ COMO UN ENCUENTRO CULTURAL, CREATIVO Y COMUNITARIO.</p>
-        <p>QUEREMOS QUE TODAS LAS PERSONAS SE SIENTAN SEGURAS, RESPETADAS Y ACOMPAÑADAS.</p>
-        <p>SI TENÉS DUDAS, ESCRIBINOS. SI TENÉS ALGO PARA CONTAR, ESTAMOS PARA ESCUCHAR.</p>
-        <p>CONSTRUIMOS COMUNIDAD CON RESPETO, CUIDADO Y TRANSPARENCIA.</p>
+<h2>6. Canal de contacto</h2>
+<p>Si viviste algo o querés aportar información:</p>
+<p><strong>transparencia@sonicfest.com.ar</strong></p>
 
-        <hr>
+<h2>7. Mensaje final</h2>
+<p>Sonic Fest nació como un espacio cultural y comunitario. Nuestro compromiso es que cada persona pueda disfrutarlo en un entorno seguro, respetuoso y cuidado.</p>
+<p>Si tenés dudas, preguntá. Si tenés algo para contar, te escuchamos. Construimos comunidad entre todas las personas.</p>
 
-        <h2>GALERÍA REFERENCIAL (MATERIAL INSTITUCIONAL)</h2>
-        <div class="gallery-section">
-            <img src="Images/Reglas0.png" alt="Convenciones de Sonic en Argentina">
-            <img src="Images/Reglas1.png" alt="Sonic Fest documento">
-            <img src="Images/Reglas3.png" alt="Documento de la Sonic Fest">
-            <img src="Images/Reglas4.png" alt="Sonic Fest expo">
-            <img src="Images/Reglas5.png" alt="Sonic Fest Expo Argentina">
-            <img src="Images/Reglas6.png" alt="Sonic Fest documento confiable">
-            <img src="Images/Reglas7.png" alt="Sonic Fest documento oficial diversion">
-            <img src="Images/Reglas8.png" alt="Sonic Fest juntadas argentina">
-            <img src="Images/Reglas9.png" alt="documento de la Sonic Fest boliche Argentina">
-        </div>
-    </div>
+</div>
 
-    <a class="button" href="https://sonicfest.com.ar">VOLVER A LA PÁGINA PRINCIPAL</a>
+<a class="button" href="https://sonicfest.com.ar">VOLVER A LA PÁGINA PRINCIPAL</a>
+<footer>2025 SONIC FEST®</footer>
 
-    <footer>2025 SONIC FEST®</footer>
 </body>
 </html>
-
