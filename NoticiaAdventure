@@ -1,1 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SONIC ADVENTURE FEST - SONIC FEST DOCUMENTO</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Righteous', cursive;
+        text-align: center;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px;
+        position: relative;
+        color: white;
+      }
+
+      /* Imagen de fondo */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('Images/TELA2025.png') repeat;
+        background-size: auto;
+        filter: brightness(0.5);
+        z-index: -1;
+      }
+
+      /* Barra de navegación */
+      nav {
+        width: 100%;
+        background-color: #3658b3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0 30px;
+        transition: color 0.2s, transform 0.2s;
+      }
+
+      nav a:hover {
+        color: #ffcc00;
+        transform: scale(1.05);
+      }
+
+      .header-title {
+        color: #ffcc00;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        text-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+        animation: glowTitle 3s ease-in-out infinite alternate;
+      }
+
+      @keyframes glowTitle {
+        from { text-shadow: 0 0 10px rgba(255,204,0,0.5); }
+        to { text-shadow: 0 0 25px rgba(255,255,100,1); }
+      }
+
+      .about-section {
+        background: rgba(0, 0, 0, 0.65);
+        border-radius: 20px;
+        padding: 35px;
+        max-width: 800px;
+        width: 90%;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+        margin-bottom: 30px;
+        text-align: justify;
+        color: white;
+        text-transform: uppercase;
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeIn 1.2s ease-out forwards;
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .about-section p {
+        line-height: 1.6;
+        font-size: 1rem;
+        margin-bottom: 15px;
+      }
+
+      .about-section strong {
+        color: #ffcc00;
+      }
+
+      .about-section h3 {
+        color: #ffcc00;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+        text-align: center;
+        text-shadow: 0 0 5px rgba(255, 204, 0, 0.7);
+      }
+      
+      .about-section ul {
+        text-align: left;
+        list-style-type: none; /* Quitamos los puntos por defecto */
+        padding-left: 20px;
+        margin-left: 10px;
+      }
+      
+      .about-section ul li:before {
+        content: "⚡"; /* Agregamos un rayo como viñeta */
+        margin-right: 10px;
+        color: #ffcc00;
+      }
+      
+      .about-section li {
+        margin-bottom: 10px;
+        line-height: 1.4;
+      }
+
+      /* Estilo para imágenes dentro del artículo */
+      .about-section img {
+        width: 100%; 
+        max-width: 450px; 
+        height: auto;
+        margin: 25px auto; 
+        display: block;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+        border: 3px solid #ffcc00; 
+      }
+      
+      /* Estilo para el contenedor del video de YouTube */
+      .youtube-embed {
+        margin: 30px auto;
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .youtube-embed iframe {
+        width: 100%;
+        max-width: 560px; 
+        height: 315px; 
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(255, 204, 0, 0.4);
+      }
+      
+      /* Botón */
+      a.button {
+        display: inline-block;
+        background-color: #ffcc00;
+        color: black;
+        text-decoration: none;
+        padding: 15px 30px;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 1.2rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        transition: transform 0.2s ease, background 0.2s ease;
+        margin: 10px 0;
+      }
+
+      a.button:hover {
+        background-color: #ffd633;
+        transform: scale(1.05);
+      }
+
+      footer {
+        font-size: 0.9rem;
+        color: white;
+        margin-top: 40px;
+      }
+      
+      /* Media Query para responsividad del embed */
+      @media (max-width: 600px) {
+          .youtube-embed iframe {
+              height: 200px; /* Ajuste para pantallas pequeñas */
+          }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <a href="https://sonicfest.com.ar/prox.html">⚡PRÓXIMOS EVENTOS</a>
+      <a href="https://sonicfest.com.ar/fiestas.html">📷FIESTAS PASADAS</a>
+      <a href="https://sonicfest.com.ar/tienda.html">🛒 TIENDA</a>
+    </nav>
+
+    <div class="header-title">SONIC ADVENTURE FEST</div>
+
+    <div class="about-section">
+      
+      <p style="text-align: center; font-size: 1.1rem; color: #ffcc00;">
+        <strong>Sonic Adventure Fest: La Fiesta que Despertó la Aventura en Buenos Aires</strong>
+      </p>
+      <p style="text-align: center; margin-bottom: 25px;">
+        3 de marzo de 2025
+        <br>
+        Por Mariano Gabriel Saavedra - Organizador de Sonic Fest | 11 de noviembre de 2025
+      </p>
+      
+      <p>
+        El lunes 3 de marzo de 2025 marcó el <strong>arranque perfecto para el año sonicero en Argentina</strong>. El <strong>Sonic Adventure Fest</strong>, nuestra fiesta temática +18, reunió a <strong>alrededor de 300 fans apasionados</strong> en un icónico *venue* porteño, transformándolo en un portal directo al vibrante universo de Sonic Adventure.
+      </p>
+
+      <p>
+        Como segunda edición mayor de Sonic Fest (después del exitoso *Sonic X Shadow Fest* de septiembre de 2024), este evento capturó magistralmente la esencia de la saga de Dreamcast: <strong>velocidad, exploración y pura adrenalina colectiva</strong>. Fue una noche de inmersión total, donde la nostalgia del '98 se mezcló con la inmensa energía de la comunidad, consolidando a Sonic Fest como el <strong>epicentro de los "soniqueros" en Latinoamérica</strong>.
+      </p>
+
+      <h3>✅ SEGURIDAD IMPECABLE: DIVERSIÓN GARANTIZADA</h3>
+      
+      <p>
+        Desde las primeras horas, la <strong>seguridad privada fue impecable</strong>. Contamos con personal capacitado en puerta para el control de ingresos y revisiones de mochilas, además de vigilancia constante en todo el predio. Esto garantizó un <strong>ambiente 100% seguro y sin incidentes</strong>, permitiendo que todos se soltaran a full con *cosplays* y *pogo* sin preocupaciones.
+      </p>
+      
+      <p style="text-align: center; font-style: italic;">
+        ¡Un agradecimiento especial al equipo de seguridad por hacer posible la diversión total y la paz mental de toda la comunidad!
+      </p>
+      
+      <img src="Anteriores/Matienzo/IMG-20251101-WA0181.jpg" alt="Sonic Adventure Fest - Foto de multitud de fans en la pista de baile" />
+
+      <h3>🕹️ UNA NOCHE DE AVENTURA NON-STOP</h3>
+
+      <p>
+        El *setlist* y las actividades estuvieron totalmente centradas en *Sonic Adventure* y sus secuelas, con bloques memorables dedicados a *Chao Races*, niveles icónicos como *Speed Highway* y los temazos épicos de *Crush 40*.
+      </p>
+      
+      <p style="text-align: center; font-size: 1.1rem;">
+        Aquí va un repaso de lo que hizo <strong>épica</strong> esta edición:
+      </p>
+      
+      <ul>
+        <li>
+          <strong>Música y DJ Set Temático:</strong> Más de dos horas de *OST* remezclados, desde el optimismo de "It Doesn't Matter" hasta el *funk* de "Escape from the City". El DJ principal *droppeó* *mashups* electrizantes con visuales de *Station Square* y *Mystic Ruins* proyectados en pantallas LED, ¡haciendo que el piso temblara como en un *boss rush*!
+        </li>
+        <li>
+          <strong>Cosplay y Competencias:</strong> El desfile de *cosplays* fue brutal. Un Sonic con alas de *Adventure* se llevó el premio al más fiel. También hubo competencias interactivas como <strong>trivias de *lore*</strong> y mini-torneos de baile sincronizados. ¡La energía fue contagiosa!
+        </li>
+        <li>
+          <strong>Stands y Merchandising Exclusivo:</strong> La zona de stands ofreció *pins* limitados, pósters de la era SEGA y accesorios *custom*. Destacaron los <strong>tatuajes temporales personalizados</strong> con motivos de Tails o Knuckles, que volaron del mostrador.
+        </li>
+        <li>
+          <strong>Sector de Arte y Creatividad:</strong> Un espacio dedicado para dibujar *fanarts* en vivo, con mesas y materiales gratis. Los fans compartieron *sketches* de Sonic en aventuras imposibles.
+        </li>
+        <li>
+          <strong>Sorteos y Sorpresas:</strong> Se regalaron códigos para *Sonic x Shadow Generations* y *merchandising* oficial. El sorteo principal coronó a un afortunado con un *bundle* de *soundtracks* digitales.
+        </li>
+      </ul>
+      
+      <img src="Anteriores/Matienzo/IMG-20251103-WA0065.jpg" alt="Sonic Adventure Fest - Foto de cosplayers de Sonic y Shadow" />
+
+      <p>
+        La fiesta arrancó a las <strong>22:00</strong> y se extendió hasta las <strong>04:00</strong>, con un *after-relax* para charlas y fotos. Carteles temáticos por todo el *venue* recrearon la *vibe* de 1998, y las luces estroboscópicas simularon las carreras supersónicas de Sonic.
+      </p>
+      
+      <img src="Anteriores/Matienzo/IMG-20251103-WA0073.jpg" alt="Sonic Adventure Fest - Foto de ambiente con luces temáticas" />
+
+      <h3>📲 EL REEL QUE CAPTURÓ LA MAGIA</h3>
+      
+      <p style="text-align: center;">
+        Si quieres revivir la euforia o ver de qué se trató, mira el resumen oficial aquí:
+      </p>
+
+      <div class="youtube-embed">
+        <iframe 
+            src="https://www.youtube.com/embed/dFgMqQ4AqyY" 
+            title="Sonic Adventure Fest - Reel Oficial" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
+      </div>
+      
+      <p style="text-align: center; margin-top: 15px;">
+        ¡El video de 60 segundos con *highlights* del *pogo*, *cosplays* y euforia colectiva sumó miles de *views* en horas!
+      </p>
+      
+      <h3>📈 NÚMEROS QUE ACELERAN EL CORAZÓN</h3>
+
+      <p>
+        El <strong>Sonic Adventure Fest</strong> no solo celebró un clásico, sino que impulsó la evolución de Sonic Fest. Los resultados hablan por sí solos:
+      </p>
+      
+      <ul>
+        <li>
+          <strong>+300 Asistentes:</strong> Un <strong>récord</strong> para una edición de marzo, superando las expectativas iniciales.
+        </li>
+        <li>
+          <strong>0 Incidentes:</strong> Un testamento a la planificación y a la seguridad en puerta y *roaming*.
+        </li>
+        <li>
+          <strong>100% Feedback Positivo:</strong> Las encuestas post-evento destacaron la inmersión, el setlist y la calidez comunitaria.
+        </li>
+      </ul>
+      
+      <p>
+        De esta fiesta nació la idea para la <strong>Sonic Expo Fest familiar del 1° de junio</strong>, abriendo puertas a todas las edades y demostrando que la pasión por Sonic no tiene límites.
+      </p>
+
+      <h3>🏁 ¡PRÓXIMA PARADA!</h3>
+      
+      <p style="text-align: center;">
+        <strong>El erizo azul no para.</strong> ¡Prepara tu tabla de *air-ride*!
+      </p>
+      
+      <p style="text-align: center;">
+        <strong>Sonic Fest Riders Party +18</strong>
+        <br>
+        <strong>Cuándo:</strong> 23 de noviembre 2025
+        <br>
+        <strong>Dónde:</strong> Uniclub, con bloques de *Sonic Riders* y *guests* sorpresa.
+      </p>
+      
+      <p style="text-align: center; font-size: 1.2rem;">
+        <strong>Entradas ya disponibles:</strong> 
+        <a href="https://alpogo.com/evento/sonic-fest-riders-party-21135" target="_blank" style="color: #ffcc00; text-decoration: none;">alpogo.com/evento/sonic-fest-riders-party-21135</a>
+      </p>
+      
+      <p style="text-align: center; margin-top: 30px; font-size: 1.1rem;">
+        Si viviste esa noche, contame tu momento top en comentarios o por DM. ¡*Gotta go fast*, pero con amigos! 🦔✨
+      </p>
+      
+      <p style="text-align: center; font-size: 1.1rem; color: #3658b3;">
+        <strong style="color: #ffcc00;">REDES OFICIALES:</strong>
+        <br>
+        <a href="https://www.instagram.com/sonicfestok" target="_blank" style="color: #ffcc00; text-decoration: none;">INSTAGRAM @sonicfestok</a>
+        <br>
+        <a href="https://www.tiktok.com/@sonic.fest" target="_blank" style="color: #ffcc00; text-decoration: none;">TIKTOK @sonic.fest</a>
+      </p>
+      
+      <p style="text-align: center;">
+        #SonicAdventureFest #SonicFestArgentina #SonicAdventure
+      </p>
+
+      <p style="text-align: center; font-size: 0.9rem; color: #aaa;">
+        *Fuentes: sonicfest.com.ar/about, Instagram @sonicfestok (posts del 25/02 y 07/03/2025), X @SonicFestarg.*
+      </p>
+      
+    </div>
+
+    <a class="button" href="https://sonicfest.com.ar">ATRÁS</a>
+
+    <footer>2025 SONIC FEST®</footer>
+  </body>
+</html>
 
