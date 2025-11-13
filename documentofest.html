@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Documento de la SONIC FEST - Oficial</title>
+  <style>
+    :root{
+      --max-img-width: 600px;
+      --gap: 1rem;
+      --text-color: #111;
+      --muted: #555;
+      --bg: #fff;
+    }
+    html,body{
+      height:100%;
+      margin:0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:var(--text-color);
+      background:var(--bg);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+    }
+    .container{
+      max-width:1000px;
+      margin:28px auto;
+      padding:20px;
+    }
+    h1{
+      font-size:1.6rem;
+      margin:0 0 8px 0;
+      display:flex;
+      align-items:center;
+      gap:.5rem;
+    }
+    h2{
+      font-size:1.05rem;
+      margin:0 0 18px 0;
+      color:var(--muted);
+      display:flex;
+      align-items:center;
+      gap:.5rem;
+    }
+
+    table {
+      width:100%;
+      border-collapse:collapse;
+      margin-top:12px;
+    }
+    thead th {
+      text-align:center;
+      padding:8px 6px;
+      font-weight:600;
+      border-bottom:1px solid #e6e6e6;
+    }
+    tbody td {
+      vertical-align:top;
+      padding:14px 6px;
+      border-bottom:1px solid #f2f2f2;
+    }
+
+    /* Centrar imagenes en la celda y limitar ancho */
+    .img-cell {
+      text-align:center;
+      width:50%;
+    }
+    .img-cell img{
+      max-width:100%;
+      width:100%;
+      height:auto;
+      max-width: var(--max-img-width);
+      border-radius:6px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+
+    .desc-cell {
+      padding-left:14px;
+      color:var(--muted);
+    }
+
+    /* Responsive: en pantallas pequeñas, mostrar imagen encima de la descripción */
+    @media (max-width:720px){
+      table, thead, tbody, tr, td {
+        display:block;
+        width:100%;
+      }
+      thead { display:none; }
+      tr { margin-bottom:var(--gap); border-bottom:1px solid #eee; padding-bottom:12px; }
+      .img-cell, .desc-cell { width:100%; padding:0; text-align:left; }
+      .desc-cell { margin-top:8px; }
+    }
+
+    footer{
+      margin-top:20px;
+      padding-top:12px;
+      border-top:1px dashed #eee;
+      color:var(--muted);
+      font-size:0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>📜 DOCUMENTO DE LA SONIC FEST - OFICIAL</h1>
+      <h2>📸 Material institucional y documentación visual</h2>
+    </header>
+
+    <table aria-label="Material institucional y documentación visual">
+      <thead>
+        <tr>
+          <th>Imagen</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="img-cell">
+            <img src="Images/Reglas0.png" width="600" alt="Convenciones de Sonic en Argentina">
+          </td>
+          <td class="desc-cell">Material institucional utilizado en convenciones y encuentros oficiales de Sonic en Argentina.</td>
+        </tr>
+
+        <tr>
+          <td class="img-cell">
+            <img src="Images/Reglas1.png" width="600" alt="Sonic Fest documento">
+          </td>
+          <td class="desc-cell">Imagen asociada a aclaración oficial del término “Sonic Fest documento” en contexto institucional.</td>
+        </tr>
+
+        <tr>
+          <td class="img-cell">
+            <img src="Images/Reglas3.png" width="600" alt="Documento de la Sonic Fest">
+          </td>
+          <td class="desc-cell">Recurso visual utilizado para documentación oficial y referencia verificada.</td>
+        </tr>
+
+        <tr>
+          <td class="img-cell">
+            <img src="Images/Reglas4.png" width="600" alt="Sonic Fest expo">
+          </td>
+          <td class="desc-cell">Imagen asociada a expos y actividades abiertas realizadas por Sonic Fest.</td>
+        </tr>
+
+        <tr>
+          <td class="img-cell">
+            <img src="Images/Reglas5.png" width="600" alt="Sonic Fest Expo Argentina">
+          </td>
+          <td class="desc-cell">Material visual para comunicación de eventos temáticos en Argentina.</td>
+        </tr>
+
+        <tr>
+          <td class="img-cell">
+            <img src="Images/Reglas6.png" width="600" alt="Sonic Fest documento confiable">
+          </td>
+          <td class="desc-cell">Identidad visual relacionada con el carácter comunitario y confiable de Sonic Fest.</td>
+        </tr>
+
+        <tr>
+          <td class="img-cell">
+            <img src="Images/Reglas7.png" width="600" alt="Sonic Fest documento oficial diversion">
+          </td>
+          <td class="desc-cell">Imagen representativa del tono recreativo y de entretenimiento característico de la organización.</td>
+        </tr>
+
+        <tr>
+          <td class="img-cell">
+            <img src="Images/Reglas8.png" width="600" alt="Sonic Fest juntadas argentina">
+          </td>
+          <td class="desc-cell">Registro visual de encuentros y reuniones abiertas de la comunidad.</td>
+        </tr>
+
+        <tr>
+          <td class="img-cell">
+            <img src="Images/Reglas9.png" width="600" alt="documento de la Sonic Fest boliche Argentina">
+          </td>
+          <td class="desc-cell">Imagen relacionada con eventos nocturnos temáticos organizados oficialmente.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <footer>
+      <p>© <strong>2025 SONIC FEST®</strong></p>
+    </footer>
+  </main>
+</body>
+</html>
