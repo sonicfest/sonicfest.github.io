@@ -1,10 +1,9 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SONIC FEST JUNTADAS DE SONIC EN ARGENTINA DOCUMENTO</title>
-
     <!-- Favicons -->
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" type="image/png" href="favicon3.png" />
@@ -12,7 +11,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-
     <!-- Fuente Righteous -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +18,6 @@
       href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
       rel="stylesheet"
     />
-
     <style>
       body {
         margin: 0;
@@ -35,7 +32,6 @@
         position: relative;
         color: white;
       }
-
       body::before {
         content: "";
         position: fixed;
@@ -48,7 +44,6 @@
         filter: brightness(0.5);
         z-index: -1;
       }
-
       nav {
         width: 100%;
         background-color: #3658b3;
@@ -62,7 +57,6 @@
         z-index: 100;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
       }
-
       nav a {
         color: white;
         text-decoration: none;
@@ -71,12 +65,10 @@
         margin: 0 30px;
         transition: color 0.2s, transform 0.2s;
       }
-
       nav a:hover {
         color: #ffcc00;
         transform: scale(1.05);
       }
-
       .flyer-description {
         font-size: 2rem;
         margin-top: 120px;
@@ -85,7 +77,143 @@
         text-transform: uppercase;
         text-align: center;
       }
-
+      /* Estilos para el acordeón desplegable */
+      .accordion {
+        background: rgba(0, 0, 0, 0.65);
+        border-radius: 20px;
+        padding: 0;
+        max-width: 800px;
+        width: 90%;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+        margin-bottom: 30px;
+        overflow: hidden;
+      }
+      .accordion-button {
+        width: 100%;
+        background: rgba(54, 88, 179, 0.8);
+        color: white;
+        text-align: left;
+        padding: 20px;
+        border: none;
+        font-family: 'Righteous', cursive;
+        font-size: 1.5rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+      }
+      .accordion-button:hover {
+        background: rgba(54, 88, 179, 1);
+      }
+      .toggle {
+        font-size: 1.5rem;
+        transition: transform 0.3s ease;
+      }
+      .accordion-button.active .toggle {
+        transform: rotate(45deg);
+      }
+      .panel {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        background: rgba(0, 0, 0, 0.65);
+        padding: 0 35px;
+      }
+      .panel.active {
+        max-height: 5000px; /* Ajustar según contenido, o usar un valor grande */
+        padding: 35px;
+      }
+      /* Estilos del artículo (del segundo código) */
+      .header-title {
+        color: #ffcc00;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin: 20px 0;
+        text-transform: uppercase;
+        text-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+        animation: glowTitle 3s ease-in-out infinite alternate;
+      }
+      @keyframes glowTitle {
+        from { text-shadow: 0 0 10px rgba(255,204,0,0.5); }
+        to { text-shadow: 0 0 25px rgba(255,255,100,1); }
+      }
+      .about-section {
+        text-align: justify;
+        color: white;
+        text-transform: uppercase;
+      }
+      .about-section p {
+        line-height: 1.7;
+        font-size: 1rem;
+        margin-bottom: 15px;
+      }
+      .about-section strong {
+        color: #ffcc00;
+      }
+      .about-section h3 {
+        color: #ffcc00;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+        text-align: center;
+        text-shadow: 0 0 5px rgba(255, 204, 0, 0.7);
+        border-bottom: 2px solid rgba(255, 204, 0, 0.3);
+        padding-bottom: 5px;
+      }
+      .about-section ul {
+        text-align: left;
+        list-style-type: none;
+        padding-left: 10px;
+        margin-left: 10px;
+      }
+      .about-section ul li:before {
+        content: "⭐";
+        margin-right: 10px;
+        color: #ffcc00;
+      }
+      .about-section li {
+        margin-bottom: 12px;
+        line-height: 1.4;
+      }
+      .about-section .quote {
+        border-left: 5px solid #3658b3;
+        padding-left: 15px;
+        margin: 20px 0;
+        font-style: italic;
+        color: #ddd;
+        text-align: center;
+      }
+      .about-section img {
+        width: 100%;
+        max-width: 550px;
+        height: auto;
+        margin: 25px auto;
+        display: block;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+        border: 3px solid #ffcc00;
+      }
+      .youtube-embed {
+        margin: 30px auto;
+        max-width: 100%;
+        text-align: center;
+      }
+      .youtube-embed iframe {
+        width: 100%;
+        max-width: 560px;
+        height: 315px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(255, 204, 0, 0.4);
+      }
+      @media (max-width: 600px) {
+        .youtube-embed iframe {
+          height: 200px;
+        }
+      }
       .gallery img {
         width: 90%;
         max-width: 800px;
@@ -94,7 +222,6 @@
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
       }
-
       a.button {
         display: inline-block;
         background-color: #ffcc00;
@@ -108,12 +235,10 @@
         transition: transform 0.2s ease, background 0.2s ease;
         margin: 20px 0 40px 0;
       }
-
       a.button:hover {
         background-color: #ffd633;
         transform: scale(1.05);
       }
-
       footer {
         font-size: 0.9rem;
         color: white;
@@ -121,18 +246,155 @@
       }
     </style>
   </head>
-
   <body>
     <nav>
       <a href="https://sonicfest.com.ar/prox.html">⚡PRÓXIMOS EVENTOS</a>
       <a href="https://sonicfest.com.ar/fiestas.html">📷FIESTAS PASADAS</a>
       <a href="https://sonicfest.com.ar/tienda.html">🛒 TIENDA</a>
     </nav>
-
     <p class="flyer-description">
       FOTOS SONIC FEST - MATIENZO 2025
     </p>
-
+    <!-- Acordeón desplegable con el contenido del artículo -->
+    <div class="accordion">
+      <button class="accordion-button" onclick="toggleAccordion(this)">
+        Sonic Adventure Fest <span class="toggle">+</span>
+      </button>
+      <div class="panel">
+        <div class="header-title">SONIC ADVENTURE FEST</div>
+        <div class="about-section">
+          <p style="text-align: center; font-size: 1.2rem; color: #ffcc00; text-shadow: 0 0 5px black;">
+            <strong>Sonic Adventure Fest: La Fiesta que Despertó la Aventura en Buenos Aires</strong>
+          </p>
+          <p style="text-align: center; margin-bottom: 25px; font-size: 0.9rem; color: #aaa;">
+            3 de marzo de 2025
+            <br>
+            Por Mariano Gabriel Saavedra - Organizador de Sonic Fest | 11 de noviembre de 2025
+          </p>
+          
+          <p>
+            El lunes 3 de marzo de 2025 marcó el <strong>arranque perfecto para el año sonicero en Argentina</strong>. La <strong>Sonic Adventure Fest</strong>, nuestra fiesta temática +18, reunió a <strong>alrededor de 300 fans apasionados</strong> en un icónico *venue* porteño, transformándolo en un portal directo al vibrante universo de Sonic Adventure.
+          </p>
+          <p>
+            Como segunda edición mayor de Sonic Fest, este evento capturó magistralmente la esencia de la saga de Dreamcast: <strong>velocidad, exploración y pura adrenalina colectiva</strong>. Fue una noche de inmersión total, donde la nostalgia del '98 se mezcló con la inmensa energía de la comunidad, consolidando a Sonic Fest como el <strong>epicentro de los "soniqueros" en Latinoamérica</strong>.
+          </p>
+          <img src="Anteriores/Matienzo/IMG-20251101-WA0181.jpg" alt="Sonic Adventure Fest - Foto de multitud de fans en la pista de baile" />
+          <h3>🛡️ SEGURIDAD IMPECABLE: DIVERSIÓN GARANTIZADA</h3>
+          
+          <p>
+            Desde las primeras horas, la <strong>seguridad privada fue impecable</strong>. Contamos con personal capacitado en puerta para el control de ingresos, revisiones de mochilas y vigilancia constante en todo el predio, provista por el salón en el que se realizó (Club Matienzo). Esto garantizó un <strong>ambiente 100% seguro y sin incidentes</strong>, permitiendo que todos se soltaran a full con *cosplays* y *pogo* sin preocupaciones.
+          </p>
+          
+          <div class="quote">
+            ¡Un agradecimiento especial al equipo de seguridad por hacer posible la diversión total y la paz mental de toda la comunidad!
+          </div>
+          
+          <h3>🎵 UNA NOCHE DE AVENTURA NON-STOP</h3>
+          <p>
+            El *setlist* y las actividades estuvieron totalmente centradas en <strong>Sonic Adventure</strong> y sus secuelas, con bloques memorables dedicados a *CRUSH40*, niveles icónicos como *Speed Highway* y demás del *Sonic Adventure 1*.
+          </p>
+          
+          <p style="text-align: center; font-size: 1.1rem; color: #ddd;">
+            Aquí va un repaso de lo que hizo <strong>épica</strong> esta edición:
+          </p>
+          
+          <ul>
+            <li>
+              <strong>Música y DJ Set Temático:</strong> Dos horas de *OST* remezclados. El DJ principal *droppeó* *mashups* electrizantes con visuales de *Station Square* y *Mystic Ruins* proyectados en pantallas LED, ¡haciendo que el piso temblara como en un *boss rush*!
+            </li>
+            <li>
+              <strong>Cosplay y Competencias:</strong> Desfile de *cosplays* brutales. Un Sonic con alas de *Adventure* se llevó el premio al más fiel. Hubo trivias de *lore* y mini-torneos de baile.
+            </li>
+            <li>
+              <strong>Stands y Merchandising Exclusivo:</strong> Pins limitados, pósters de la era SEGA y accesorios *custom*. Los <strong>tatuajes temporales</strong> personalizados con motivos de Tails o Knuckles ¡volaron del mostrador!
+            </li>
+          </ul>
+          
+          <img src="Anteriores/Matienzo/IMG-20251103-WA0068.jpg" alt="Fiesta Sonic Fest Argentina evento de comunidad en Matienzo" />
+          
+          <ul>
+            <li>
+              <strong>Sector de Arte y Creatividad:</strong> Un espacio dedicado para dibujar *fanarts* en vivo, con mesas y materiales gratis.
+              <img src="Images/A6.png" alt="Fiesta Sonic Fest Documento Argentina evento de comunidad en Matienzo" />
+            </li>
+            <li>
+              <strong>Sorteos y Sorpresas:</strong> Regalos sorpresa como caramelos, llaveros, tarjetas de recuerdo.
+            </li>
+          </ul>
+          <p>
+            La fiesta se extendió hasta las <strong>05:30</strong>. Carteles temáticos del Sonic Adventure 2 por todo el *venue* recrearon la *vibe* de 1998 y 2001, y las luces estroboscópicas simularon las carreras supersónicas de Sonic.
+          </p>
+          
+          <img src="Anteriores/Matienzo/IMG-20251103-WA0074.jpg" alt="Sonic Fest Argentina fiesta entre fans en Matienzo" />
+          <h3>🎥 EL REEL QUE CAPTURÓ LA MAGIA</h3>
+          
+          <p style="text-align: center;">
+            Si queres revivir la euforia o ver de qué se trató, mirá la publicidad Reel famosa de Sonic Fest.
+          </p>
+          <div class="youtube-embed">
+            <iframe
+                src="https://www.youtube.com/embed/dFgMqQ4AqyY"
+                title="Sonic Adventure Fest - Reel Oficial"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+          </div>
+          
+          <p style="text-align: center; margin-top: 15px; color: #ddd;">
+            ¡Post-evento, los comentarios pedían "¡más Adventure vibes!" en nuestras redes!
+          </p>
+          
+          <img src="Anteriores/Matienzo/IMG-20251103-WA0071.jpg" alt="Foto de Sonic Fest evento para fans en Buenos Aires Argentina" />
+          <h3>📊 NÚMEROS QUE ACELERAN EL CORAZÓN</h3>
+          <p>
+            El **Sonic Adventure Fest** impulsó la evolución de Sonic Fest. Los resultados hablan por sí solos:
+          </p>
+          
+          <ul style="list-style-type: none; padding-left: 0;">
+            <li style="color: #ffcc00; font-size: 1.1rem; text-align: center;">🚀 <strong>+300 Asistentes:</strong> Récord para una edición de marzo.</li>
+            <li style="color: #ffcc00; font-size: 1.1rem; text-align: center;">🛡️ <strong>0 Incidentes:</strong> Seguridad en puerta y *roaming* que veló por todos.</li>
+            <li style="color: #ffcc00; font-size: 1.1rem; text-align: center;">👍 <strong>100% Feedback Positivo:</strong> Destacando la inmersión y la calidez comunitaria.</li>
+          </ul>
+          
+          <p style="text-align: center; margin-top: 20px;">
+            De esta fiesta siguió la <strong>Sonic Expo Fest familiar del 1° de junio</strong>, abriendo puertas a todas las edades.
+          </p>
+          <h3>🏁 ¡PRÓXIMA PARADA!</h3>
+          
+          <p style="text-align: center; font-size: 1.1rem; color: #ddd;">
+            ¡El erizo azul no para! Próximo hit:
+          </p>
+          
+          <p style="text-align: center; font-size: 1.3rem;">
+            <strong>Sonic Fest Riders Party +18</strong>
+            <br>
+            📅 23 de noviembre 2025 – Uniclub
+          </p>
+          
+          <p style="text-align: center; font-size: 1.2rem;">
+            <strong>Entradas ya disponibles:</strong>
+            <a href="https://alpogo.com/evento/sonic-fest-riders-party-21135" target="_blank" style="color: #ffcc00; text-decoration: none;">alpogo.com/evento/sonic-fest-riders-party-21135</a>
+          </p>
+          
+          <p style="text-align: center; margin-top: 30px; font-size: 1.1rem; color: #ddd;">
+            Si viviste esa noche, contame tu momento top en comentarios o DM. ¡*Gotta go fast*, pero con amigos! 🦔✨
+          </p>
+          
+          <p style="text-align: center; font-size: 1.1rem; color: #3658b3; margin-top: 30px;">
+            <strong style="color: #ffcc00;">REDES OFICIALES:</strong>
+            <br>
+            <a href="https://www.instagram.com/sonicfestok" target="_blank" style="color: #ffcc00; text-decoration: none; display: block; margin-top: 5px;">INSTAGRAM @sonicfestok</a>
+            <a href="https://www.tiktok.com/@sonic.fest" target="_blank" style="color: #ffcc00; text-decoration: none; display: block;">TIKTOK @sonic.fest</a>
+          </p>
+          
+          <p style="text-align: center; font-size: 0.9rem; color: #aaa; margin-top: 25px;">
+            #SonicAdventureFest #SonicFestArgentina #SonicAdventure
+          </p>
+        </div>
+      </div>
+    </div>
     <div class="gallery">
       <img src="Anteriores/Matienzo/IMG-20251101-WA0181.jpg" alt="Sonic Fest Matienzo Argentina evento fans sonic fest documento" />
       <img src="Anteriores/Matienzo/IMG-20251103-WA0062.jpg" alt="Foto en Sonic Fest evento Matienzo Buenos Aires Argentina" />
@@ -145,9 +407,24 @@
       <img src="Anteriores/Matienzo/IMG-20251103-WA0073.jpg" alt="Sonic Fest evento cultural Argentina Matienzo sonic fest documento" />
       <img src="Anteriores/Matienzo/IMG-20251103-WA0074.jpg" alt="Sonic Fest Argentina fiesta entre fans en Matienzo" />
     </div>
-
     <a class="button" href="https://sonicfest.com.ar">PÁGINA PRINCIPAL</a>
-
     <footer>2025 Sonic Fest®</footer>
+    <script>
+      function toggleAccordion(button) {
+        const panel = button.nextElementSibling;
+        const toggle = button.querySelector('.toggle');
+        const isActive = button.classList.contains('active');
+        
+        if (isActive) {
+          button.classList.remove('active');
+          panel.classList.remove('active');
+          toggle.textContent = '+';
+        } else {
+          button.classList.add('active');
+          panel.classList.add('active');
+          toggle.textContent = '−';
+        }
+      }
+    </script>
   </body>
 </html>
