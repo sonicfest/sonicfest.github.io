@@ -77,7 +77,8 @@
         text-transform: uppercase;
         text-align: center;
       }
-      /* Estilos para el acordeón desplegable */
+
+      /* === ACORDEÓN MEJORADO === */
       .accordion {
         background: rgba(0, 0, 0, 0.65);
         border-radius: 20px;
@@ -119,15 +120,17 @@
       .panel {
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s ease-out;
+        transition: max-height 0.4s ease-out;
         background: rgba(0, 0, 0, 0.65);
         padding: 0 35px;
       }
-      .panel.active {
-        max-height: 5000px; /* Ajustar según contenido, o usar un valor grande */
+      .panel.open {
+        max-height: none; /* Permite altura completa */
         padding: 35px;
       }
-      /* Estilos del artículo (del segundo código) */
+      /* === FIN ACORDEÓN === */
+
+      /* Estilos del artículo */
       .header-title {
         color: #ffcc00;
         font-size: 2.5rem;
@@ -248,14 +251,15 @@
   </head>
   <body>
     <nav>
-      <a href="https://sonicfest.com.ar/prox.html">⚡PRÓXIMOS EVENTOS</a>
-      <a href="https://sonicfest.com.ar/fiestas.html">📷FIESTAS PASADAS</a>
-      <a href="https://sonicfest.com.ar/tienda.html">🛒 TIENDA</a>
+      <a href="https://sonicfest.com.ar/prox.html">PRÓXIMOS EVENTOS</a>
+      <a href="https://sonicfest.com.ar/fiestas.html">FIESTAS PASADAS</a>
+      <a href="https://sonicfest.com.ar/tienda.html">TIENDA</a>
     </nav>
     <p class="flyer-description">
       FOTOS SONIC FEST - MATIENZO 2025
     </p>
-    <!-- Acordeón desplegable con el contenido del artículo -->
+
+    <!-- Acordeón desplegable -->
     <div class="accordion">
       <button class="accordion-button" onclick="toggleAccordion(this)">
         Sonic Adventure Fest <span class="toggle">+</span>
@@ -271,7 +275,7 @@
             <br>
             Por Mariano Gabriel Saavedra - Organizador de Sonic Fest | 11 de noviembre de 2025
           </p>
-          
+
           <p>
             El lunes 3 de marzo de 2025 marcó el <strong>arranque perfecto para el año sonicero en Argentina</strong>. La <strong>Sonic Adventure Fest</strong>, nuestra fiesta temática +18, reunió a <strong>alrededor de 300 fans apasionados</strong> en un icónico *venue* porteño, transformándolo en un portal directo al vibrante universo de Sonic Adventure.
           </p>
@@ -279,25 +283,25 @@
             Como segunda edición mayor de Sonic Fest, este evento capturó magistralmente la esencia de la saga de Dreamcast: <strong>velocidad, exploración y pura adrenalina colectiva</strong>. Fue una noche de inmersión total, donde la nostalgia del '98 se mezcló con la inmensa energía de la comunidad, consolidando a Sonic Fest como el <strong>epicentro de los "soniqueros" en Latinoamérica</strong>.
           </p>
           <img src="Anteriores/Matienzo/IMG-20251101-WA0181.jpg" alt="Sonic Adventure Fest - Foto de multitud de fans en la pista de baile" />
-          <h3>🛡️ SEGURIDAD IMPECABLE: DIVERSIÓN GARANTIZADA</h3>
-          
+          <h3>SEGURIDAD IMPECABLE: DIVERSIÓN GARANTIZADA</h3>
+
           <p>
             Desde las primeras horas, la <strong>seguridad privada fue impecable</strong>. Contamos con personal capacitado en puerta para el control de ingresos, revisiones de mochilas y vigilancia constante en todo el predio, provista por el salón en el que se realizó (Club Matienzo). Esto garantizó un <strong>ambiente 100% seguro y sin incidentes</strong>, permitiendo que todos se soltaran a full con *cosplays* y *pogo* sin preocupaciones.
           </p>
-          
+
           <div class="quote">
             ¡Un agradecimiento especial al equipo de seguridad por hacer posible la diversión total y la paz mental de toda la comunidad!
           </div>
-          
-          <h3>🎵 UNA NOCHE DE AVENTURA NON-STOP</h3>
+
+          <h3>UNA NOCHE DE AVENTURA NON-STOP</h3>
           <p>
             El *setlist* y las actividades estuvieron totalmente centradas en <strong>Sonic Adventure</strong> y sus secuelas, con bloques memorables dedicados a *CRUSH40*, niveles icónicos como *Speed Highway* y demás del *Sonic Adventure 1*.
           </p>
-          
+
           <p style="text-align: center; font-size: 1.1rem; color: #ddd;">
             Aquí va un repaso de lo que hizo <strong>épica</strong> esta edición:
           </p>
-          
+
           <ul>
             <li>
               <strong>Música y DJ Set Temático:</strong> Dos horas de *OST* remezclados. El DJ principal *droppeó* *mashups* electrizantes con visuales de *Station Square* y *Mystic Ruins* proyectados en pantallas LED, ¡haciendo que el piso temblara como en un *boss rush*!
@@ -309,9 +313,9 @@
               <strong>Stands y Merchandising Exclusivo:</strong> Pins limitados, pósters de la era SEGA y accesorios *custom*. Los <strong>tatuajes temporales</strong> personalizados con motivos de Tails o Knuckles ¡volaron del mostrador!
             </li>
           </ul>
-          
+
           <img src="Anteriores/Matienzo/IMG-20251103-WA0068.jpg" alt="Fiesta Sonic Fest Argentina evento de comunidad en Matienzo" />
-          
+
           <ul>
             <li>
               <strong>Sector de Arte y Creatividad:</strong> Un espacio dedicado para dibujar *fanarts* en vivo, con mesas y materiales gratis.
@@ -324,10 +328,10 @@
           <p>
             La fiesta se extendió hasta las <strong>05:30</strong>. Carteles temáticos del Sonic Adventure 2 por todo el *venue* recrearon la *vibe* de 1998 y 2001, y las luces estroboscópicas simularon las carreras supersónicas de Sonic.
           </p>
-          
+
           <img src="Anteriores/Matienzo/IMG-20251103-WA0074.jpg" alt="Sonic Fest Argentina fiesta entre fans en Matienzo" />
-          <h3>🎥 EL REEL QUE CAPTURÓ LA MAGIA</h3>
-          
+          <h3>EL REEL QUE CAPTURÓ LA MAGIA</h3>
+
           <p style="text-align: center;">
             Si queres revivir la euforia o ver de qué se trató, mirá la publicidad Reel famosa de Sonic Fest.
           </p>
@@ -341,60 +345,61 @@
                 allowfullscreen>
             </iframe>
           </div>
-          
+
           <p style="text-align: center; margin-top: 15px; color: #ddd;">
             ¡Post-evento, los comentarios pedían "¡más Adventure vibes!" en nuestras redes!
           </p>
-          
+
           <img src="Anteriores/Matienzo/IMG-20251103-WA0071.jpg" alt="Foto de Sonic Fest evento para fans en Buenos Aires Argentina" />
-          <h3>📊 NÚMEROS QUE ACELERAN EL CORAZÓN</h3>
+          <h3>NÚMEROS QUE ACELERAN EL CORAZÓN</h3>
           <p>
             El **Sonic Adventure Fest** impulsó la evolución de Sonic Fest. Los resultados hablan por sí solos:
           </p>
-          
+
           <ul style="list-style-type: none; padding-left: 0;">
-            <li style="color: #ffcc00; font-size: 1.1rem; text-align: center;">🚀 <strong>+300 Asistentes:</strong> Récord para una edición de marzo.</li>
-            <li style="color: #ffcc00; font-size: 1.1rem; text-align: center;">🛡️ <strong>0 Incidentes:</strong> Seguridad en puerta y *roaming* que veló por todos.</li>
-            <li style="color: #ffcc00; font-size: 1.1rem; text-align: center;">👍 <strong>100% Feedback Positivo:</strong> Destacando la inmersión y la calidez comunitaria.</li>
+            <li style="color: #ffcc00; font-size: 1.1rem; text-align: center;">+300 Asistentes: Récord para una edición de marzo.</li>
+            <li style="color: #ffcc00; font-size: 1.1rem; text-align: center;">0 Incidentes: Seguridad en puerta y *roaming* que veló por todos.</li>
+            <li style="color: #ffcc00; font-size: 1.1rem; text-align: center;">100% Feedback Positivo: Destacando la inmersión y la calidez comunitaria.</li>
           </ul>
-          
+
           <p style="text-align: center; margin-top: 20px;">
             De esta fiesta siguió la <strong>Sonic Expo Fest familiar del 1° de junio</strong>, abriendo puertas a todas las edades.
           </p>
-          <h3>🏁 ¡PRÓXIMA PARADA!</h3>
-          
+          <h3>¡PRÓXIMA PARADA!</h3>
+
           <p style="text-align: center; font-size: 1.1rem; color: #ddd;">
             ¡El erizo azul no para! Próximo hit:
           </p>
-          
+
           <p style="text-align: center; font-size: 1.3rem;">
             <strong>Sonic Fest Riders Party +18</strong>
             <br>
-            📅 23 de noviembre 2025 – Uniclub
+            23 de noviembre 2025 – Uniclub
           </p>
-          
+
           <p style="text-align: center; font-size: 1.2rem;">
             <strong>Entradas ya disponibles:</strong>
             <a href="https://alpogo.com/evento/sonic-fest-riders-party-21135" target="_blank" style="color: #ffcc00; text-decoration: none;">alpogo.com/evento/sonic-fest-riders-party-21135</a>
           </p>
-          
+
           <p style="text-align: center; margin-top: 30px; font-size: 1.1rem; color: #ddd;">
-            Si viviste esa noche, contame tu momento top en comentarios o DM. ¡*Gotta go fast*, pero con amigos! 🦔✨
+            Si viviste esa noche, contame tu momento top en comentarios o DM. ¡*Gotta go fast*, pero con amigos!
           </p>
-          
+
           <p style="text-align: center; font-size: 1.1rem; color: #3658b3; margin-top: 30px;">
             <strong style="color: #ffcc00;">REDES OFICIALES:</strong>
             <br>
             <a href="https://www.instagram.com/sonicfestok" target="_blank" style="color: #ffcc00; text-decoration: none; display: block; margin-top: 5px;">INSTAGRAM @sonicfestok</a>
             <a href="https://www.tiktok.com/@sonic.fest" target="_blank" style="color: #ffcc00; text-decoration: none; display: block;">TIKTOK @sonic.fest</a>
           </p>
-          
+
           <p style="text-align: center; font-size: 0.9rem; color: #aaa; margin-top: 25px;">
             #SonicAdventureFest #SonicFestArgentina #SonicAdventure
           </p>
         </div>
       </div>
     </div>
+
     <div class="gallery">
       <img src="Anteriores/Matienzo/IMG-20251101-WA0181.jpg" alt="Sonic Fest Matienzo Argentina evento fans sonic fest documento" />
       <img src="Anteriores/Matienzo/IMG-20251103-WA0062.jpg" alt="Foto en Sonic Fest evento Matienzo Buenos Aires Argentina" />
@@ -407,22 +412,41 @@
       <img src="Anteriores/Matienzo/IMG-20251103-WA0073.jpg" alt="Sonic Fest evento cultural Argentina Matienzo sonic fest documento" />
       <img src="Anteriores/Matienzo/IMG-20251103-WA0074.jpg" alt="Sonic Fest Argentina fiesta entre fans en Matienzo" />
     </div>
+
     <a class="button" href="https://sonicfest.com.ar">PÁGINA PRINCIPAL</a>
     <footer>2025 Sonic Fest®</footer>
+
+    <!-- JavaScript mejorado para acordeón -->
     <script>
       function toggleAccordion(button) {
         const panel = button.nextElementSibling;
         const toggle = button.querySelector('.toggle');
-        const isActive = button.classList.contains('active');
-        
-        if (isActive) {
+        const isOpen = panel.classList.contains('open');
+
+        // Cerrar
+        if (isOpen) {
           button.classList.remove('active');
-          panel.classList.remove('active');
+          panel.classList.remove('open');
+          panel.style.maxHeight = panel.scrollHeight + 'px'; // Forzar altura actual
+          setTimeout(() => {
+            panel.style.maxHeight = '0';
+          }, 10);
           toggle.textContent = '+';
-        } else {
+        } 
+        // Abrir
+        else {
           button.classList.add('active');
-          panel.classList.add('active');
+          panel.classList.add('open');
+          panel.style.maxHeight = panel.scrollHeight + 'px'; // Expandir al tamaño real
           toggle.textContent = '−';
+
+          // Después de la transición, quitar max-height para que sea fluido
+          panel.addEventListener('transitionend', function handler() {
+            if (panel.classList.contains('open')) {
+              panel.style.maxHeight = 'none';
+            }
+            panel.removeEventListener('transitionend', handler);
+          });
         }
       }
     </script>
