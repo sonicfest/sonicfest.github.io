@@ -152,6 +152,7 @@
         font-weight: bold;
         transition: all 0.3s ease;
         padding: 0 5px;
+        display: inline-block; /* Para mejor comportamiento en móviles */
       }
 
       .glow-yt {
@@ -176,7 +177,7 @@
         border-radius: 5px;
       }
 
-      /* Acordeón de Shows (Discreto) */
+      /* Acordeón de Shows */
       .shows-container {
         margin-top: 40px;
         border-top: 1px solid #444;
@@ -220,7 +221,7 @@
       }
 
       details[open] summary::after {
-        content: '–'; /* Guión o menos */
+        content: '–'; 
         transform: rotate(180deg);
       }
 
@@ -229,25 +230,35 @@
         border-bottom: 1px solid rgba(255,255,255,0.1);
       }
 
+      /* ESTILOS PARA VIDEOS INCRUSTADOS (Adaptado del ejemplo) */
       .video-list {
         padding: 15px 20px;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        align-items: center; /* Centrar los videos */
+        gap: 20px;
       }
 
-      .video-link {
-        color: #6ee2ff;
-        text-decoration: none;
-        font-size: 0.9rem;
-        word-break: break-all; /* Para que los links largos no rompan el celu */
-        transition: color 0.2s;
-        text-align: left;
+      .youtube-embed {
+        width: 100%;
+        max-width: 560px; /* Tamaño máximo estándar */
+        position: relative;
+        padding-bottom: 0; 
       }
 
-      .video-link:hover {
-        color: white;
-        text-decoration: underline;
+      .youtube-embed iframe {
+        width: 100%;
+        height: 315px; /* Altura estándar */
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(255, 204, 0, 0.3);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        display: block;
+      }
+
+      @media (max-width: 600px) {
+        .youtube-embed iframe {
+          height: 250px; /* Altura ajustada para móviles */
+        }
       }
 
       /* Botón volver */
@@ -277,7 +288,7 @@
         margin-bottom: 20px;
       }
 
-      /* Media Queries */
+      /* Media Queries generales */
       @media (max-width: 600px) {
         .header-title { font-size: 2rem; margin-top: 80px; }
         nav a { margin: 0 10px; font-size: 0.9rem; }
@@ -304,7 +315,8 @@
         The Badniks es una banda tributo argentina dedicada a interpretar en vivo la música de Sonic the Hedgehog, recorriendo desde temas clásicos hasta composiciones modernas. Su show combina arreglos rock/alternativos, secciones potentes al estilo Crush 40 y versiones propias que reimaginan las canciones icónicas de la saga.
       </p>
 
-      <img src="Images/Badniks/A1.png" alt="The Badniks en vivo" class="band-image">
+      <!-- Alt text mejorado para SEO -->
+      <img src="Images/Badniks/A1.png" alt="The Badniks banda oficial de Sonic en Argentina tocando en vivo" class="band-image">
 
       <p>
         En sus presentaciones tocan clásicos como Escape from the City, Studiopolis / Blue Spheres, Chemical Plant y muchos más, además de publicar contenido y presentaciones completas en 
@@ -313,24 +325,26 @@
         <a href="https://www.instagram.com/thebadniks/" target="_blank" class="glow-link glow-ig">Instagram</a>.
       </p>
 
-      <img src="Images/Badniks/A2.png" alt="Show en vivo" class="band-image">
+      <img src="Images/Badniks/A2.png" alt="Show en vivo de The Badniks en Sonic Fest" class="band-image">
 
       <p>
         The Badniks es la banda oficial de la Sonic Fest, donde han tocado en espacios destacados de la escena argentina como el Club Cultural Matienzo y Uniclub, reconocido por recibir a artistas internacionales.
       </p>
 
-      <img src="Images/Badniks/A3.png" alt="Integrantes Badniks" class="band-image">
+      <img src="Images/Badniks/A3.png" alt="Integrantes de The Badniks en camarines" class="band-image">
 
-      <!-- SHOWS DESPLEGABLES -->
+      <!-- SHOWS DESPLEGABLES CON VIDEOS EMBEBIDOS -->
       <div class="shows-container">
         <h2 style="border:none; margin-top:0;">MIRÁ SUS SHOWS</h2>
-        <p style="text-align:center; font-size:0.9rem; color:#ccc; margin-bottom:20px;">(Hacé click en los títulos para ver los videos)</p>
+        <p style="text-align:center; font-size:0.9rem; color:#ccc; margin-bottom:20px;">(Hacé click en los títulos para desplegar los videos)</p>
 
         <!-- Riders Party 2025 -->
         <details>
           <summary>The Badniks en Sonic Fest Riders Party (23/11/2025)</summary>
           <div class="video-list">
-             <a href="https://youtu.be/bkUgfDe5QQg?si=UaoGepXNEtDGJ0lI" target="_blank" class="video-link">📺 Ver Show Riders Party</a>
+             <div class="youtube-embed">
+                <iframe src="https://www.youtube.com/embed/bkUgfDe5QQg" title="The Badniks en vivo Riders Party" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+             </div>
           </div>
         </details>
 
@@ -338,11 +352,11 @@
         <details>
           <summary>The Badniks en Sonic Expo Fest (1/6/2025)</summary>
           <div class="video-list">
-            <a href="https://www.youtube.com/watch?v=PwPTdjna2Ts" target="_blank" class="video-link">▶ Video 1</a>
-            <a href="https://www.youtube.com/watch?v=uf0_iDB7SbY" target="_blank" class="video-link">▶ Video 2</a>
-            <a href="https://www.youtube.com/watch?v=nZUE8K9DhmM" target="_blank" class="video-link">▶ Video 3</a>
-            <a href="https://www.youtube.com/watch?v=VA2J5io9UuM" target="_blank" class="video-link">▶ Video 4</a>
-            <a href="https://www.youtube.com/watch?v=XbbdwKpDVgQ&pp=0gcJCRUKAYcqIYzv" target="_blank" class="video-link">▶ Video 5</a>
+            <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/PwPTdjna2Ts" title="The Badniks Expo Fest Video 1" frameborder="0" allowfullscreen></iframe></div>
+            <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/uf0_iDB7SbY" title="The Badniks Expo Fest Video 2" frameborder="0" allowfullscreen></iframe></div>
+            <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/nZUE8K9DhmM" title="The Badniks Expo Fest Video 3" frameborder="0" allowfullscreen></iframe></div>
+            <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/VA2J5io9UuM" title="The Badniks Expo Fest Video 4" frameborder="0" allowfullscreen></iframe></div>
+            <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/XbbdwKpDVgQ" title="The Badniks Expo Fest Video 5" frameborder="0" allowfullscreen></iframe></div>
           </div>
         </details>
 
@@ -350,19 +364,19 @@
         <details>
           <summary>The Badniks en Sonic Adventure Fest (3/3/2025)</summary>
           <div class="video-list">
-             <a href="https://youtu.be/40UDinfaD3g?si=FjWno1IJsghZvhu8" target="_blank" class="video-link">▶ Intro / Video 1</a>
-             <a href="https://youtu.be/h-F7ObXsKMc?si=ridRfKtCNwQ9luJp" target="_blank" class="video-link">▶ Video 2</a>
-             <a href="https://youtu.be/gXr7G6AsIZ0?si=0c7yk7ajYrfCBXfF" target="_blank" class="video-link">▶ Video 3</a>
-             <a href="https://youtu.be/0hEr229_btk?si=yDjtR9mXf1qMUb3P" target="_blank" class="video-link">▶ Video 4</a>
-             <a href="https://youtu.be/1b8T7ENhhqY?si=nDUpr2KOYZ_Za0bF" target="_blank" class="video-link">▶ Video 5</a>
-             <a href="https://youtu.be/AZX8PMs6VuA?si=-Bg-jWVRPg935ORG" target="_blank" class="video-link">▶ Video 6</a>
-             <a href="https://youtu.be/kFMK4EmCbf8?si=c1u75kzMQxgsjJ1F" target="_blank" class="video-link">▶ Video 7</a>
-             <a href="https://youtu.be/AY8LvXQIrsg?si=w1VTKG3pDTS6-KvI" target="_blank" class="video-link">▶ Video 8</a>
-             <a href="https://youtu.be/U8T-b42hi2s?si=HCZDHkFKQClIW_qi" target="_blank" class="video-link">▶ Video 9</a>
-             <a href="https://youtu.be/jEyvC3bpBYs?si=MaUkviBk-2-jNPb1" target="_blank" class="video-link">▶ Video 10</a>
-             <a href="https://youtu.be/njAppK07jBA?si=dJfHsF0mIclSI7Gb" target="_blank" class="video-link">▶ Video 11</a>
-             <a href="https://youtu.be/7G9kC4B35qg?si=wpc-9fEp3rsQErUN" target="_blank" class="video-link">▶ Video 12</a>
-             <a href="https://youtu.be/xbPp8qHwKDk?si=IKeXkm4eTE6E8E27" target="_blank" class="video-link">▶ Video 13</a>
+             <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/40UDinfaD3g" title="The Badniks Adventure Fest Intro" frameborder="0" allowfullscreen></iframe></div>
+             <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/h-F7ObXsKMc" title="The Badniks Adventure Fest Video 2" frameborder="0" allowfullscreen></iframe></div>
+             <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/gXr7G6AsIZ0" title="The Badniks Adventure Fest Video 3" frameborder="0" allowfullscreen></iframe></div>
+             <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/0hEr229_btk" title="The Badniks Adventure Fest Video 4" frameborder="0" allowfullscreen></iframe></div>
+             <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/1b8T7ENhhqY" title="The Badniks Adventure Fest Video 5" frameborder="0" allowfullscreen></iframe></div>
+             <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/AZX8PMs6VuA" title="The Badniks Adventure Fest Video 6" frameborder="0" allowfullscreen></iframe></div>
+             <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/kFMK4EmCbf8" title="The Badniks Adventure Fest Video 7" frameborder="0" allowfullscreen></iframe></div>
+             <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/AY8LvXQIrsg" title="The Badniks Adventure Fest Video 8" frameborder="0" allowfullscreen></iframe></div>
+             <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/U8T-b42hi2s" title="The Badniks Adventure Fest Video 9" frameborder="0" allowfullscreen></iframe></div>
+             <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/jEyvC3bpBYs" title="The Badniks Adventure Fest Video 10" frameborder="0" allowfullscreen></iframe></div>
+             <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/njAppK07jBA" title="The Badniks Adventure Fest Video 11" frameborder="0" allowfullscreen></iframe></div>
+             <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/7G9kC4B35qg" title="The Badniks Adventure Fest Video 12" frameborder="0" allowfullscreen></iframe></div>
+             <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/xbPp8qHwKDk" title="The Badniks Adventure Fest Video 13" frameborder="0" allowfullscreen></iframe></div>
           </div>
         </details>
 
@@ -370,9 +384,9 @@
         <details>
           <summary>The Badniks en Sonic Fest fin de año 2024 (28/12/2024)</summary>
           <div class="video-list">
-             <a href="https://youtu.be/inFJ57dwAjY?si=ZLZ8j1cP6ROlML6F" target="_blank" class="video-link">▶ Video 1</a>
-             <a href="https://youtu.be/ZydK69s4gtE?si=5Gtw2Z1Pl8B6PQMI" target="_blank" class="video-link">▶ Video 2</a>
-             <a href="https://youtu.be/ScrqEZ3uVPs?si=nTaOVtudpO81NyoF" target="_blank" class="video-link">▶ Video 3</a>
+             <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/inFJ57dwAjY" title="The Badniks Fin de Año Video 1" frameborder="0" allowfullscreen></iframe></div>
+             <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/ZydK69s4gtE" title="The Badniks Fin de Año Video 2" frameborder="0" allowfullscreen></iframe></div>
+             <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/ScrqEZ3uVPs" title="The Badniks Fin de Año Video 3" frameborder="0" allowfullscreen></iframe></div>
           </div>
         </details>
 
@@ -380,13 +394,13 @@
         <details>
           <summary>The Badniks en Sonic x Shadow Fest (23/09/2024)</summary>
           <div class="video-list">
-             <a href="https://youtu.be/e0dPEAMx4X8?si=3k2SxHfYntHAwCEy" target="_blank" class="video-link">▶ Video 1</a>
-             <a href="https://youtu.be/JkpELf1tX7Q?si=wYjX5RNW1toOc5zi" target="_blank" class="video-link">▶ Video 2</a>
-             <a href="https://youtu.be/hpJ1_EA6ovA?si=2jXCWqw-o8x0NViE" target="_blank" class="video-link">▶ Video 3</a>
-             <a href="https://youtu.be/CfPwxSYH9JI?si=5jPfG0G3QHxhzbOC" target="_blank" class="video-link">▶ Video 4</a>
-             <a href="https://youtu.be/9c8I1QehnHI?si=Qe-gSresa0vPsF1Q" target="_blank" class="video-link">▶ Video 5</a>
-             <a href="https://youtu.be/dbqTjspeLM0?si=Gwn1il1DrFOXz0_O" target="_blank" class="video-link">▶ Video 6</a>
-             <a href="https://youtu.be/LM0AeINl1r0?si=m3i_R9WnYoY1ZjRm" target="_blank" class="video-link">▶ Video 7</a>
+             <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/e0dPEAMx4X8" title="The Badniks Sonic x Shadow Video 1" frameborder="0" allowfullscreen></iframe></div>
+             <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/JkpELf1tX7Q" title="The Badniks Sonic x Shadow Video 2" frameborder="0" allowfullscreen></iframe></div>
+             <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/hpJ1_EA6ovA" title="The Badniks Sonic x Shadow Video 3" frameborder="0" allowfullscreen></iframe></div>
+             <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/CfPwxSYH9JI" title="The Badniks Sonic x Shadow Video 4" frameborder="0" allowfullscreen></iframe></div>
+             <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/9c8I1QehnHI" title="The Badniks Sonic x Shadow Video 5" frameborder="0" allowfullscreen></iframe></div>
+             <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/dbqTjspeLM0" title="The Badniks Sonic x Shadow Video 6" frameborder="0" allowfullscreen></iframe></div>
+             <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/LM0AeINl1r0" title="The Badniks Sonic x Shadow Video 7" frameborder="0" allowfullscreen></iframe></div>
           </div>
         </details>
       </div>
@@ -396,7 +410,7 @@
 
       <!-- TIN GIOVINI -->
       <h3>TIN GIOVINI – Guitarra y Voz</h3>
-      <img src="Images/Badniks/B1.png" alt="Tin Giovini" class="band-image">
+      <img src="Images/Badniks/B1.png" alt="Tin Giovini guitarrista de The Badniks" class="band-image">
       <p>
         Soy Tin Giovini, guitarrista y cantante de The Badniks. Mi amor por la música nació con los juegos de Sonic. A los 10 años recibí mi primera guitarra en Navidad y desde ese momento no paré.
       </p>
@@ -406,22 +420,33 @@
       <p>
         Siempre fantaseé con tener una banda de covers de Sonic como hobby paralelo… y después de 16 años tocando esos temas en mi cuarto, finalmente se dio.
       </p>
-      <img src="Images/Badniks/B2.png" alt="Tin Giovini en vivo" class="band-image">
+      <!-- Link agregado e iluminado -->
+      <p style="text-align:center;">
+        Seguime en: 
+        <a href="https://www.instagram.com/tingiovini/" target="_blank" class="glow-link glow-ig">INSTAGRAM</a>
+      </p>
+      <img src="Images/Badniks/B2.png" alt="Tin Giovini tocando en vivo Sonic Fest" class="band-image">
 
       <!-- THIAGOMII -->
       <h3>THIAGOMII – Teclados</h3>
-      <img src="Images/Badniks/T1.png" alt="Thiagomii" class="band-image">
+      <img src="Images/Badniks/T1.png" alt="Thiagomii tecladista de The Badniks" class="band-image">
       <p>
         Soy Thiagomii, tecladista de The Badniks. Arranqué haciendo covers de videojuegos retro usando archivos MIDI y una notebook. Con el tiempo me enamoré de la música y me compré mi primer teclado MIDI.
       </p>
       <p>
         Unirme a The Badniks fue algo súper espontáneo que me ayudó muchísimo a desarrollar cómo tocar en banda, entender la dinámica en vivo y ganar presencia en el escenario. Hoy estoy muy enfocado en mejorar mis composiciones y expandir mis habilidades con distintos instrumentos.
       </p>
-      <img src="Images/Badniks/T2.png" alt="Thiagomii en vivo" class="band-image">
+      <!-- Links agregados e iluminados -->
+      <p style="text-align:center;">
+        Seguime en: 
+        <a href="https://www.instagram.com/thiagomii/" target="_blank" class="glow-link glow-ig">INSTAGRAM</a> | 
+        <a href="https://www.youtube.com/@Thiagomii" target="_blank" class="glow-link glow-yt">YOUTUBE</a>
+      </p>
+      <img src="Images/Badniks/T2.png" alt="Thiagomii en vivo tocando el teclado" class="band-image">
 
       <!-- COLMAN -->
       <h3>COLMAN – Bajo</h3>
-      <img src="Images/Badniks/C1.png" alt="Colman" class="band-image">
+      <img src="Images/Badniks/C1.png" alt="Colman bajista de The Badniks" class="band-image">
       <p>
         Qué onda wombats, soy Colman, bajista de The Badniks. Arranqué escuchando Deep Purple y Pantera por influencia de mi tío, y después me abrí a todo: jazz, rock progresivo, thrash, black metal… Mi primera banda fue de funk, pero buscaba algo más rápido y agresivo, así que formé Viñas del Thrash con músicos muy zarpados de la escena under.
       </p>
@@ -434,11 +459,19 @@
       <p>
         Ya con la banda, consolidamos un sonido agresivo, irreverente y siempre buscando subir el nivel y expandir el show.
       </p>
-      <img src="Images/Badniks/C2.png" alt="Colman en vivo" class="band-image">
+      <!-- Links agregados e iluminados -->
+      <p style="text-align:center;">
+        Seguime en: 
+        <a href="https://www.instagram.com/simplemente_colman/" target="_blank" class="glow-link glow-ig">INSTAGRAM</a>
+        <br>
+        Escuchá mi banda: 
+        <a href="https://www.instagram.com/viniasdelthrash/" target="_blank" class="glow-link glow-ig">VIÑAS DEL THRASH</a>
+      </p>
+      <img src="Images/Badniks/C2.png" alt="Colman bajista en vivo" class="band-image">
 
       <!-- HERNI -->
       <h3>HERNI – Batería</h3>
-      <img src="Images/Badniks/H1.png" alt="Herni" class="band-image">
+      <img src="Images/Badniks/H1.png" alt="Herni baterista de The Badniks" class="band-image">
       <p>
         La resiliencia del baterista es amar un armatoste ruidoso, incómodo y hermoso a la vez. Soy Hernán, baterista de The Badniks. Empecé de pibe rompiendo ollas y plásticos con palillos improvisados, hasta que pude estudiar en serio a los 13.
       </p>
@@ -448,7 +481,7 @@
       <p>
         Aguante Berazategui, pa. Gracias por acompañarnos.
       </p>
-      <img src="Images/Badniks/H2.png" alt="Herni en vivo" class="band-image">
+      <img src="Images/Badniks/H2.png" alt="Herni baterista tocando en vivo" class="band-image">
 
     </div>
 
