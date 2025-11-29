@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THE BADNIKS - SONIC FEST</title>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Fuente Righteous -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Righteous', cursive;
+        text-align: center;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px;
+        position: relative;
+        color: white;
+      }
+
+      /* Imagen de fondo */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('Images/TELA2025.png') repeat;
+        background-size: auto;
+        filter: brightness(0.5);
+        z-index: -1;
+      }
+
+      /* Barra de navegación - COLOR NEGRO A PEDIDO */
+      nav {
+        width: 100%;
+        background-color: #000000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0 30px;
+        transition: color 0.2s, transform 0.2s;
+      }
+
+      nav a:hover {
+        color: #ffcc00;
+        transform: scale(1.05);
+      }
+
+      /* Título Principal */
+      .header-title {
+        color: #ffcc00;
+        font-size: 3rem;
+        font-weight: bold;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        text-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+        letter-spacing: 2px;
+      }
+
+      /* Contenedor Principal (estilo About) */
+      .content-section {
+        background: rgba(0, 0, 0, 0.75);
+        border-radius: 20px;
+        padding: 40px;
+        max-width: 800px;
+        width: 90%;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+        margin-bottom: 30px;
+        text-align: justify;
+        color: white;
+        text-transform: uppercase;
+        animation: fadeIn 1s ease-out forwards;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      .content-section p {
+        line-height: 1.6;
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+      }
+
+      .content-section h2 {
+        color: #ffcc00;
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 0px #000;
+        border-bottom: 2px solid #ffcc00;
+        padding-bottom: 10px;
+      }
+
+      .content-section h3 {
+        color: #6ee2ff;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
+
+      /* Imágenes de la banda */
+      .band-image {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        display: block;
+        margin: 25px auto;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        border: 2px solid rgba(255, 255, 255, 0.1);
+      }
+
+      /* Links iluminados (YouTube e Instagram) */
+      .glow-link {
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        padding: 0 5px;
+      }
+
+      .glow-yt {
+        color: #ff4d4d;
+        text-shadow: 0 0 8px red;
+      }
+      .glow-yt:hover {
+        color: #fff;
+        background-color: #ff0000;
+        box-shadow: 0 0 15px red;
+        border-radius: 5px;
+      }
+
+      .glow-ig {
+        color: #fd5d93;
+        text-shadow: 0 0 8px #ff00cc;
+      }
+      .glow-ig:hover {
+        color: #fff;
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        box-shadow: 0 0 15px #ff00cc;
+        border-radius: 5px;
+      }
+
+      /* Acordeón de Shows (Discreto) */
+      .shows-container {
+        margin-top: 40px;
+        border-top: 1px solid #444;
+        padding-top: 20px;
+      }
+
+      details {
+        background-color: rgba(255, 255, 255, 0.05);
+        margin-bottom: 10px;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: background-color 0.3s;
+      }
+
+      details:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      summary {
+        list-style: none;
+        padding: 15px 20px;
+        cursor: pointer;
+        font-size: 1.1rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #e0e0e0;
+      }
+
+      summary::-webkit-details-marker {
+        display: none;
+      }
+
+      summary::after {
+        content: '+';
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #ffcc00;
+        transition: transform 0.3s;
+      }
+
+      details[open] summary::after {
+        content: '–'; /* Guión o menos */
+        transform: rotate(180deg);
+      }
+
+      details[open] summary {
+        color: #ffcc00;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+      }
+
+      .video-list {
+        padding: 15px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .video-link {
+        color: #6ee2ff;
+        text-decoration: none;
+        font-size: 0.9rem;
+        word-break: break-all; /* Para que los links largos no rompan el celu */
+        transition: color 0.2s;
+        text-align: left;
+      }
+
+      .video-link:hover {
+        color: white;
+        text-decoration: underline;
+      }
+
+      /* Botón volver */
+      a.button-back {
+        display: inline-block;
+        background-color: #ffcc00;
+        color: black;
+        text-decoration: none;
+        padding: 12px 30px;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 1rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        transition: transform 0.2s ease, background 0.2s ease;
+        margin-top: 30px;
+      }
+
+      a.button-back:hover {
+        background-color: #ffd633;
+        transform: scale(1.05);
+      }
+
+      footer {
+        font-size: 0.9rem;
+        color: white;
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+
+      /* Media Queries */
+      @media (max-width: 600px) {
+        .header-title { font-size: 2rem; margin-top: 80px; }
+        nav a { margin: 0 10px; font-size: 0.9rem; }
+        .content-section { padding: 20px; }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Barra de navegación NEGRA -->
+    <nav>
+      <a href="https://sonicfest.com.ar/prox.html">⚡PRÓXIMOS EVENTOS</a>
+      <a href="https://sonicfest.com.ar/fiestas.html">📷FIESTAS PASADAS</a>
+      <a href="https://sonicfest.com.ar/tienda.html">🛒 TIENDA</a>
+    </nav>
+
+    <div class="header-title">THE BADNIKS</div>
+
+    <div class="content-section">
+      <!-- INTRODUCCIÓN -->
+      <h2>¿QUIÉNES SON THE BADNIKS?</h2>
+
+      <p>
+        The Badniks es una banda tributo argentina dedicada a interpretar en vivo la música de Sonic the Hedgehog, recorriendo desde temas clásicos hasta composiciones modernas. Su show combina arreglos rock/alternativos, secciones potentes al estilo Crush 40 y versiones propias que reimaginan las canciones icónicas de la saga.
+      </p>
+
+      <img src="Images/Badniks/A1.png" alt="The Badniks en vivo" class="band-image">
+
+      <p>
+        En sus presentaciones tocan clásicos como Escape from the City, Studiopolis / Blue Spheres, Chemical Plant y muchos más, además de publicar contenido y presentaciones completas en 
+        <a href="https://www.youtube.com/@TheBadniksBand" target="_blank" class="glow-link glow-yt">YouTube</a>
+        e 
+        <a href="https://www.instagram.com/thebadniks/" target="_blank" class="glow-link glow-ig">Instagram</a>.
+      </p>
+
+      <img src="Images/Badniks/A2.png" alt="Show en vivo" class="band-image">
+
+      <p>
+        The Badniks es la banda oficial de la Sonic Fest, donde han tocado en espacios destacados de la escena argentina como el Club Cultural Matienzo y Uniclub, reconocido por recibir a artistas internacionales.
+      </p>
+
+      <img src="Images/Badniks/A3.png" alt="Integrantes Badniks" class="band-image">
+
+      <!-- SHOWS DESPLEGABLES -->
+      <div class="shows-container">
+        <h2 style="border:none; margin-top:0;">MIRÁ SUS SHOWS</h2>
+        <p style="text-align:center; font-size:0.9rem; color:#ccc; margin-bottom:20px;">(Hacé click en los títulos para ver los videos)</p>
+
+        <!-- Riders Party 2025 -->
+        <details>
+          <summary>The Badniks en Sonic Fest Riders Party (23/11/2025)</summary>
+          <div class="video-list">
+             <a href="https://youtu.be/bkUgfDe5QQg?si=UaoGepXNEtDGJ0lI" target="_blank" class="video-link">📺 Ver Show Riders Party</a>
+          </div>
+        </details>
+
+        <!-- Expo Fest 2025 -->
+        <details>
+          <summary>The Badniks en Sonic Expo Fest (1/6/2025)</summary>
+          <div class="video-list">
+            <a href="https://www.youtube.com/watch?v=PwPTdjna2Ts" target="_blank" class="video-link">▶ Video 1</a>
+            <a href="https://www.youtube.com/watch?v=uf0_iDB7SbY" target="_blank" class="video-link">▶ Video 2</a>
+            <a href="https://www.youtube.com/watch?v=nZUE8K9DhmM" target="_blank" class="video-link">▶ Video 3</a>
+            <a href="https://www.youtube.com/watch?v=VA2J5io9UuM" target="_blank" class="video-link">▶ Video 4</a>
+            <a href="https://www.youtube.com/watch?v=XbbdwKpDVgQ&pp=0gcJCRUKAYcqIYzv" target="_blank" class="video-link">▶ Video 5</a>
+          </div>
+        </details>
+
+        <!-- Adventure Fest 2025 -->
+        <details>
+          <summary>The Badniks en Sonic Adventure Fest (3/3/2025)</summary>
+          <div class="video-list">
+             <a href="https://youtu.be/40UDinfaD3g?si=FjWno1IJsghZvhu8" target="_blank" class="video-link">▶ Intro / Video 1</a>
+             <a href="https://youtu.be/h-F7ObXsKMc?si=ridRfKtCNwQ9luJp" target="_blank" class="video-link">▶ Video 2</a>
+             <a href="https://youtu.be/gXr7G6AsIZ0?si=0c7yk7ajYrfCBXfF" target="_blank" class="video-link">▶ Video 3</a>
+             <a href="https://youtu.be/0hEr229_btk?si=yDjtR9mXf1qMUb3P" target="_blank" class="video-link">▶ Video 4</a>
+             <a href="https://youtu.be/1b8T7ENhhqY?si=nDUpr2KOYZ_Za0bF" target="_blank" class="video-link">▶ Video 5</a>
+             <a href="https://youtu.be/AZX8PMs6VuA?si=-Bg-jWVRPg935ORG" target="_blank" class="video-link">▶ Video 6</a>
+             <a href="https://youtu.be/kFMK4EmCbf8?si=c1u75kzMQxgsjJ1F" target="_blank" class="video-link">▶ Video 7</a>
+             <a href="https://youtu.be/AY8LvXQIrsg?si=w1VTKG3pDTS6-KvI" target="_blank" class="video-link">▶ Video 8</a>
+             <a href="https://youtu.be/U8T-b42hi2s?si=HCZDHkFKQClIW_qi" target="_blank" class="video-link">▶ Video 9</a>
+             <a href="https://youtu.be/jEyvC3bpBYs?si=MaUkviBk-2-jNPb1" target="_blank" class="video-link">▶ Video 10</a>
+             <a href="https://youtu.be/njAppK07jBA?si=dJfHsF0mIclSI7Gb" target="_blank" class="video-link">▶ Video 11</a>
+             <a href="https://youtu.be/7G9kC4B35qg?si=wpc-9fEp3rsQErUN" target="_blank" class="video-link">▶ Video 12</a>
+             <a href="https://youtu.be/xbPp8qHwKDk?si=IKeXkm4eTE6E8E27" target="_blank" class="video-link">▶ Video 13</a>
+          </div>
+        </details>
+
+        <!-- Fin de año 2024 -->
+        <details>
+          <summary>The Badniks en Sonic Fest fin de año 2024 (28/12/2024)</summary>
+          <div class="video-list">
+             <a href="https://youtu.be/inFJ57dwAjY?si=ZLZ8j1cP6ROlML6F" target="_blank" class="video-link">▶ Video 1</a>
+             <a href="https://youtu.be/ZydK69s4gtE?si=5Gtw2Z1Pl8B6PQMI" target="_blank" class="video-link">▶ Video 2</a>
+             <a href="https://youtu.be/ScrqEZ3uVPs?si=nTaOVtudpO81NyoF" target="_blank" class="video-link">▶ Video 3</a>
+          </div>
+        </details>
+
+        <!-- Sonic x Shadow Fest -->
+        <details>
+          <summary>The Badniks en Sonic x Shadow Fest (23/09/2024)</summary>
+          <div class="video-list">
+             <a href="https://youtu.be/e0dPEAMx4X8?si=3k2SxHfYntHAwCEy" target="_blank" class="video-link">▶ Video 1</a>
+             <a href="https://youtu.be/JkpELf1tX7Q?si=wYjX5RNW1toOc5zi" target="_blank" class="video-link">▶ Video 2</a>
+             <a href="https://youtu.be/hpJ1_EA6ovA?si=2jXCWqw-o8x0NViE" target="_blank" class="video-link">▶ Video 3</a>
+             <a href="https://youtu.be/CfPwxSYH9JI?si=5jPfG0G3QHxhzbOC" target="_blank" class="video-link">▶ Video 4</a>
+             <a href="https://youtu.be/9c8I1QehnHI?si=Qe-gSresa0vPsF1Q" target="_blank" class="video-link">▶ Video 5</a>
+             <a href="https://youtu.be/dbqTjspeLM0?si=Gwn1il1DrFOXz0_O" target="_blank" class="video-link">▶ Video 6</a>
+             <a href="https://youtu.be/LM0AeINl1r0?si=m3i_R9WnYoY1ZjRm" target="_blank" class="video-link">▶ Video 7</a>
+          </div>
+        </details>
+      </div>
+
+      <!-- SECCIÓN INTEGRANTES -->
+      <h2>INTEGRANTES</h2>
+
+      <!-- TIN GIOVINI -->
+      <h3>TIN GIOVINI – Guitarra y Voz</h3>
+      <img src="Images/Badniks/B1.png" alt="Tin Giovini" class="band-image">
+      <p>
+        Soy Tin Giovini, guitarrista y cantante de The Badniks. Mi amor por la música nació con los juegos de Sonic. A los 10 años recibí mi primera guitarra en Navidad y desde ese momento no paré.
+      </p>
+      <p>
+        A los 16 formé mi banda de hardcore punk, Creative Fingers, con la que grabamos 3 EPs. En 2018 me uní a FAKA junto a Juan Fandiño (Flema), donde grabamos Volviendo a las Raíces. Luego seguí mi camino solista, con dos discos publicados (Illumina y Creative Fingers) y un tercero, EÖLÖ, próximo a salir.
+      </p>
+      <p>
+        Siempre fantaseé con tener una banda de covers de Sonic como hobby paralelo… y después de 16 años tocando esos temas en mi cuarto, finalmente se dio.
+      </p>
+      <img src="Images/Badniks/B2.png" alt="Tin Giovini en vivo" class="band-image">
+
+      <!-- THIAGOMII -->
+      <h3>THIAGOMII – Teclados</h3>
+      <img src="Images/Badniks/T1.png" alt="Thiagomii" class="band-image">
+      <p>
+        Soy Thiagomii, tecladista de The Badniks. Arranqué haciendo covers de videojuegos retro usando archivos MIDI y una notebook. Con el tiempo me enamoré de la música y me compré mi primer teclado MIDI.
+      </p>
+      <p>
+        Unirme a The Badniks fue algo súper espontáneo que me ayudó muchísimo a desarrollar cómo tocar en banda, entender la dinámica en vivo y ganar presencia en el escenario. Hoy estoy muy enfocado en mejorar mis composiciones y expandir mis habilidades con distintos instrumentos.
+      </p>
+      <img src="Images/Badniks/T2.png" alt="Thiagomii en vivo" class="band-image">
+
+      <!-- COLMAN -->
+      <h3>COLMAN – Bajo</h3>
+      <img src="Images/Badniks/C1.png" alt="Colman" class="band-image">
+      <p>
+        Qué onda wombats, soy Colman, bajista de The Badniks. Arranqué escuchando Deep Purple y Pantera por influencia de mi tío, y después me abrí a todo: jazz, rock progresivo, thrash, black metal… Mi primera banda fue de funk, pero buscaba algo más rápido y agresivo, así que formé Viñas del Thrash con músicos muy zarpados de la escena under.
+      </p>
+      <p>
+        La idea siempre fue la misma: generar locura y gedencia.
+      </p>
+      <p>
+        Cuando supe que The Badniks buscaba bajista, ni lo dudé. Ya los había visto en un evento y la energía que generaban en la gente era tremenda. Eso es lo que más amo de la música.
+      </p>
+      <p>
+        Ya con la banda, consolidamos un sonido agresivo, irreverente y siempre buscando subir el nivel y expandir el show.
+      </p>
+      <img src="Images/Badniks/C2.png" alt="Colman en vivo" class="band-image">
+
+      <!-- HERNI -->
+      <h3>HERNI – Batería</h3>
+      <img src="Images/Badniks/H1.png" alt="Herni" class="band-image">
+      <p>
+        La resiliencia del baterista es amar un armatoste ruidoso, incómodo y hermoso a la vez. Soy Hernán, baterista de The Badniks. Empecé de pibe rompiendo ollas y plásticos con palillos improvisados, hasta que pude estudiar en serio a los 13.
+      </p>
+      <p>
+        Entre idas y vueltas la batería se volvió mi cable al edén… o al abismo, según el género del tema. Pasé por varios proyectos, pero siempre con pasión, cariño por la música y por ustedes, que nos prestan sus oídos.
+      </p>
+      <p>
+        Aguante Berazategui, pa. Gracias por acompañarnos.
+      </p>
+      <img src="Images/Badniks/H2.png" alt="Herni en vivo" class="band-image">
+
+    </div>
+
+    <a class="button-back" href="https://sonicfest.com.ar">VOLVER A SONIC FEST</a>
+
+    <footer>2025 SONIC FEST®</footer>
+  </body>
+</html>
