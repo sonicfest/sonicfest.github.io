@@ -5,21 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SONIC FEST - EVENTOS DE SONIC EN ARGENTINA</title>
 
+    <!-- Favicons -->
     <link rel="icon" type="image/png" href="/favicon.png">
-    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="icon" type="image/x-icon" href="/favicon2.ico">
     <link rel="shortcut icon" href="favicon2.ico" type="image/x-icon">
-    <link rel="shortcut icon" type="image/png" href="favicon2.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
+    <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 
     <style>
+      /* --- ESTILOS GENERALES --- */
       body {
         margin: 0;
         font-family: 'Righteous', cursive;
@@ -34,6 +33,7 @@
         color: white;
       }
 
+      /* Fondo (Mantenemos tu imagen original) */
       body::before {
         content: "";
         position: fixed;
@@ -47,9 +47,10 @@
         z-index: -1;
       }
 
+      /* --- NAVEGACIÓN (Estilo Badniks - Negro) --- */
       nav {
         width: 100%;
-        background-color: #3658b3;
+        background-color: #000000;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -64,10 +65,11 @@
       nav a {
         color: white;
         text-decoration: none;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: bold;
-        margin: 0 30px;
+        margin: 0 20px;
         transition: color 0.2s, transform 0.2s;
+        text-transform: uppercase;
       }
 
       nav a:hover {
@@ -75,12 +77,14 @@
         transform: scale(1.05);
       }
 
+      /* --- TÍTULO PRINCIPAL --- */
       .header-title {
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: bold;
         margin-top: 100px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         text-transform: uppercase;
+        text-shadow: 0 4px 10px rgba(0,0,0,0.8);
       }
 
       .header-title .gradient {
@@ -88,48 +92,75 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         text-decoration: none;
+        transition: opacity 0.3s;
       }
-
+      
       .header-title .gradient:hover {
-        opacity: 0.9;
+        opacity: 0.8;
+        text-shadow: 0 0 20px rgba(255, 20, 147, 0.5);
       }
 
-      p.description {
-        max-width: 600px;
-        font-size: 1.2rem;
-        margin-bottom: 20px;
-        text-align: justify;
-        color: white;
-        text-transform: uppercase;
-      }
-
-      .expo-button {
-        display: inline-block;
-        margin-left: 8px;
-        background: linear-gradient(90deg, violet, deeppink);
-        color: white;
-        font-size: 0.9rem;
-        padding: 5px 12px;
-        border-radius: 12px;
-        text-decoration: none;
-        transition: transform 0.2s ease, filter 0.2s ease;
-      }
-
-      .expo-button:hover {
-        transform: scale(1.05);
-        filter: brightness(1.1);
-      }
-
-      /* AQUÍ ESTÁ EL CAMBIO DE TAMAÑO DE LA IMAGEN */
-      .main-image {
-        width: 80%;      /* Aumentado de 50% a 80% */
-        max-width: 700px; /* Aumentado de 400px a 700px */
-        margin: 20px 0;
+      /* --- CONTENEDOR PRINCIPAL (Glassmorphism del ejemplo) --- */
+      .content-section {
+        background: rgba(0, 0, 0, 0.75); /* Fondo oscuro semitransparente */
         border-radius: 20px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        padding: 40px;
+        max-width: 800px;
+        width: 90%;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        animation: fadeIn 1s ease-out forwards;
       }
 
-      a.button {
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      /* --- TEXTOS Y DESCRIPCIONES --- */
+      p.description {
+        font-size: 1.2rem;
+        margin-bottom: 25px;
+        line-height: 1.6;
+        text-transform: uppercase;
+        max-width: 90%;
+      }
+
+      /* --- BOTÓN GLOW UP (Sonic Expo) --- */
+      /* Este es el estilo nuevo para que destaque como neón */
+      .glow-expo {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        color: #fff;
+        background: linear-gradient(45deg, #ff00cc, #3333ff);
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1rem;
+        box-shadow: 0 0 10px #ff00cc;
+        transition: all 0.3s ease;
+        animation: pulse 2s infinite;
+      }
+
+      .glow-expo:hover {
+        background: linear-gradient(45deg, #ff33cc, #6666ff);
+        box-shadow: 0 0 25px #ff00cc, 0 0 5px #fff;
+        transform: scale(1.05);
+      }
+
+      @keyframes pulse {
+        0% { box-shadow: 0 0 10px #ff00cc; }
+        50% { box-shadow: 0 0 20px #ff00cc, 0 0 10px #3333ff; }
+        100% { box-shadow: 0 0 10px #ff00cc; }
+      }
+
+      /* --- BOTÓN UNICLUB (Amarillo) --- */
+      a.button-main {
         display: inline-block;
         background-color: #ffcc00;
         color: black;
@@ -137,89 +168,105 @@
         padding: 15px 30px;
         border-radius: 25px;
         font-weight: bold;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
         transition: transform 0.2s ease, background 0.2s ease;
-        margin: 10px 0;
+        margin: 20px 0;
+        text-transform: uppercase;
       }
 
-      a.button:hover {
+      a.button-main:hover {
         background-color: #ffd633;
         transform: scale(1.05);
+        box-shadow: 0 0 15px #ffd633;
       }
 
-      .socials {
+      /* --- IMAGEN PRINCIPAL --- */
+      .main-image {
+        width: 100%;
+        max-width: 600px;
+        margin: 20px 0 40px 0;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        border: 2px solid rgba(255, 255, 255, 0.1);
+      }
+
+      /* --- REDES SOCIALES --- */
+      .socials-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        max-width: 600px;
+        margin-bottom: 40px;
+        border-top: 1px solid rgba(255,255,255,0.2);
+        padding-top: 30px;
+      }
+
+      .social-row {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 15px;
-        margin-bottom: 40px;
-        max-width: 600px;
+        gap: 10px;
       }
 
-      .socials span {
-        color: white;
-        font-weight: bold;
+      .social-label {
+        font-size: 0.9rem;
+        color: #ccc;
         text-transform: uppercase;
-        text-align: justify;
       }
 
-      .socials a.social-button {
+      .social-button {
         display: inline-flex;
         align-items: center;
+        justify-content: center;
         gap: 10px;
-        padding: 15px 30px;
-        border-radius: 25px;
+        padding: 12px 25px;
+        border-radius: 50px;
         font-weight: bold;
-        font-size: 1.2rem;
         color: white;
         text-decoration: none;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-        transition: transform 0.2s ease, background 0.2s ease;
+        transition: transform 0.2s, filter 0.2s;
+        width: 80%;
+        max-width: 300px;
       }
 
-      .socials a.social-button img {
-        width: 24px;
-        height: 24px;
+      .social-button img { width: 24px; height: 24px; }
+      
+      .social-button:hover { transform: scale(1.05); filter: brightness(1.2); }
+
+      .btn-ig { background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4); }
+      .btn-dc { background-color: #5865F2; }
+
+      /* --- ACORDEÓN / FAQ (Estilo Badniks) --- */
+      .faq-container {
+        width: 100%;
+        text-align: left;
       }
 
-      .socials a.instagram-button {
-        background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
-      }
-
-      .socials a.instagram-button:hover {
-        transform: scale(1.05);
-        filter: brightness(1.1);
-      }
-
-      .socials a.discord-button {
-        background-color: #5865F2;
-      }
-
-      .socials a.discord-button:hover {
-        background-color: #4752C4;
-        transform: scale(1.05);
-      }
-
-      .faq-section {
-        background: rgba(0, 0, 0, 0.55);
-        border-radius: 20px;
-        padding: 20px;
-        max-width: 600px;
-        width: 90%;
-        backdrop-filter: blur(4px);
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      .faq-container h2 {
+        text-align: center;
+        color: #6ee2ff;
+        border-bottom: 2px solid #6ee2ff;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
       }
 
       details {
-        border-top: 1px solid #6ee2ff;
-        border-bottom: 1px solid #6ee2ff;
-        padding: 15px 0;
+        background-color: rgba(255, 255, 255, 0.05);
         margin-bottom: 10px;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: background-color 0.3s;
+      }
+
+      details:hover {
+        background-color: rgba(255, 255, 255, 0.1);
       }
 
       summary {
         list-style: none;
+        padding: 15px 20px;
         cursor: pointer;
         font-weight: bold;
         font-size: 1rem;
@@ -229,6 +276,8 @@
         align-items: center;
         color: #b8e6ff;
       }
+
+      summary::-webkit-details-marker { display: none; }
 
       summary::after {
         content: "+";
@@ -243,63 +292,84 @@
       }
 
       details p {
-        margin: 10px 0 0 0;
-        color: #ccc;
+        padding: 15px 20px;
+        margin: 0;
+        color: #ddd;
         line-height: 1.5;
         text-align: justify;
+        border-top: 1px solid rgba(255,255,255,0.1);
       }
 
       footer {
         font-size: 0.9rem;
-        color: white;
+        color: #aaa;
         margin-top: 40px;
+      }
+
+      /* Responsive */
+      @media (max-width: 600px) {
+        .header-title { font-size: 1.8rem; margin-top: 80px; }
+        nav a { margin: 0 10px; font-size: 0.8rem; }
+        .content-section { padding: 20px; }
+        a.button-main { width: 90%; box-sizing: border-box; font-size: 0.9rem; }
       }
     </style>
   </head>
 
   <body>
+    
+    <!-- Barra de Navegación -->
     <nav>
       <a href="https://sonicfest.com.ar/prox.html">⚡PRÓXIMOS EVENTOS</a>
       <a href="https://sonicfest.com.ar/fiestas.html">📷FIESTAS PASADAS</a>
       <a href="https://sonicfest.com.ar/tienda.html">🛒 TIENDA</a>
     </nav>
 
+    <!-- Título fuera del contenedor para jerarquía -->
     <div class="header-title">
       ¡Bienvenidos a la <a href="https://www.sonicfest.com.ar/about" class="gradient" target="_blank" rel="noopener noreferrer">SONIC FEST</a>!
     </div>
 
-    <p class="description">
-      FIESTAS DE SONIC EN ARGENTINA 🇦🇷 Y CONVENCIONES DE SONIC EN ARGENTINA PARA TODAS LAS EDADES
-      <a href="https://www.sonicfest.com.ar/indexexpo" target="_blank" class="expo-button">(SONIC EXPO FEST)</a>
-    </p>
+    <!-- Contenedor Principal Estilizado -->
+    <div class="content-section">
+      
+      <p class="description">
+        FIESTAS DE SONIC EN ARGENTINA 🇦🇷 Y CONVENCIONES DE SONIC EN ARGENTINA PARA TODAS LAS EDADES.
+        <br><br>
+        <!-- Link con Glow Up aplicado -->
+        <a href="https://www.sonicfest.com.ar/indexexpo" target="_blank" class="glow-expo">✨ IR A SONIC EXPO FEST ✨</a>
+      </p>
 
-    <a
-      class="button"
-      href="https://sonicfest.com.ar/FotosUniclub"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      🎟️FOTOS DE LA ÚLTIMA SONIC FEST 23/11/2025 EN EL UNICLUB - RIDERS PARTY🎟️
-    </a>
-
-    <img src="Anteriores/Uniclub/A1.jpg" alt="Sonic Riders Flyer" class="main-image">
-
-    <div class="socials">
-      <span>ENTERATE DE LA PRÓXIMA FIESTA +18 O CONVENCIÓN ATP:</span>
-      <a href="https://www.instagram.com/sonicfestok/" target="_blank" class="social-button instagram-button">
-        <img src="Images/INSTAGRAM.png" alt="Instagram"> INSTAGRAM SONIC FEST
+      <a class="button-main" href="https://sonicfest.com.ar/FotosUniclub" target="_blank" rel="noopener noreferrer">
+        🎟️ FOTOS SONIC FEST 23/11/2025 (UNICLUB) 🎟️
       </a>
 
-      <span>CONOCER SONIQUER@S PARA ARMAR GRUPOS, HACER PREVIAS Y MÁS</span>
-      <a href="https://discord.com/invite/FwZ6xXezKY" target="_blank" class="social-button discord-button">
-        <img src="Images/DISCORD.png" alt="Discord"> DISCORD SONIC FEST
-      </a>
-    </div>
+      <img src="Anteriores/Uniclub/A1.jpg" alt="Sonic Riders Flyer" class="main-image">
 
-    <div class="faq-section">
-      <details>
-        <summary>🔒POLÍTICA DE SEGURIDAD E INTEGRIDAD SONIC FEST</summary>
-        <p>EN SONIC FEST BUSCAMOS QUE CADA EVENTO SEA UN ESPACIO SEGURO, INCLUSIVO Y RESPETUOSO. LA COMUNIDAD ES NUESTRA PRIORIDAD.
+      <!-- Sección Redes -->
+      <div class="socials-container">
+        <div class="social-row">
+          <span class="social-label">Enterate de la próxima fiesta +18 o ATP:</span>
+          <a href="https://www.instagram.com/sonicfestok/" target="_blank" class="social-button btn-ig">
+            <img src="Images/INSTAGRAM.png" alt="Instagram"> INSTAGRAM SONIC FEST
+          </a>
+        </div>
+
+        <div class="social-row">
+          <span class="social-label">Conocé Soniquer@s, armá grupos y previas:</span>
+          <a href="https://discord.com/invite/FwZ6xXezKY" target="_blank" class="social-button btn-dc">
+            <img src="Images/DISCORD.png" alt="Discord"> DISCORD SONIC FEST
+          </a>
+        </div>
+      </div>
+
+      <!-- Sección FAQ Integrada -->
+      <div class="faq-container">
+        <h2>PREGUNTAS FRECUENTES</h2>
+        
+        <details>
+          <summary>🔒 POLÍTICA DE SEGURIDAD E INTEGRIDAD</summary>
+          <p>EN SONIC FEST BUSCAMOS QUE CADA EVENTO SEA UN ESPACIO SEGURO, INCLUSIVO Y RESPETUOSO. LA COMUNIDAD ES NUESTRA PRIORIDAD.
 
 PRINCIPIOS
 
@@ -347,71 +417,70 @@ ACTUAR CON RAPIDEZ
 
 MEJORAR CONTINUAMENTE
 
-QUEREMOS QUE DISFRUTES CON TRANQUILIDAD, EN UN AMBIENTE DONDE LA SEGURIDAD Y EL RESPETO NO SON SOLO PALABRAS, SINO PRÁCTICA REAL.
-
-        </p>
-      </details>
-
-      <details>
-        <summary>📘SOBRE NOSOTROS</summary>
-
-          👉 <a href="https://www.sonicfest.com.ar/about" target="_blank" style="color:#6ee2ff; text-decoration:underline; font-weight:bold;">¿QUÉ ES LA SONIC FEST?</a>
-          👉 <a href="https://www.sonicfest.com.ar/thebadniks" target="_blank" style="color:#6ee2ff; text-decoration:underline; font-weight:bold;">¿QUIÉNES SON LOS BADNIKS?</a>
-
-</p>
-        
-      </details>
-
+QUEREMOS QUE DISFRUTES CON TRANQUILIDAD, EN UN AMBIENTE DONDE LA SEGURIDAD Y EL RESPETO NO SON SOLO PALABRAS, SINO PRÁCTICA REAL..</p>
+        </details>
 
         <details>
-        <summary>¿HAY SEGURIDAD?</summary>
-        <p>SÍ, EN TODOS NUESTRAS FIESTAS SIEMPRE HUBO, HAY Y HABRÁ PERSONAL DE SEGURIDAD PARA GARANTIZAR UN AMBIENTE SEGURO, PROVISTO Y SUPERVISADO POR EL ESTABLECIMIENTO DONDE SE REALIZA LA SONIC FEST. HAY CONTROL EN PUERTA Y DENTRO. SI OCURRE ALGÚN PROBLEMA O NOTÁS ALGUIEN SOSPECHOSO O QUE NO DEBERÍA ESTAR, O YA CONTAS CON UNA DENUNCIA A UNA PERSONA QUE ESTÁ PRESENTE, PRESENTALO AL PERSONAL DE SEGURIDAD, QUIENES SON LOS ÚNICOS RESPONSABLES Y AUTORIZADOS PARA INTERVENIR Y, DE SER NECESARIO, RETIRAR A LA PERSONA DEL LUGAR.</p>
-      </details>
+          <summary>📘 SOBRE NOSOTROS</summary>
+          <p style="text-align: center;">
+            👉 <a href="https://www.sonicfest.com.ar/about" target="_blank" style="color:#6ee2ff; font-weight:bold;">¿QUÉ ES LA SONIC FEST?</a><br>
+            👉 <a href="https://www.sonicfest.com.ar/thebadniks" target="_blank" style="color:#6ee2ff; font-weight:bold;">¿QUIÉNES SON LOS BADNIKS?</a>
+          </p>
+        </details>
 
-          <details>
-        <summary>¿A QUÉ HORA EMPIEZA?</summary>
-        <p>ABRIMOS PUERTA A LAS 23:59HS Y LA FIESTA TERMINA A LAS 06:00hs. QUIZÁS NOS TARDEMOS UN POQUITO MÁS QUE DE LAS 00:30HS. ESTATE DESDE LAS 23:59HS PARA TENER TU PIN DE REGALO! LOS PRIMEROS 100 LO TIENEN. </p>
-      </details>
+        <details>
+          <summary>¿HAY SEGURIDAD?</summary>
+          <p>SÍ. SIEMPRE HAY PERSONAL DE SEGURIDAD EN PUERTA Y DENTRO DEL ESTABLECIMIENTO. ANTE CUALQUIER PROBLEMA, ELLOS SON LOS RESPONSABLES AUTORIZADOS PARA INTERVENIR.</p>
+        </details>
 
-          <details>
-        <summary>¿HAY ENTRADAS EN PUERTA?</summary>
-        <p>SÍ PERO SALE UN 50% MÁS, CONSEGUILA ANTICIPADA EN EL BOTÓN COMPRAR ENTRADA MÁS ARRIBA </p>
-      </details>
+        <details>
+          <summary>¿A QUÉ HORA EMPIEZA?</summary>
+          <p>PUERTAS: 23:59HS - FINALIZA: 06:00HS. ¡LLEGÁ TEMPRANO PARA TU PIN DE REGALO (PRIMEROS 100)!</p>
+        </details>
 
+        <details>
+          <summary>¿HAY ENTRADAS EN PUERTA?</summary>
+          <p>SÍ, PERO CUESTAN UN 50% MÁS. RECOMENDAMOS COMPRARLA ANTICIPADA EN EL BOTÓN DE ARRIBA.</p>
+        </details>
 
-              <details>
-        <summary>¿HAY PREVIA?</summary>
-        <p>SÍ! SALÍ ANTES DE TU CASA Y HACÉ LA PREVIA EN EL SHOPPING ABASTO, A UNA CUADRA DEL SALÓN. CUANDO LA FIESTA TERMINE ALREDEDOR DE LAS 05:00 HS, QUEDATE CON EL MISMO GRUPO PARA IR A HACER TIEMPO EN EL AFTER EN UN MCDONALDS HASTA QUE SE HABILITEN LOS TRANSPORTES. CONOCÉ Y COORDINÁ CON LOS ASISTENTES UNIÉNDOTE A NUESTRO DISCORD MÁS ARRIBA. LA PREVIA NO ES OFICIAL. ES ORGANIZADA POR LOS ASISTENTES.</p>
-      </details>
-      
-      <details>
-        <summary>¿HAY GUARDAROPAS?</summary>
-        <p>SÍ, TENEMOS. PODÉS GUARDAR TU MOCHILA O TU CAMPERA. LLEVÁ EFECTIVO PARA PAGARLO.</p>
-      </details>
+        <details>
+          <summary>¿HAY PREVIA?</summary>
+          <p>SÍ (NO OFICIAL). SHOPPING ABASTO. ORGANIZATE EN NUESTRO DISCORD.</p>
+        </details>
 
-      <details>
-        <summary>¿QUÉ NECESITO PARA ENTRAR?</summary>
-        <p>TENÉS QUE TENER EL DNI Y SER MAYOR DE 18 AÑOS. SI NO TENÉS EL DNI, SIRVE EL DNI DIGITAL ÚNICAMENTE DESDE LA APP MI ARGENTINA. SI VENÍS DE OTRO PAÍS, EL PASAPORTE O DOCUMENTO DE IDENTIDAD EQUIVALENTE SIRVE. SI NO SOS MAYOR DE 18 AÑOS, VENÍ A LA SONIC EXPO FEST. HACÉ CLICK ACÁ:</p>
-          👉 <a href="https://www.sonicfest.com.ar/indexexpo" target="_blank" style="color:#6ee2ff; text-decoration:underline; font-weight:bold;">SONIC EXPO FEST</a>
-</p>
-        
-      </details>
+        <details>
+          <summary>¿HAY GUARDARROPAS?</summary>
+          <p>SÍ. LLEVÁ EFECTIVO.</p>
+        </details>
 
-     <details>
-        <summary>¿PUEDO IR DISFRAZADO? - COSPLAYERS</summary>
-        <p>POR SUPUESTO! LOS COSPLAYERS SON BIENVENIDOS. TAMBIÉN PODES VENIR CON TU ACCESORIO! TRAÉ TU PELUCHE, EXTREME GEAR CASERA, O UNA ESPADA EXCALIBUR IMPRESA EN 3D. NO PUEDE SER OBJETO PUNZANTE O HERRAMIENTAS PELIGROSAS. PODÉS VESTIRTE COMO QUIERAS. COPATE Y TRAE TU COSPLAY O REMERA DE SONIC!</p>
-      </details>
+        <details>
+          <summary>¿QUÉ NECESITO PARA ENTRAR?</summary>
+          <p>
+            DNI FÍSICO O MI ARGENTINA. MAYORES DE 18 AÑOS. <br>
+            SI SOS MENOR, VENÍ A LA: <br>
+            👉 <a href="https://www.sonicfest.com.ar/indexexpo" target="_blank" style="color:#6ee2ff; font-weight:bold;">SONIC EXPO FEST</a>
+          </p>
+        </details>
 
-       <details>
-        <summary>¿PUEDO LLEVAR MI PROPIA COMIDA O BEBIDA?</summary>
-        <p>NO. EN EL CONTROL DE MOCHILAS SE RETIRAN COMIDAS, BEBIDAS O CUBIERTOS. DENTRO DEL EVENTO HAY OPCIONES GASTRONÓMICAS.</p>
-      </details>
+        <details>
+          <summary>¿COSPLAY?</summary>
+          <p>¡SÍ! COSPLAY, REMERAS, PELUCHES, ACCESORIOS. PROHIBIDOS OBJETOS PUNZANTES O PELIGROSOS.</p>
+        </details>
 
-       <details>
-        <summary>¿QUÉ PASA SI LLUEVE?</summary>
-        <p>NO SE SUSPENDE POR CONDICIONES CLIMÁTICAS. ES EN UN SALÓN, NO AL AIRE LIBRE.</p>
-      </details>
+        <details>
+          <summary>¿COMIDA / BEBIDA PROPIA?</summary>
+          <p>NO. SE RETIRAN EN PUERTA. ADENTRO HAY BARRA Y OPCIONES.</p>
+        </details>
 
+         <details>
+          <summary>¿LLUVIA?</summary>
+          <p>NO SE SUSPENDE POR LLUVIA.</p>
+        </details>
+      </div>
+      <!-- Fin FAQ -->
+
+    </div>
+    <!-- Fin Content Section -->
 
     <footer>2025 Sonic Fest®</footer>
   </body>
