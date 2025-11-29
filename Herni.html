@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HERNI - THE BADNIKS - SONIC FEST</title>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Fuente Righteous -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Righteous', cursive;
+        text-align: center;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px;
+        position: relative;
+        color: white;
+      }
+
+      /* Imagen de fondo */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('Images/Badniks/badniks.jpg') repeat;
+        background-size: 500px 500px;
+        filter: brightness(0.5);
+        z-index: -1;
+      }
+
+      /* Título Principal */
+      .header-title {
+        color: #ffcc00;
+        font-size: 3rem;
+        font-weight: bold;
+        margin-top: 40px; 
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        text-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+        letter-spacing: 2px;
+      }
+
+      /* Contenedor Principal */
+      .content-section {
+        background: rgba(0, 0, 0, 0.75);
+        border-radius: 20px;
+        padding: 40px;
+        max-width: 800px;
+        width: 90%;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+        margin-bottom: 30px;
+        text-align: justify;
+        color: white;
+        text-transform: uppercase;
+        animation: fadeIn 1s ease-out forwards;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      .content-section p {
+        line-height: 1.6;
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+      }
+
+      .content-section h3 {
+        color: #6ee2ff;
+        text-align: center;
+        font-size: 1.8rem;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #6ee2ff;
+        padding-bottom: 10px;
+      }
+
+      /* Imágenes de la banda */
+      .band-image {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        display: block;
+        margin: 25px auto;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        border: 2px solid rgba(255, 255, 255, 0.1);
+      }
+
+      /* Botón volver */
+      a.button-back {
+        display: inline-block;
+        background-color: #ffcc00;
+        color: black;
+        text-decoration: none;
+        padding: 12px 30px;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 1rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        transition: transform 0.2s ease, background 0.2s ease;
+        margin-top: 30px;
+      }
+
+      a.button-back:hover {
+        background-color: #ffd633;
+        transform: scale(1.05);
+      }
+
+      footer {
+        font-size: 0.9rem;
+        color: white;
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 600px) {
+        .header-title { font-size: 2rem; margin-top: 20px; }
+        .content-section { padding: 20px; }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="content-section">
+      
+      <!-- HERNI -->
+      <h3>HERNI – Batería</h3>
+      <img src="Images/Badniks/H1.png" alt="Herni baterista de The Badniks" class="band-image">
+      <p>
+        La resiliencia del baterista es amar un armatoste ruidoso, incómodo y hermoso a la vez. Soy Hernán, baterista de The Badniks. Empecé de pibe rompiendo ollas y plásticos con palillos improvisados, hasta que pude estudiar en serio a los 13.
+      </p>
+      <p>
+        Entre idas y vueltas la batería se volvió mi cable al edén… o al abismo, según el género del tema. Pasé por varios proyectos, pero siempre con pasión, cariño por la música y por ustedes, que nos prestan sus oídos.
+      </p>
+      <p>
+        Aguante Berazategui, pa. Gracias por acompañarnos.
+      </p>
+      <img src="Images/Badniks/H2.png" alt="Herni baterista tocando en vivo" class="band-image">
+
+    </div>
+
+    <a class="button-back" href="https://sonicfest.com.ar/thebadniks">IR A THE BADNIKS</a>
+
+    <footer>2025 SONIC FEST®</footer>
+  </body>
+</html>
