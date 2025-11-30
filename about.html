@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EVENTOS DE SONIC EN ARGENTINA - SONIC EN ARGENTINA</title>
+    <title>QUÉ ES SONIC FEST - ACERCA DE - ABOUT</title>
 
     <!-- Favicons -->
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -33,7 +33,7 @@
         color: white;
       }
 
-      /* Imagen de fondo */
+      /* Imagen de fondo (Usando tu imagen original con el estilo Badniks) */
       body::before {
         content: "";
         position: fixed;
@@ -41,16 +41,16 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: url('Images/TELA2025.png') repeat;
+        background: url('Images/TELA2025.png') repeat; /* Tu fondo original */
         background-size: auto;
-        filter: brightness(0.5);
+        filter: brightness(0.4); /* Oscurecido para legibilidad estilo Badniks */
         z-index: -1;
       }
 
-      /* Barra de navegación */
+      /* Barra de navegación - Estilo Negro */
       nav {
         width: 100%;
-        background-color: #3658b3;
+        background-color: #000000;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -65,9 +65,9 @@
       nav a {
         color: white;
         text-decoration: none;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: bold;
-        margin: 0 30px;
+        margin: 0 20px;
         transition: color 0.2s, transform 0.2s;
       }
 
@@ -76,93 +76,191 @@
         transform: scale(1.05);
       }
 
+      /* Título Principal */
       .header-title {
         color: #ffcc00;
-        font-size: 2.5rem;
+        font-size: 3rem;
         font-weight: bold;
         margin-top: 100px;
         margin-bottom: 20px;
         text-transform: uppercase;
-        text-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
-        animation: glowTitle 3s ease-in-out infinite alternate;
+        text-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+        letter-spacing: 2px;
+        animation: glowPulse 3s infinite alternate;
       }
 
-      @keyframes glowTitle {
-        from { text-shadow: 0 0 10px rgba(255,204,0,0.5); }
-        to { text-shadow: 0 0 25px rgba(255,255,100,1); }
+      @keyframes glowPulse {
+        from { text-shadow: 0 0 10px rgba(255, 204, 0, 0.5); }
+        to { text-shadow: 0 0 25px rgba(255, 204, 0, 1); }
       }
 
-      .about-section {
-        background: rgba(0, 0, 0, 0.65); /* Más oscuro que antes */
+      /* Contenedor Principal (Estilo Badniks) */
+      .content-section {
+        background: rgba(0, 0, 0, 0.75);
         border-radius: 20px;
-        padding: 35px;
+        padding: 40px;
         max-width: 800px;
         width: 90%;
-        backdrop-filter: blur(5px);
-        box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+        backdrop-filter: blur(8px);
+        box-shadow: 0 4px 25px rgba(0,0,0,0.7);
         margin-bottom: 30px;
         text-align: justify;
         color: white;
         text-transform: uppercase;
-        opacity: 0;
-        transform: translateY(30px);
-        animation: fadeIn 1.2s ease-out forwards;
+        animation: fadeIn 1s ease-out forwards;
       }
 
       @keyframes fadeIn {
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
       }
 
-      .about-section p {
+      .content-section p {
         line-height: 1.6;
-        font-size: 1rem;
-        margin-bottom: 15px;
+        font-size: 1.1rem;
+        margin-bottom: 20px;
       }
 
-      .about-section strong {
+      .content-section strong {
         color: #ffcc00;
       }
 
-      .about-section h3 {
+      /* Títulos H2 y H3 estilizados */
+      .content-section h2 {
         color: #ffcc00;
-        margin-top: 25px;
-        margin-bottom: 10px;
-        font-size: 1.3rem;
         text-align: center;
+        font-size: 1.8rem;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 0px #000;
+        border-bottom: 2px solid #ffcc00;
+        padding-bottom: 10px;
       }
 
-      /* Botón */
-      a.button {
+      .content-section h3 {
+        color: #6ee2ff; /* Azul cian estilo Badniks */
+        text-align: left;
+        font-size: 1.4rem;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        text-shadow: 1px 1px 5px rgba(110, 226, 255, 0.5);
+      }
+
+      /* Imágenes con estilo */
+      .content-image {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        display: block;
+        margin: 25px auto;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .content-image:hover {
+        transform: scale(1.02);
+      }
+
+      /* LINKS LUMINOSOS (Efecto Badniks) */
+      .glow-link {
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        padding: 0 5px;
+        display: inline-block;
+        border-radius: 4px;
+      }
+
+      /* Estilo Rojo (YouTube / Galerías) */
+      .glow-red {
+        color: #ff4d4d;
+        text-shadow: 0 0 8px red;
+      }
+      .glow-red:hover {
+        color: #fff;
+        background-color: #ff0000;
+        box-shadow: 0 0 15px red;
+      }
+
+      /* Estilo Instagram (Rosa/Multicolor) */
+      .glow-ig {
+        color: #fd5d93;
+        text-shadow: 0 0 8px #ff00cc;
+      }
+      .glow-ig:hover {
+        color: #fff;
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        box-shadow: 0 0 15px #ff00cc;
+      }
+
+      /* Estilo Web (Amarillo/Dorado) */
+      .glow-web {
+        color: #ffcc00;
+        text-shadow: 0 0 8px #ffcc00;
+      }
+      .glow-web:hover {
+        color: #000;
+        background-color: #ffcc00;
+        box-shadow: 0 0 15px #ffcc00;
+      }
+
+      /* Botón volver */
+      a.button-back {
         display: inline-block;
         background-color: #ffcc00;
         color: black;
         text-decoration: none;
-        padding: 15px 30px;
+        padding: 12px 30px;
         border-radius: 25px;
         font-weight: bold;
         font-size: 1.2rem;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
         transition: transform 0.2s ease, background 0.2s ease;
-        margin: 10px 0;
+        margin-top: 20px;
       }
 
-      a.button:hover {
+      a.button-back:hover {
         background-color: #ffd633;
         transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
       }
 
       footer {
         font-size: 0.9rem;
         color: white;
         margin-top: 40px;
+        margin-bottom: 20px;
+        opacity: 0.8;
+      }
+
+      /* Listas personalizadas para la evolución */
+      ul.timeline {
+        list-style: none;
+        padding: 0;
+      }
+      ul.timeline li {
+        margin-bottom: 20px;
+        border-left: 3px solid #ffcc00;
+        padding-left: 15px;
+        background: rgba(255, 255, 255, 0.05);
+        padding: 10px 15px;
+        border-radius: 0 10px 10px 0;
+      }
+
+      /* Media Queries */
+      @media (max-width: 600px) {
+        .header-title { font-size: 2rem; margin-top: 80px; }
+        nav a { margin: 0 8px; font-size: 0.8rem; }
+        .content-section { padding: 25px 20px; }
+        .content-section h2 { font-size: 1.5rem; }
       }
     </style>
   </head>
 
   <body>
+    <!-- Barra de navegación -->
     <nav>
       <a href="https://sonicfest.com.ar/prox.html">⚡PRÓXIMOS EVENTOS</a>
       <a href="https://sonicfest.com.ar/fiestas.html">📷FIESTAS PASADAS</a>
@@ -171,41 +269,84 @@
 
     <div class="header-title">¿QUÉ ES LA SONIC FEST?</div>
 
-    <div class="about-section">
-      <p>🇦🇷 <strong>SONIC FEST</strong> ES UN EVENTO DE SONIC EN ARGENTINA, ORGANIZADA POR Y PARA FANS EN BUENOS AIRES, ARGENTINA. ES EL PUNTO DE ENCUENTRO PARA FANS DE SONIC EN ARGENTINA. SE ORGANIZAN EVENTOS DE SONIC: FIESTAS NOCUTRNAS DE SONIC TEMÁTICO +18 (BOLICHE) Y CONVENCIONES DE SONIC PARA TODAS LAS EDADES, SONIC EXPO FEST</p>
-        <img src="Anteriores/Uniclub/Z2.png" alt="Cosplayers en Sonic Fest Riders Party" />
+    <div class="content-section">
+      <!-- INTRODUCCIÓN -->
+      <p>
+        🇦🇷 <strong>SONIC FEST</strong> ES UN EVENTO DE SONIC EN ARGENTINA, ORGANIZADA POR Y PARA FANS EN BUENOS AIRES. ES EL PUNTO DE ENCUENTRO DEFINITIVO PARA LA COMUNIDAD.
+      </p>
+      <p>
+        SE ORGANIZAN EVENTOS DE SONIC EN DOS MODALIDADES: FIESTAS NOCTURNAS TEMÁTICAS +18 (BOLICHE) Y CONVENCIONES PARA TODAS LAS EDADES LLAMADAS "SONIC EXPO FEST".
+      </p>
 
-      <p>DESDE SU PRIMERA EDICIÓN NOCTURNA EN MARZO DE 2024, HA CRECIDO EXPONENCIALMENTE, CONVIRTIÉNDOSE EN UN PUNTO DE ENCUENTRO PARA LA COMUNIDAD SONIQUERA EN ARGENTINA.</p>
+      <img src="Anteriores/Uniclub/Z2.png" alt="Cosplayers en Sonic Fest Riders Party" class="content-image" />
 
-      <p>🎶 MÚSICA, COSPLAY, SORTEOS, ACTIVIDADES INTERACTIVAS, LUCES, VISUALES TEMÁTICAS Y MERCHANDISING EXCLUSIVO FORMAN PARTE DE UNA EXPERIENCIA INMERSIVA QUE COMBINA LA NOSTALGIA CON LA ENERGÍA DE LOS VIDEOJUEGOS Y LA CULTURA POP.</p>
+      <p>
+        DESDE SU PRIMERA EDICIÓN NOCTURNA EN MARZO DE 2024, HA CRECIDO EXPONENCIALMENTE.
+      </p>
 
-      <h3>TIPOS DE EVENTOS</h3>
-      <p>🎉 ORGANIZAMOS DOS FORMATOS PRINCIPALES DE EVENTOS:</p>
-      <p><strong>FIESTAS NOCTURNAS +18</strong> EN BOLICHES TEMÁTICOS, CON DJS, SHOWS EN VIVO, BLOQUES MUSICALES DEDICADOS A BANDAS COMO CRUSH 40, Y AMBIENTACIÓN INSPIRADA EN LOS JUEGOS DE SONIC.</p>
-      <p><strong>CONVENCIONES FAMILIARES “SONIC EXPO FEST”</strong>, ABIERTAS A TODAS LAS EDADES, CON STANDS, TORNEOS, REGALOS Y ESPACIOS PARA QUE LOS MÁS CHICOS TAMBIÉN VIVAN LA MAGIA DEL ERIZO AZUL.</p>
+      <p>
+        🎶 MÚSICA, COSPLAY, SORTEOS, ACTIVIDADES INTERACTIVAS, LUCES, VISUALES TEMÁTICAS Y MERCHANDISING EXCLUSIVO FORMAN PARTE DE UNA EXPERIENCIA INMERSIVA QUE COMBINA LA NOSTALGIA CON LA ENERGÍA DE LOS VIDEOJUEGOS Y LA CULTURA POP.
+      </p>
 
-      <h3>EVOLUCIÓN DEL EVENTO</h3>
-      <p>📈 <strong>23 DE MARZO 2024:</strong> PRIMERA FIESTA CON MÁS DE 100 ASISTENTES.          👉 <a href="https://www.sonicfest.com.ar/fotoscolombo" target="_blank">SONIC FEST CASA COLOMBO 23/3/2024</a>
-<br>
-         <strong>28 DE SEPTIEMBRE 2024:</strong> MÁS DE 250 PERSONAS, SONIC X SHADOW FEST.<br>
-         <strong>3 DE MARZO 2025:</strong> SONIC ADVENTURE FEST: FIESTA CON ALREDEDOR DE 300 FANS           👉 <a href="https://www.sonicfest.com.ar/fotosmatienzo" target="_blank">SONIC ADVENTURE FEST 3/3/2025</a>
-.<br>
-        
-         <strong>1 DE JUNIO 2025:</strong> LANZAMIENTO DE LA <strong>SONIC EXPO FEST</strong>, LA PRIMERA CONVENCIÓN DE SONIC EN ARGENTINA PERMITIENDO EL INGRESO DE MENORES ACOMPAÑADOS POR SUS PADRES, CUMPLIENDO EL SUEÑO DE MUCHOS FANS JÓVENES. NO ES UN REBRANDING. ES UNA EXPANSIÓN DE LA MARCA PARA CREAR UNA CONVENCIÓN FAMILIAR, FUERA DE LAS FIESTAS +18 QUE SE LLEVAN EN PARALELO</p>
-         <strong>23 DE NOVIEMBRE DE 2025:</strong> LANZAMIENTO DE LA <strong>SONIC FEST RIDERS PARTY</strong>, LA FIESTA RAVE DE SONIC EN EL ICÓNICO UNICLUB  👉 <a href="https://sonicfest.com.ar/FotosUniclub" target="_blank">SONIC FEST RIDERS PARTY UNICLUB 23/3/2024</p>
+      <!-- TIPOS DE EVENTOS -->
+      <h2>TIPOS DE EVENTOS</h2>
+      <p>🎉 ORGANIZAMOS DOS FORMATOS PRINCIPALES:</p>
+      
+      <h3>FIESTAS NOCTURNAS +18</h3>
+      <p>
+        EN BOLICHES TEMÁTICOS, CON DJS, SHOWS EN VIVO, BLOQUES MUSICALES DEDICADOS A BANDAS COMO CRUSH 40, Y AMBIENTACIÓN INSPIRADA EN LOS JUEGOS DE SONIC.
+      </p>
 
-      <h3>PRÓXIMOS EVENTOS</h3>
-      <p>⚡ <strong>ATENTOS AL 2026</strong> TE ESPERAMOS CON MÚSICA DE TODAS LAS ERAS, SORTEOS, REGALOS Y LA PARTICIPACIÓN DE BANDAS COMO <strong>THE BADNIKS</strong>.</p>
+      <h3>CONVENCIONES FAMILIARES “SONIC EXPO FEST”</h3>
+      <p>
+        ABIERTAS A TODAS LAS EDADES, CON STANDS, TORNEOS, REGALOS Y ESPACIOS PARA QUE LOS MÁS CHICOS TAMBIÉN VIVAN LA MAGIA DEL ERIZO AZUL.
+      </p>
 
-      <p>[<a href="https://sonicfest.com.ar" style="color:#ffcc00;">SONICFEST.COM.AR</a>] • 
-         [<a href="https://www.instagram.com/sonicfestok/" style="color:#ffcc00;">INSTAGRAM</a>] • 
-         [<a href="https://www.youtube.com/@SonicFestOK" style="color:#ffcc00;">YOUTUBE</a>]</p>
+      <!-- EVOLUCIÓN (Timeline estilizada) -->
+      <h2>EVOLUCIÓN DEL EVENTO</h2>
+      <ul class="timeline">
+        <li>
+          📈 <strong>23 DE MARZO 2024:</strong> PRIMERA FIESTA CON MÁS DE 100 ASISTENTES.<br>
+          👉 <a href="https://www.sonicfest.com.ar/fotoscolombo" target="_blank" class="glow-link glow-red">FOTOS SONIC FEST CASA COLOMBO</a>
+        </li>
+        <li>
+          <strong>28 DE SEPTIEMBRE 2024:</strong> MÁS DE 250 PERSONAS, SONIC X SHADOW FEST.
+        </li>
+        <li>
+          <strong>3 DE MARZO 2025:</strong> SONIC ADVENTURE FEST: FIESTA CON ALREDEDOR DE 300 FANS.<br>
+          👉 <a href="https://www.sonicfest.com.ar/fotosmatienzo" target="_blank" class="glow-link glow-red">FOTOS ADVENTURE FEST</a>
+        </li>
+        <li>
+          <strong>1 DE JUNIO 2025:</strong> LANZAMIENTO DE LA <strong>SONIC EXPO FEST</strong>. LA PRIMERA CONVENCIÓN DE SONIC EN ARGENTINA, PERMITIENDO EL INGRESO DE MENORES ACOMPAÑADOS. NO ES UN REBRANDING, ES UNA EXPANSIÓN DE LA MARCA PARA CREAR UNA CONVENCIÓN FAMILIAR EN PARALELO A LAS FIESTAS +18.
+        </li>
+        <li>
+          <strong>23 DE NOVIEMBRE DE 2025:</strong> LANZAMIENTO DE LA <strong>SONIC FEST RIDERS PARTY</strong>, LA FIESTA RAVE DE SONIC EN EL ICÓNICO UNICLUB.<br>
+          👉 <a href="https://sonicfest.com.ar/FotosUniclub" target="_blank" class="glow-link glow-red">FOTOS RIDERS PARTY UNICLUB</a>
+        </li>
+      </ul>
 
-      <h3>SEGURIDAD Y BIENESTAR</h3>
-      <p>🛡️ TODOS LOS EVENTOS CUENTAN CON SEGURIDAD PROPORCIONADA POR EL SALON, GUARDARROPAS Y POLÍTICAS CLARAS PARA GARANTIZAR UN AMBIENTE SEGURO Y DIVERTIDO PARA TODOS LOS ASISTENTES.</p>
+      <!-- PRÓXIMOS EVENTOS -->
+      <h2>PRÓXIMOS EVENTOS</h2>
+      <p>
+        ⚡ <strong>ATENTOS AL 2026:</strong> TE ESPERAMOS CON MÚSICA DE TODAS LAS ERAS, SORTEOS, REGALOS Y LA PARTICIPACIÓN DE BANDAS COMO 
+        <a href="https://sonicfest.com.ar/badniks" class="glow-link glow-web" style="color: #6ee2ff; text-shadow: 0 0 5px cyan;">THE BADNIKS</a>.
+      </p>
+
+      <div style="text-align: center; margin-top: 30px;">
+        <p>SEGUINOS EN NUESTRAS REDES:</p>
+        <a href="https://sonicfest.com.ar" class="glow-link glow-web">WEB OFICIAL</a> • 
+        <a href="https://www.instagram.com/sonicfestok/" class="glow-link glow-ig">INSTAGRAM</a> • 
+        <a href="https://www.youtube.com/@SonicFestOK" class="glow-link glow-red">YOUTUBE</a>
+      </div>
+
+      <!-- SEGURIDAD -->
+      <h2>SEGURIDAD Y BIENESTAR</h2>
+      <p>
+        🛡️ TODOS LOS EVENTOS CUENTAN CON SEGURIDAD PROPORCIONADA POR EL SALÓN, GUARDARROPAS Y POLÍTICAS CLARAS PARA GARANTIZAR UN AMBIENTE SEGURO Y DIVERTIDO PARA TODOS LOS ASISTENTES.
+      </p>
     </div>
 
-    <a class="button" href="https://sonicfest.com.ar">ATRÁS</a>
+    <a class="button-back" href="https://sonicfest.com.ar">ATRÁS</a>
 
     <footer>2025 SONIC FEST®</footer>
   </body>
