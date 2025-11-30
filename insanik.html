@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INSANIK - THE BADNIKS - SONIC FEST</title>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Fuente Righteous -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Righteous', cursive;
+        text-align: center;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px;
+        position: relative;
+        color: white;
+      }
+
+      /* Imagen de fondo */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('Images/Badniks/badniks.jpg') repeat;
+        background-size: 500px 500px;
+        filter: brightness(0.5);
+        z-index: -1;
+      }
+
+      /* Título Principal */
+      .header-title {
+        color: #ffcc00;
+        font-size: 3rem;
+        font-weight: bold;
+        margin-top: 40px; 
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        text-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+        letter-spacing: 2px;
+      }
+
+      /* Contenedor Principal */
+      .content-section {
+        background: rgba(0, 0, 0, 0.75);
+        border-radius: 20px;
+        padding: 40px;
+        max-width: 800px;
+        width: 90%;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+        margin-bottom: 30px;
+        text-align: justify;
+        color: white;
+        text-transform: uppercase;
+        animation: fadeIn 1s ease-out forwards;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      .content-section p {
+        line-height: 1.6;
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+      }
+
+      .content-section h3 {
+        color: #6ee2ff;
+        text-align: center;
+        font-size: 1.8rem;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #6ee2ff;
+        padding-bottom: 10px;
+      }
+
+      /* Imágenes de la banda */
+      .band-image {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        display: block;
+        margin: 25px auto;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        border: 2px solid rgba(255, 255, 255, 0.1);
+      }
+
+      /* Links iluminados */
+      .glow-link {
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        padding: 0 5px;
+        display: inline-block;
+      }
+
+      .glow-yt {
+        color: #ff4d4d;
+        text-shadow: 0 0 8px red;
+      }
+      .glow-yt:hover {
+        color: #fff;
+        background-color: #ff0000;
+        box-shadow: 0 0 15px red;
+        border-radius: 5px;
+      }
+
+      .glow-ig {
+        color: #fd5d93;
+        text-shadow: 0 0 8px #ff00cc;
+      }
+      .glow-ig:hover {
+        color: #fff;
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        box-shadow: 0 0 15px #ff00cc;
+        border-radius: 5px;
+      }
+
+      /* Botón volver */
+      a.button-back {
+        display: inline-block;
+        background-color: #ffcc00;
+        color: black;
+        text-decoration: none;
+        padding: 12px 30px;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 1rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        transition: transform 0.2s ease, background 0.2s ease;
+        margin-top: 30px;
+      }
+
+      a.button-back:hover {
+        background-color: #ffd633;
+        transform: scale(1.05);
+      }
+
+      footer {
+        font-size: 0.9rem;
+        color: white;
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 600px) {
+        .header-title { font-size: 2rem; margin-top: 20px; }
+        .content-section { padding: 20px; }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="content-section">
+
+      <!-- INSANIK / FERCHU -->
+      <h3>INSANIK / FERCHU – Guitarra & DJ</h3>
+
+      <img src="Images/Badniks/Z1.png" alt="Insanik Ferchu guitarrista de The Badniks" class="band-image">
+
+      <p>
+        Buendía, grupooo. 7 de la tarde y yo arrancando a desayunar. En los 90 eso era lo más normal del mundo: comías cuando podías y seguías como si nada.
+      </p>
+
+      <p>
+        Soy <strong>Ferchu</strong>, también conocido como <strong>Insanik</strong>, guitarrista de The Badniks y un sacadito que deja volar la cabeza en las bandejas pinchando mucho Rick James, Ray Parker Jr. y varios más. Mi combo secreto es <strong>funk + disco + groove</strong>, una mezcla tan poderosa que te deja bailando sin depender de otra cosa, sólo la música.
+      </p>
+
+      <img src="Images/Badniks/Z2.png" alt="Insanik Ferchu DJ The Badniks Sonic Fest" class="band-image">
+
+      <p>
+        Todo empezó con una vibra bien noventera: improvisado, inesperado y con ese aroma a “esto puede salir muy mal o muy épico”. Como ex–miembro de la Sonic Fest, siempre había un momento donde me trepaba al escenario para tirar algún temita de Sonic sin pedir permiso. Ahí encontré a un grupo de salvajes con la misma energía caótica, listos para hacer ruido conmigo.
+      </p>
+
+      <p>
+        Entre distorsión, nostalgia y muchas birritas, <strong>The Badniks</strong> empezó a aparecer en cada fiesta como ese invitado que nunca confirma asistencia pero siempre cae igual para prender fuego todo.
+      </p>
+
+      <img src="Images/Badniks/Z3.png" alt="Insanik Ferchu guitarrista The Badniks en vivo" class="band-image">
+
+      <p>
+        Es un honor tocar para ustedes. Que cada encuentro sea una experiencia inolvidable, llena de los mejores temas del destello azulado. Y si algo sale mal, tranqui: en los 90 todo se arreglaba con actitud, un riff y un par de pasos de baile dudosos.
+      </p>
+
+      <p style="text-align:center;">
+        Seguime en: 
+        <a href="https://www.instagram.com/_insanik" target="_blank" class="glow-link glow-ig">INSTAGRAM</a>
+      </p>
+
+    </div>
+
+    <a class="button-back" href="https://sonicfest.com.ar/thebadniks">IR A THE BADNIKS</a>
+
+    <footer>2025 SONIC FEST®</footer>
+  </body>
+</html>
