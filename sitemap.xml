@@ -12,6 +12,14 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <url>
+    <loc>https://sonicfest.com.ar/opiniones.html</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
   <url>
     <loc>https://sonicfest.com.ar/about.html</loc>
     <lastmod>2025-12-02</lastmod>
