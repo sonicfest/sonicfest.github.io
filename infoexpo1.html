@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-29W3Y5CDRT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-29W3Y5CDRT');
+    </script>
+    
+    <title>SONIC EXPO FEST 2025 - CRÓNICA</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <style>
+      /* --- ESTILOS GENERALES Y FONDO --- */
+      body {
+        margin: 0;
+        font-family: 'Righteous', cursive;
+        text-align: center;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px;
+        position: relative;
+        color: white;
+      }
+
+      /* Imagen de fondo */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('Images/EXPO.png') repeat; 
+        background-size: auto;
+        filter: brightness(0.5);
+        z-index: -1;
+      }
+
+      /* --- BARRA DE NAVEGACIÓN --- */
+      nav {
+        width: 100%;
+        background-color: #ff003c; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0 30px;
+        transition: color 0.2s, transform 0.2s;
+      }
+
+      nav a:hover {
+        color: #ffcc00;
+        transform: scale(1.05);
+      }
+
+      /* --- ESTILOS DEL ARTÍCULO --- */
+      
+      .header-title {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        color: #ffcc00;
+        text-shadow: 0 0 10px rgba(255,204,0,0.7);
+        animation: glowTitle 3s ease-in-out infinite alternate;
+        line-height: 1.1;
+      }
+
+      @keyframes glowTitle {
+        from { text-shadow: 0 0 10px rgba(255,204,0,0.5); }
+        to { text-shadow: 0 0 25px rgba(255,255,100,1); }
+      }
+
+      .article-container {
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 20px;
+        padding: 40px;
+        max-width: 800px;
+        width: 90%;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+        margin-bottom: 30px;
+        text-align: justify;
+        color: white;
+        text-transform: uppercase;
+        animation: fadeIn 1s ease-out forwards;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      .article-container p {
+        line-height: 1.6;
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+      }
+
+      /* Listas personalizadas para que se vean bien en Righteous */
+      .article-container ul {
+        list-style: none;
+        padding: 0;
+      }
+      .article-container li {
+        margin-bottom: 15px;
+        padding-left: 20px;
+        border-left: 3px solid #6ee2ff;
+      }
+
+      .article-container h2 {
+        color: #ffcc00; 
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 50px;
+        margin-bottom: 25px;
+        text-shadow: 2px 2px 0px #000;
+        border-bottom: 2px solid #ffcc00;
+        padding-bottom: 10px;
+      }
+
+      .article-container h3 {
+        color: #6ee2ff; 
+        font-size: 1.5rem;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        text-align: center; 
+      }
+
+      .article-image {
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+        display: block;
+        margin: 30px auto;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .article-image:hover {
+        transform: scale(1.02);
+      }
+
+      /* Datos clave destacados */
+      .key-info {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        border: 1px solid #ff003c;
+        margin-bottom: 30px;
+      }
+      
+      .key-info strong {
+        color: #ffcc00;
+        display: block;
+        margin-bottom: 5px;
+        font-size: 1.3rem;
+      }
+
+      .button-back {
+        display: inline-block;
+        background: linear-gradient(90deg, #ff003c, #cc0030);
+        color: white;
+        padding: 12px 30px;
+        border-radius: 25px;
+        font-weight: bold;
+        text-decoration: none;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        margin-top: 40px;
+        transition: transform 0.2s;
+        border: 2px solid white;
+      }
+      
+      .button-back:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+      }
+
+      footer {
+        font-size: 0.9rem;
+        color: white;
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 600px) {
+        .header-title { font-size: 2rem; margin-top: 80px; }
+        nav a { margin: 0 10px; font-size: 0.8rem; }
+        .article-container { padding: 20px; }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <a href="https://sonicfest.com.ar/prox.html">⚡PRÓXIMOS EVENTOS</a>
+      <a href="https://sonicfest.com.ar/fiestas.html">📷FIESTAS PASADAS</a>
+      <a href="https://sonicfest.com.ar/tienda.html">🛒 TIENDA</a>
+    </nav>
+
+    <div class="header-title">SONIC EXPO FEST 2025<br><span style="font-size: 0.5em; color: white;">EL ERIZO AZUL CONQUISTA BS. AS.</span></div>
+
+    <div class="article-container">
+      
+      <!-- Bloque de Información Clave -->
+      <div class="key-info">
+        <p><strong>📅 FECHA</strong> Domingo 1 de junio de 2025</p>
+        <p><strong>📍 LUGAR</strong> Club Cultural Matienzo (CABA)</p>
+        <p><strong>⏰ HORARIO</strong> 13:00 a 19:00 hs</p>
+      </div>
+
+      <p>
+        Buenos Aires se tiñe de azul y velocidad. La <strong>Sonic Expo Fest</strong> se presenta como un hito para la comunidad gamer argentina, marcando la llegada de la primera convención dedicada 100% a Sonic The Hedgehog en el país. 
+      </p>
+
+      <!-- FOTO 1: SUGERENCIA (FOTO GENERAL DEL EVENTO O LOGO) -->
+      <!-- <img src="Images/ExpoGeneral.jpg" alt="Sonic Expo Fest Overview" class="article-image"> -->
+
+      <p>
+        Lejos de ser un evento genérico de videojuegos, esta propuesta busca unificar a todas las generaciones de fanáticos: desde la "vieja escuela" que creció con la SEGA Genesis, hasta la nueva ola de fans que llegaron por las películas, Sonic Frontiers o las series de streaming.
+      </p>
+
+      <h2>🎮 ACTIVIDADES Y ENTRETENIMIENTO</h2>
+      <p style="text-align: center; color: #ccc; font-size: 0.9rem;">UNA EXPERIENCIA "GOTTA GO FAST"</p>
+
+      <p>
+        La organización, bajo la promesa de "tirar toda la carne al asador", diseñó un cronograma cargado de actividades inmersivas:
+      </p>
+
+      <ul>
+        <li>
+          <strong>🎸 Música en Vivo:</strong> La banda <em>The Badniks</em> fue la encargada de musicalizar la jornada, trayendo al escenario los temas icónicos de la franquicia con energía rockera.
+        </li>
+        <li>
+          <strong>🕹️ Zona Gamer Retro y Actual:</strong> Un sector dedicado a los videojuegos que incluyó consolas clásicas (sí, estaba la SEGA) para jugar los títulos originales, además de las entregas más modernas.
+        </li>
+        <li>
+          <strong>🧠 Trivia "Soniccienta":</strong> Conducida por Brendushcka, esta actividad puso a prueba el conocimiento de los fans más hardcore.
+        </li>
+        <li>
+          <strong>🏆 Concursos y Cosplay:</strong> El evento contó con un concurso de Mejor Cosplay de Sonic, permitiendo a los asistentes encarnar a Tails, Knuckles, Shadow, Amy y más. También hubo un Speedrun Sorpresa para medir habilidades en tiempo real.
+        </li>
+        <li>
+          <strong>🎨 Arte y Tatuajes:</strong> Se habilitó un sector con cartulinas para dibujar libremente y, como gran atractivo, hubo tatuajes temporales gratis para los asistentes.
+        </li>
+      </ul>
+
+      <!-- FOTO 2: SUGERENCIA (FOTO DE COSPLAYERS O LA BANDA) -->
+      <!-- <img src="Images/CosplaySonic.jpg" alt="Concurso de Cosplay" class="article-image"> -->
+
+      <h2>📍 UBICACIÓN Y LOGÍSTICA</h2>
+      
+      <p>
+        El evento tuvo lugar en el <strong>Club Cultural Matienzo</strong> (Av. Juan B. Justo 2959, CABA), un espacio techado y climatizado preparado para no suspenderse por lluvia.
+      </p>
+
+      <h3>CÓMO LLEGAR</h3>
+      <p>La organización facilitó múltiples vías de acceso:</p>
+      <ul>
+        <li>🚌 <strong>Colectivos:</strong> 19, 34, 39, 42, 55, 65, 71, 76, 78, 90, 108, 111, 119, 127 y 166.</li>
+        <li>🚆 <strong>Tren:</strong> Línea San Martín (Estación Villa Crespo).</li>
+        <li>🚇 <strong>Subte:</strong> Línea B (Estación Dorrego).</li>
+      </ul>
+
+      <h2>📝 TIPS, REGLAS Y RECOMENDACIONES</h2>
+
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+        <div style="width: 45%; min-width: 300px;">
+          <h3>✅ LO QUE SÍ HUBO</h3>
+          <p>
+            <strong>Regalo Madrugador:</strong> Los primeros 100 en ingresar recibieron un PIN exclusivo.<br><br>
+            <strong>Ambiente Familiar:</strong> Evento ATP. Menores de 8 años gratis (con adulto) y acceso gratuito con CUD.<br><br>
+            <strong>Buffet:</strong> Venta de comida y bebida en el lugar.
+          </p>
+        </div>
+        <div style="width: 45%; min-width: 300px;">
+          <h3>❌ NO PERMITIDO</h3>
+          <p>
+            🚫 Ingreso con alimentos o bebidas de afuera.<br>
+            🚫 Ingreso con alcohol, objetos punzantes o inflamables.<br>
+            🚫 Descuidar a los niños (staff atento con "aplausos" si alguien se perdía).
+          </p>
+        </div>
+      </div>
+
+      <h2>🌟 EL ESPÍRITU DEL EVENTO</h2>
+
+      <p>
+        La Sonic Expo Fest se distinguió por su mensaje de inclusión generacional. En sus propias palabras promocionales:
+      </p>
+
+      <div style="background: rgba(0,0,0,0.5); padding: 20px; border-left: 5px solid #ff003c; font-style: italic; margin: 20px 0;">
+        "Para vos que decías 'Solo quiero ser uno de ellos', para los que se quedaban afuera en las fiestas nocturnas por ser menor de edad, por los nuevos que se suman a esta movida sónica... Les abrimos las puertas a todos."
+      </div>
+
+      <p>
+        Fue una jornada diseñada para golpear la nostalgia de los veteranos y recibir con los brazos abiertos a los nuevos integrantes de la velocidad, consolidándose como la experiencia definitiva para los fans de SEGA en Argentina.
+      </p>
+
+      <div style="text-align: center;">
+        <a href="https://sonicfest.com.ar" class="button-back">VOLVER AL INICIO</a>
+      </div>
+
+    </div>
+
+    <footer>2025 SONIC FEST® - TODOS LOS DERECHOS RESERVADOS</footer>
+  </body>
+</html>
