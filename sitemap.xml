@@ -82,7 +82,7 @@
   </url>
   <!-- Páginas adicionales de noticias y artistas -->
   <url>
-    <loc>https://sonicfest.com.ar/noticiaadventure.html</loc>
+    <loc>https://sonicfest.com.ar/NoticiaAdventure.html</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
