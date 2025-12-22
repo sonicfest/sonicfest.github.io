@@ -1,4 +1,4 @@
-# 📜 DOCUMENTO DE LA SONIC FEST - OFICIAL
+# 📜 PÁGINA WEB OFICIAL DE LA SONIC FEST - OFICIAL
 
 ## 📸 Material institucional y documentación visual
 
