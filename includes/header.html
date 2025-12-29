@@ -1,59 +1,96 @@
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-29W3Y5CDRT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-29W3Y5CDRT');
-</script>
+  <!-- CSS crítico inline: evita parpadeo (FOUC) y aplica fondo de tela en todas las páginas -->
+  <style>
+    body { 
+      margin: 0; 
+      padding: 0; 
+      min-height: 100vh; 
+      opacity: 0; 
+      transition: opacity .4s ease; 
+    }
+    body.loaded { 
+      opacity: 1; 
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: url('Images/TELA2025.png') repeat;
+      background-size: auto;
+      filter: brightness(0.5);
+      z-index: -1;
+    }
+  </style>
 
-<!-- Favicons -->
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-<link rel="shortcut icon" type="image/png" href="favicon3.png" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-<link rel="manifest" href="/site.webmanifest" />
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-29W3Y5CDRT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-29W3Y5CDRT');
+  </script>
 
-<!-- Fuentes -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet" />
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" type="image/png" href="favicon3.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
 
-<!-- CSS principal -->
-<link rel="stylesheet" href="../css/main.css">
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet" />
 
-<!-- Navegación -->
-<nav>
-  <a href="https://sonicfest.com.ar/prox.html">⚡PRÓXIMOS EVENTOS</a>
-  <a href="https://sonicfest.com.ar/fiestas.html">📷FIESTAS PASADAS</a>
-  <a href="https://sonicfest.com.ar/tienda.html">🛒 TIENDA</a>
-</nav>
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Nota: ajusté la ruta a "css/main.css" (sin ../) asumiendo que header.html está en una carpeta como /includes/ y las páginas lo cargan desde raíz o subcarpetas. Si tu estructura es distinta, cambiá a ../css/main.css si es necesario -->
 
-<!-- Schema.org común -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Sonic Fest",
-  "alternateName": ["Sonic Fest Argentina", "Sonic Expo Fest", "Sonic Argentina", "Sonic Fest Documento"],
-  "url": "https://sonicfest.com.ar",
-  "logo": "https://sonicfest.com.ar/favicon2.png",
-  "description": "Organización de eventos de Sonic en Argentina. Fiestas nocturnas y convenciones familiares.",
-  "sameAs": ["https://www.instagram.com/sonicfestok/", "https://www.youtube.com/@SonicFestArg"],
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "customer support",
-    "areaServed": "AR",
-    "availableLanguage": "Spanish"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Buenos Aires",
-    "addressCountry": "AR"
+  <!-- Título dinámico (se sobrescribe en cada página con su propio <title>) -->
+  <title>Sonic Fest Argentina</title>
+</head>
+<body>
+  <!-- Navegación fija -->
+  <nav>
+    <a href="https://sonicfest.com.ar/prox.html">⚡ PRÓXIMOS EVENTOS</a>
+    <a href="https://sonicfest.com.ar/fiestas.html">📷 FIESTAS PASADAS</a>
+    <a href="https://sonicfest.com.ar/tienda.html">🛒 TIENDA</a>
+  </nav>
+
+  <!-- Schema.org común para toda la web -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Sonic Fest",
+    "alternateName": ["Sonic Fest Argentina", "Sonic Expo Fest", "Sonic Argentina", "Sonic Fest Documento"],
+    "url": "https://sonicfest.com.ar",
+    "logo": "https://sonicfest.com.ar/favicon2.png",
+    "description": "Organización de eventos de Sonic en Argentina. Fiestas nocturnas y convenciones familiares.",
+    "sameAs": [
+      "https://www.instagram.com/sonicfestok/",
+      "https://www.youtube.com/@SonicFestArg"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "areaServed": "AR",
+      "availableLanguage": "Spanish"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Buenos Aires",
+      "addressCountry": "AR"
+    }
   }
-}
-</script>
+  </script>
+
+  <!-- Contenido principal de la página empieza aquí (después del header) -->
