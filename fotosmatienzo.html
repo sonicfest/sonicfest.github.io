@@ -4,43 +4,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Metadatos SEO únicos -->
+
+  <!-- Metadatos SEO únicos de esta página -->
   <title>SONIC FEST MATIENZO 2025 - Fotos y Documento Oficial</title>
   <meta name="page-title" content="SONIC FEST MATIENZO 2025 - FOTOS Y DOCUMENTO OFICIAL">
   <meta name="description" content="Fotos y crónica oficial de Sonic Adventure Fest en Club Matienzo, marzo 2025. La fiesta que marcó el inicio del año sonicero en Argentina con más de 300 asistentes.">
   <meta name="keywords" content="sonic fest matienzo, sonic adventure fest, fotos sonic fest, sonic argentina 2025, fiesta sonic buenos aires">
   <link rel="canonical" href="https://sonicfest.com.ar/fotosmatienzo" />
-  
-  <!-- Open Graph -->
+
+  <!-- Open Graph / Redes sociales -->
   <meta property="og:title" content="Sonic Adventure Fest Matienzo 2025 - Fotos Oficiales">
   <meta property="og:description" content="Reviví la Sonic Adventure Fest en Club Matienzo: fotos, videos y crónica completa de la fiesta que abrió el 2025 sonicero.">
   <meta property="og:image" content="https://sonicfest.com.ar/Anteriores/Matienzo/IMG-20251101-WA0181.jpg">
   <meta property="og:url" content="https://sonicfest.com.ar/fotosmatienzo">
   <meta property="og:type" content="article">
-
-  <!-- CSS crítico inline (igual que en index.html) -->
-  <style>
-    body { margin:0; padding:0; min-height:100vh; opacity:0; transition:opacity .4s ease; }
-    body.loaded { opacity:1; }
-    body::before {
-      content:"";
-      position:fixed;
-      top:0; left:0;
-      width:100%; height:100%;
-      background:url('Images/TELA2025.png') repeat;
-      background-size:auto;
-      filter:brightness(0.5);
-      z-index:-1;
-    }
-  </style>
 </head>
 <body>
 
-  <!-- Header incluido vía JS (igual que en home) -->
+  <!-- Header cargado desde header.html (incluye nav, CSS crítico, analytics, fuentes, etc.) -->
   <div id="header-placeholder"></div>
 
-  <!-- Título principal como en la home -->
+  <!-- Título principal (igual estilo que la home) -->
   <div class="header-title">
     FOTOS SONIC FEST - MATIENZO 2025
   </div>
@@ -50,11 +34,11 @@
     +300 ASISTENTES • LA FIESTA QUE ABRIÓ EL AÑO SONICERO EN ARGENTINA
   </p>
 
-  <!-- Acordeón (usando detalles nativos como en tu FAQ de la home para consistencia) -->
+  <!-- Crónica completa en acordeón nativo (como la FAQ de la home) -->
   <div class="faq-section">
     <details open>
       <summary>Sonic Adventure Fest - Crónica Completa</summary>
-      
+
       <div style="padding: 20px; line-height: 1.7;">
         <p style="text-align: center; font-size: 1.3rem; color: #ffcc00; margin-bottom: 10px;">
           <strong>Sonic Adventure Fest: La Fiesta que Despertó la Aventura en Buenos Aires</strong>
@@ -68,7 +52,7 @@
 
         <p>Como segunda edición mayor de Sonic Fest, capturó la esencia de la saga Dreamcast: <strong>velocidad, exploración y adrenalina colectiva</strong>. Nostalgia del '98 + energía actual = noche inolvidable.</p>
 
-        <img src="Anteriores/Matienzo/IMG-20251101-WA0181.jpg" alt="Multitud en pista de baile" style="width:100%; max-width:800px; display:block; margin:30px auto; border-radius:12px;">
+        <img src="Anteriores/Matienzo/IMG-20251101-WA0181.jpg" alt="Multitud en pista de baile" class="main-image">
 
         <h3 style="color:#ffcc00; text-align:center;">SEGURIDAD IMPECABLE</h3>
         <p>Seguridad privada en puerta y durante todo el evento. <strong>0 incidentes</strong>. Todos pudieron disfrutar a full con cosplays y pogo sin preocupaciones.</p>
@@ -82,13 +66,15 @@
           <li><strong>Sorteos:</strong> Llaveros, caramelos y más.</li>
         </ul>
 
-        <img src="Anteriores/Matienzo/IMG-20251103-WA0068.jpg" alt="Ambiente comunitario" style="width:100%; max-width:800px; display:block; margin:30px auto; border-radius:12px;">
+        <img src="Anteriores/Matienzo/IMG-20251103-WA0068.jpg" alt="Ambiente comunitario" class="main-image">
 
         <p>La fiesta duró hasta las <strong>05:30</strong> con luces estroboscópicas y decoración temática de SA1 y SA2.</p>
 
         <h3 style="color:#ffcc00; text-align:center;">REEL OFICIAL</h3>
         <div class="youtube-embed" style="max-width:800px; margin:30px auto;">
-          <iframe src="https://www.youtube.com/embed/dFgMqQ4AqyY" title="Reel Oficial Sonic Adventure Fest" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width:100%; aspect-ratio:16/9; border-radius:12px;"></iframe>
+          <iframe src="https://www.youtube.com/embed/dFgMqQ4AqyY" title="Reel Oficial Sonic Adventure Fest" 
+                  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen style="width:100%; aspect-ratio:16/9; border-radius:12px;"></iframe>
         </div>
 
         <h3 style="color:#ffcc00; text-align:center;">NÚMEROS</h3>
@@ -117,8 +103,8 @@
     </details>
   </div>
 
-  <!-- Galería de fotos (misma estética que imágenes en home) -->
-  <div style="max-width:1200px; margin:50px auto; padding:0 20px;">
+  <!-- Galería de fotos (usando la misma clase .main-image que en la home) -->
+  <div style="max-width:1200px; margin:50px auto; padding:0 20px; display:grid; gap:20px; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));">
     <img src="Anteriores/Matienzo/IMG-20251101-WA0181.jpg" alt="Sonic Fest Matienzo 2025" class="main-image">
     <img src="Anteriores/Matienzo/IMG-20251103-WA0062.jpg" alt="Ambiente nocturno" class="main-image">
     <img src="Anteriores/Matienzo/IMG-20251103-WA0065.jpg" alt="Fans bailando" class="main-image">
@@ -131,15 +117,15 @@
     <img src="Anteriores/Matienzo/IMG-20251103-WA0074.jpg" alt="Fans juntos" class="main-image">
   </div>
 
-  <!-- Botón volver como en la home -->
+  <!-- Botón volver a home -->
   <a class="button" href="https://sonicfest.com.ar" style="display:block; max-width:400px; margin:50px auto;">
     ← VOLVER A PÁGINA PRINCIPAL
   </a>
 
-  <!-- Footer incluido vía JS -->
+  <!-- Footer cargado desde footer.html -->
   <div id="footer-placeholder"></div>
 
-  <!-- Script principal (mismo que en home) -->
+  <!-- Script principal que carga header, footer y activa el fade-in -->
   <script src="js/main.js"></script>
 </body>
 </html>
