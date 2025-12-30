@@ -15,60 +15,59 @@
     <title>SONIC FEST RIDERS PARTY - DOCUMENTO OFICIAL</title>
     
     <link rel="stylesheet" href="css/main.css">
-
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet" />
+
+    <style>
+        /* ESTO ARREGLA EL RECORTE SOLO EN ESTA PÁGINA */
+        .gallery-image {
+            height: auto !important;     /* Anula los 300px del main.css */
+            object-fit: contain !important; /* Asegura que se vea toda la imagen */
+        }
+        
+        /* Ajuste para que los videos no queden pegados */
+        .youtube-embed {
+            grid-column: 1 / -1; 
+            margin: 20px auto;
+        }
+    </style>
 </head>
 
 <body>
 
     <div id="header-placeholder"></div>
 
-    <p class="description" style="margin-top: 120px; color: yellow; font-size: 1.5rem;">
-        FOTOS SONIC FEST - RIDERS PARTY 2025 UNICLUB<br>
-        ¡ENVIADAS POR USTEDES!
+    <div class="header-title">
+        FOTOS SONIC FEST - RIDERS PARTY 2025
+    </div>
+
+    <p class="description">
+        UNICLUB • 23 DE NOVIEMBRE 2025 • RIDERS PARTY<br>
+        FOTOS ENVIADAS POR LA COMUNIDAD - ¡MANDANOS LA TUYA!
     </p>
 
     <div class="faq-section">
       <details>
-        <summary>INFO: VELOCIDAD EXTREMA EN UNICLUB</summary>
-        <div class="about-section" style="padding: 15px; text-align: justify; text-transform: uppercase; font-size: 0.9rem;">
-            <p style="text-align: center; color: #ffcc00;"><strong>23 de noviembre de 2025 - Uniclub, Buenos Aires</strong></p>
-            <p>El Uniclub se volvió una pista de carreras futurista para recibir a la <strong>Sonic Fest Riders Party</strong>. Inspirada en la estética Cyberpunk de <em>Sonic Riders</em>.</p>
-            
-            <h3 style="color: #ffcc00; border-bottom: 1px solid #ffcc00; margin-top: 20px;">MÚSICA EN VIVO: THE BADNIKS</h3>
-            <p>La banda de la casa rompió el escenario con versiones de <em>Sky Chase</em> y hits de <em>Sonic Adventure</em>. Tuvimos presencia internacional con remixes de <em>Hydro City</em>, armando un pogo inolvidable.</p>
-            
-            <blockquote style="border-left: 4px solid #3658b3; padding-left: 10px; margin: 20px 0; font-style: italic;">
-                "¡LA ENERGÍA DE LA COMUNIDAD DEMOSTRÓ POR QUÉ SOMOS EL EVENTO #1!"
-            </blockquote>
-
-            <h3 style="color: #ffcc00; border-bottom: 1px solid #ffcc00;">COSPLAY Y COMUNIDAD</h3>
-            <p>Desde un increíble <strong>Neo Metal Sonic</strong> hasta decenas de fans con sus Extreme Gears. ¡El nivel de cosplay fue de otra galaxia!</p>
-        </div>
-      </details>
-
-      <details style="margin-top: 10px;">
-        <summary>EDICIÓN ANTERIOR: MATIENZO 2025</summary>
-        <div style="padding: 15px;">
-            <p>Reviví lo que fue el inicio de año con la Sonic Adventure Fest.</p>
-            <a href="https://sonicfest.com.ar/fotosmatienzo" class="button" style="padding: 10px 20px; font-size: 0.9rem;">VER GALERÍA MATIENZO</a>
+        <summary>INFO DEL EVENTO</summary>
+        <div style="padding:15px; text-align:justify; text-transform:uppercase; font-size:0.9rem;">
+            <p>EL UNICLUB SE VOLVIÓ UNA PISTA DE CARRERAS FUTURISTA PARA LA <strong>SONIC FEST RIDERS PARTY</strong>. INSPIRADA EN LA ESTÉTICA CYBERPUNK DE SONIC RIDERS.</p>
+            <p><strong>Banda en vivo:</strong> The Badniks rompió el escenario con versiones de Sky Chase y hits de Sonic Adventure.</p>
         </div>
       </details>
     </div>
 
-    <div class="gallery-grid" style="margin-top: 30px;">
-        <img src="Anteriores/Uniclub/A1.jpg" alt="Sonic Fest Riders" class="gallery-image">
-        <img src="Anteriores/Uniclub/A2.jpg" alt="Fans en Uniclub" class="gallery-image">
-        <img src="Anteriores/Uniclub/Z1.png" alt="Cosplayers" class="gallery-image">
-        <img src="Anteriores/Uniclub/Z2.png" alt="Cosplayers" class="gallery-image">
+    <div class="gallery-grid">
+        <img src="Anteriores/Uniclub/A1.jpg" class="gallery-image">
+        <img src="Anteriores/Uniclub/A2.jpg" class="gallery-image">
+        <img src="Anteriores/Uniclub/Z1.png" class="gallery-image">
+        <img src="Anteriores/Uniclub/Z2.png" class="gallery-image">
 
-        <div class="video-container" style="grid-column: span 2;">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/X8Q8RxGbYbw" title="Neo Metal Sonic" frameborder="0" allowfullscreen></iframe>
+        <div class="youtube-embed">
+            <iframe src="https://www.youtube.com/embed/X8Q8RxGbYbw" title="Video" allowfullscreen style="width:100%; aspect-ratio:16/9; border-radius:12px; border:none;"></iframe>
         </div>
 
         <img src="Anteriores/Uniclub/A3.jpg" class="gallery-image">
@@ -76,8 +75,8 @@
         <img src="Anteriores/Uniclub/B2.jpg" class="gallery-image">
         <img src="Anteriores/Uniclub/B3.jpg" class="gallery-image">
 
-        <div class="video-container" style="grid-column: span 2;">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/s0Uf4FKCcjc" title="Hydro City Remix" frameborder="0" allowfullscreen></iframe>
+        <div class="youtube-embed">
+            <iframe src="https://www.youtube.com/embed/s0Uf4FKCcjc" title="Video" allowfullscreen style="width:100%; aspect-ratio:16/9; border-radius:12px; border:none;"></iframe>
         </div>
 
         <img src="Anteriores/Uniclub/B4.jpg" class="gallery-image">
@@ -90,16 +89,6 @@
         <img src="Anteriores/Uniclub/A7.jpg" class="gallery-image">
         <img src="Anteriores/Uniclub/B11.png" class="gallery-image">
 
-        <img src="Anteriores/Uniclub/A8.jpg" class="gallery-image">
-        <img src="Anteriores/Uniclub/A9.jpg" class="gallery-image">
-        <img src="Anteriores/Uniclub/A10.jpg" class="gallery-image">
-        <img src="Anteriores/Uniclub/A11.jpg" class="gallery-image">
-
-        <img src="Anteriores/Uniclub/A12.jpg" class="gallery-image">
-        <img src="Anteriores/Uniclub/A13.jpg" class="gallery-image">
-        <img src="Anteriores/Uniclub/A14.jpg" class="gallery-image">
-        <img src="Anteriores/Uniclub/A15.jpg" class="gallery-image">
-
         <img src="Anteriores/Uniclub/E1.png" class="gallery-image">
         <img src="Anteriores/Uniclub/E2.png" class="gallery-image">
         <img src="Anteriores/Uniclub/E3.png" class="gallery-image">
@@ -107,7 +96,7 @@
     </div>
 
     <a class="button" href="https://sonicfest.com.ar" style="display:block; max-width:400px; margin:50px auto;">
-        ← IR A SONIC FEST
+        ← VOLVER A PÁGINA PRINCIPAL
     </a>
 
     <div id="footer-placeholder"></div>
