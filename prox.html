@@ -1,320 +1,103 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
+<html lang="es-AR">
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SONIC EN ARGENTINA - BOLICHE DE SONIC EN ARGENTINA</title>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-29W3Y5CDRT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-29W3Y5CDRT');
+    </script>
 
-    <!-- Favicons -->
+    <title>SONIC EN ARGENTINA - PRÓXIMOS EVENTOS Y FIESTAS</title>
+    
+    <link rel="stylesheet" href="css/main.css">
+
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
 
-    <!-- Fuente Righteous -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
 
-    <style>
-      body {
-        margin: 0;
-        font-family: 'Righteous', cursive;
-        text-align: center;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 20px;
-        position: relative;
-        color: black;
-      }
+<body>
 
-      /* Imagen de fondo */
-      body::before {
-        content: "";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: url('Images/TELA2025.png') repeat;
-        background-size: auto;
-        filter: brightness(0.5);
-        z-index: -1;
-      }
+    <div id="header-placeholder"></div>
 
-      /* Barra de navegación */
-      nav {
-        width: 100%;
-        background-color: #3658b3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 15px 0;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 100;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-      }
-
-      nav a {
-        color: white;
-        text-decoration: none;
-        font-size: 1.2rem;
-        font-weight: bold;
-        margin: 0 30px;
-        transition: color 0.2s, transform 0.2s;
-      }
-
-      nav a:hover {
-        color: #ffcc00;
-        transform: scale(1.05);
-      }
-
-      .header-title {
-        color: white;
-        font-size: 2rem;
-        font-weight: bold;
-        margin-top: 100px;
-        margin-bottom: 10px;
-        text-transform: uppercase;
-      }
-
-      .main-image {
-        width: 60%;
-        max-width: 500px;
-        margin-bottom: 20px;
-        border-radius: 20px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-      }
-
-      .flyer-description {
-        font-size: 1rem;
-        margin-bottom: 20px;
-        color: white;
-        text-transform: uppercase;
-        max-width: 500px;
-      }
-
-      /* Texto Discord */
-      .discord-text {
-        color: white;
-        max-width: 500px;
-        text-align: justify;
-        margin-top: 30px;
-        margin-bottom: 15px;
-      }
-
-      /* Botones */
-      a.button {
-        display: inline-block;
-        background-color: #ffcc00;
-        color: black;
-        text-decoration: none;
-        padding: 15px 30px;
-        border-radius: 25px;
-        font-weight: bold;
-        font-size: 1.2rem;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-        transition: transform 0.2s ease, background 0.2s ease;
-        margin: 10px 0;
-      }
-
-      a.button:hover {
-        background-color: #ffd633;
-        transform: scale(1.05);
-      }
-
-      /* Botón Discord */
-      a.discord-button {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        background-color: #5865F2;
-        color: white;
-        text-decoration: none;
-        padding: 15px 30px;
-        border-radius: 25px;
-        font-weight: bold;
-        font-size: 1.2rem;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-        transition: transform 0.2s ease, background 0.2s ease;
-      }
-
-      a.discord-button:hover {
-        background-color: #4752C4;
-        transform: scale(1.05);
-      }
-
-      a.discord-button img {
-        height: 24px;
-        width: 24px;
-      }
-
-      /* === DESPLEGABLE MODIFICADO === */
-      .faq-section {
-        background: rgba(255, 255, 255, 0.08);
-        border-radius: 20px;
-        padding: 15px;
-        max-width: 600px;
-        width: 90%;
-        backdrop-filter: blur(3px);
-        box-shadow: none;
-        margin-top: 10px;
-      }
-
-      details {
-        border: none;
-        padding: 10px 0;
-        margin: 0;
-      }
-
-      /* --- Estilo mejorado para el título del desplegable --- */
-      summary {
-        list-style: none;
-        cursor: pointer;
-        font-weight: bold;
-        font-size: 2rem;
-        text-transform: uppercase;
-        color: #d96dff;
-        text-align: center;
-        position: relative;
-        transition: transform 0.2s ease, text-shadow 0.3s ease;
-        animation: pulseGlow 3s infinite alternate;
-      }
-
-      summary:hover {
-        text-shadow: 0 0 10px rgba(217, 109, 255, 0.8), 0 0 20px rgba(217, 109, 255, 0.6);
-        transform: scale(1.03);
-      }
-
-      @keyframes pulseGlow {
-        0% { text-shadow: 0 0 5px rgba(217, 109, 255, 0.6); }
-        50% { text-shadow: 0 0 15px rgba(217, 109, 255, 0.9); }
-        100% { text-shadow: 0 0 5px rgba(217, 109, 255, 0.6); }
-      }
-
-      details p {
-        margin: 10px auto 0 auto;
-        color: #ffffff;
-        line-height: 1.5;
-        text-align: justify;
-        max-width: 500px;
-      }
-
-      footer {
-        font-size: 0.9rem;
-        color: white;
-        margin-top: 40px;
-      }
-    </style>
-  </head>
-
-  <body>
-    <nav>
-      <a href="https://sonicfest.com.ar/prox.html">⚡PRÓXIMOS EVENTOS</a>
-      <a href="https://sonicfest.com.ar/fiestas.html">📷FIESTAS PASADAS</a>
-      <a href="https://sonicfest.com.ar/tienda.html">🛒 TIENDA</a>
-    </nav>
-
-    <div class="header-title">PRÓXIMOS</div>
+    <div class="header-title" style="margin-top: 110px;">
+        PRÓXIMOS EVENTOS
+    </div>
         
-    <!-- NUEVO DESPLEGABLE ABAJO DEL PRÓXIMOS -->
     <div class="faq-section">
       <details>
-        <summary>SONIC FEST 2026 PRIMERA DEL AÑO</summary>
-        <p>
-          FIESTA TEMÁTICA DE SONIC. MÚSICA DE SONIC Y SHOW EN VIVO THE BADNIKS. ALMANAQUE DE REGALO PARA TODOS LOS ASISTENTES Y SORTEOS. UBICACIÓN CASA COLOMBO, GALLO 557, A CUADRAS DEL ABASTO SHOPPING. BUENOS AIRES ARGENTINA 
-        </p>
+        <summary>SONIC FEST 2026 - PRIMERA DEL AÑO</summary>
+        <div style="padding: 15px; line-height: 1.6; text-align: justify;">
+          FIESTA TEMÁTICA DE SONIC. MÚSICA DE SONIC Y SHOW EN VIVO THE BADNIKS. ALMANAQUE DE REGALO PARA TODOS LOS ASISTENTES Y SORTEOS. UBICACIÓN CASA COLOMBO, GALLO 557, A CUADRAS DEL ABASTO SHOPPING. BUENOS AIRES ARGENTINA.
+        </div>
       </details>
     </div>
 
-    <img src="Images/flyer2026.jpg" alt="Sonic Fest 2026 primera del año" class="main-image">
+    <img src="Images/flyer2026.jpg" alt="Sonic Fest 2026 primera del año" class="main-image" style="width: 90%; max-width: 500px; border-radius: 20px; margin: 20px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
 
-    <a
-      class="button"
-      href="https://www.passline.com/eventos/sonic-fest-2026-fiesta-de-sonic-argentina-18"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      🎟️COMPRAR ENTRADAS SONIC FEST 24/01/2026 23:59 hs CASA COLOMBO +18 🎟️
+    <a class="button" href="https://www.passline.com/eventos/sonic-fest-2026-fiesta-de-sonic-argentina-18" target="_blank" rel="noopener noreferrer">
+      🎟️ COMPRAR ENTRADAS 24/01/2026 🎟️
     </a>
 
-  <!-- NUEVO DESPLEGABLE ABAJO DEL EVENTO -->
     <div class="faq-section">
       <details>
-        <summary>DETALLES SONIC FEST 2026 PRIMERA DEL AÑO</summary>
-        <p>
-Arrancamos el 2026 con la Sonic Fest +18 en el icónico Casa Colombo, el lugar donde nació la primera fiesta nocturna de la organización en marzo de 2024! Este es un Evento Oficial de Sonic Fest, garantizando el punto de encuentro definitivo para la comunidad de soniqueros en Latinoamérica.
-¡Prepárense para una inmersión total en el universo del erizo azul!
-🚀 LA NOCHE INCLUYE:
-• Velocidad Extrema: Más de cinco horas de música de Sonic, incluyendo DJ Sets temáticos, bloques dedicados a bandas como CRUSH 40, y los mejores OST.
-• Show en Vivo: La Banda Oficial de Sonic Fest, The Badniks, con sus versiones rock/alternativas de temas legendarios, incluyendo Escape from the City y Chemical Plant. La banda genera una energía "agresiva e irreverente" que busca expandir el show.
-• Merchandising Exclusivo: Stands con cosas de Sonic para comprar, pines limitados, pósters y accesorios custom. ¡Ideales para los fans nostálgicos!
-• Regalos y Sorpresas: Sorteos y almanaque de regalo para todos los asistentes. • Cosplay Bienvenidos: Traé tu cosplay de Sonic, tu Extreme Gear casera o vestite con tu remera favorita.
-🛡️ SEGURIDAD GARANTIZADA Y PROTOCOLO OFICIAL
-Sonic Fest es una productora de eventos que garantiza un ambiente 100% seguro y sin incidentes. Este es un evento en una Sede Contratada con protocolos claros:
-• Seguridad y Control de Acceso: Contamos con personal de seguridad privada que supervisa el establecimiento.
-• Política de Integridad: Aplicamos Tolerancia Cero al acoso, y nos reservamos el Derecho de Admisión para garantizar un espacio respetuoso y libre de intromisiones.
-🗓️ DETALLES DEL EVENTO OFICIAL
-Característica
-Detalle Clave (Sonic Fest)
-Fecha y Hora:
-SÁBADO 24/01/2026 - Apertura de Puerta a las 23:59 hs. La fiesta termina a las 06:00 hs.
-Ubicación Oficial:
-Casa Colombo, Gallo 557, CABA. (Salón a una cuadra del Abasto Shopping).
-Restricción de Edad:
-SOLO +18. Se requiere DNI (o Pasaporte) para ingresar.
-Punto de Venta:
-ENTRADAS LINK EN BIO EN SONICFEST.COM.AR.
-AVISO IMPORTANTE: Para la comunidad de Sonic en Argentina: Si sos menor de edad, te invitamos a nuestra convención para todas las edades: SONIC EXPO FEST. En Instagram @sonicexpofest
-Conocé y coordiná con otros asistentes uniéndote a nuestro Discord SONIC FEST.
-Seguinos en redes oficiales: INSTAGRAM @sonicfestok | TIKTOK @sonic.fest        </p>
+        <summary>VER DETALLES COMPLETOS 2026</summary>
+        <div style="padding: 15px; line-height: 1.5; text-align: left; font-size: 0.9rem;">
+            <p><strong>Arrancamos el 2026 con la Sonic Fest +18</strong> en el icónico Casa Colombo, el lugar donde nació la primera fiesta nocturna de la organización.</p>
+            <p>🚀 <strong>LA NOCHE INCLUYE:</strong><br>
+            • Más de cinco horas de música de Sonic (Crush 40, OST Temáticos).<br>
+            • Show en vivo de <strong>The Badniks</strong>.<br>
+            • Merchandising exclusivo y stands de la comunidad.<br>
+            • Sorteos y almanaque de regalo.</p>
+            <p>🛡️ <strong>SEGURIDAD:</strong> Ambiente 100% seguro con personal privado y control de admisión.</p>
+            <p>📍 <strong>UBICACIÓN:</strong> Gallo 557, CABA (Casa Colombo).</p>
+        </div>
       </details>
     </div>
     
-        <div class="header-title">FIESTAS PASADAS</div>
-<img src="Anteriores/Uniclub/Z1.png" alt="Cosplayers en Sonic Fest Riders Party" />
-    <!-- NUEVO DESPLEGABLE ABAJO DEL PRÓXIMOS -->
+    <hr style="width: 80%; border: 0; border-top: 1px solid rgba(255,255,255,0.2); margin: 40px 0;">
+
+    <div class="header-title">FIESTAS PASADAS</div>
+    
+    <img src="Anteriores/Uniclub/Z1.png" alt="Cosplayers en Sonic Fest" class="main-image" style="width: 90%; max-width: 500px; border-radius: 20px; margin-bottom: 10px;">
+
     <div class="faq-section">
       <details>
         <summary>SONIC FEST RIDERS PARTY</summary>
-        <p>
-          FIESTA TEMÁTICA DE SONIC RIDERS. VENÍ CON TU OUTFIT DE SONIC, COSPLAY DE SONIC O TU EXTREME GEAR, 
-          PLATA PARA COMPRAR COSAS DE SONIC Y GANAS DE BAILAR! LOS PRIMEROS 100 TIENEN PIN DE REGALO. NOS ACOMPAÑAN EN STANDS CON COSAS DE SONIC KAYLLATHECAT, RETROTOOLS, LEOCIRIUS
-          SHOW EN VIVO THE BADNIKS, BANDA DE SONIC OFICIAL DE LA SONIC FEST
-        </p>
+        <div style="padding: 15px; line-height: 1.6; text-align: justify;">
+          FIESTA TEMÁTICA DE SONIC RIDERS. VENÍ CON TU OUTFIT DE SONIC, COSPLAY O TU EXTREME GEAR. SHOW EN VIVO THE BADNIKS. NOS ACOMPAÑARON: KAYLLATHECAT, RETROTOOLS, LEOCIRIUS.
+        </div>
       </details>
     </div>
 
-    <img src="Images/RIDERS.png" alt="Sonic Riders Flyer" class="main-image">
+    <img src="Images/RIDERS.png" alt="Sonic Riders Flyer" class="main-image" style="width: 90%; max-width: 500px; border-radius: 20px; margin: 20px 0;">
 
-    <a
-      class="button"
-      href="https://alpogo.com/evento/sonic-fest-riders-party-21135"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      🎟️COMPRAR ENTRADAS SONIC FEST RIDERS PARTY 23/11 +18 (CADUCADO)🎟️
+    <a class="button" href="https://alpogo.com/evento/sonic-fest-riders-party-21135" target="_blank" rel="noopener noreferrer" style="opacity: 0.7;">
+      🎟️ ENTRADAS RIDERS PARTY (CADUCADO)
     </a>
 
-    <p class="discord-text">
+    <p class="description" style="max-width: 500px; margin-top: 40px;">
       UNITE A NUESTRO SERVIDOR DE DISCORD PARA CONOCER GENTE QUE VIENE A LA FIESTA Y HACER LA PREVIA!
     </p>
 
-    <a href="https://discord.com/invite/FwZ6xXezKY" target="_blank" class="discord-button">
-      <img src="Images/DISCORD.png" alt="Discord"> DISCORD SONIC FEST
+    <a href="https://discord.com/invite/FwZ6xXezKY" target="_blank" class="button" style="background-color: #5865F2; color: white;">
+       DISCORD SONIC FEST
     </a>
 
-    <a class="button" href="https://sonicfest.com.ar">PÁGINA PRINCIPAL</a>
+    <a class="button" href="https://sonicfest.com.ar" style="display:block; max-width:400px; margin:50px auto;">
+        ← VOLVER A PÁGINA PRINCIPAL
+    </a>
 
- <div id="footer-sonic"></div>
+    <div id="footer-placeholder"></div>
 
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
