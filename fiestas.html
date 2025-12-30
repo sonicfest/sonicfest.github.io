@@ -1,219 +1,79 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
+<html lang="es-AR">
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
-    <!-- Google Analytics -->
-   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-29W3Y5CDRT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-29W3Y5CDRT');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-29W3Y5CDRT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-29W3Y5CDRT');
+    </script>
     
-    <title>SONIC FEST - ENTRADAS SONIC ARGENTINA FANS DOCUMENTO</title>
+    <title>SONIC FEST - ENTRADAS Y DOCUMENTO OFICIAL</title>
+    
+    <meta name="description" content="Información sobre entradas y archivo histórico de la Sonic Fest en Argentina. Reviví los momentos de la comunidad.">
+    
+    <link rel="stylesheet" href="css/main.css">
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" type="image/png" href="favicon3.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
 
-    <style>
-      body {
-        margin: 0;
-        font-family: 'Righteous', cursive;
-        text-align: center;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: white;
-      }
+<body>
 
-      body::before {
-        content: "";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: url('Images/TELA2025.png') repeat;
-        background-size: auto;
-        filter: brightness(0.7);
-        z-index: -1;
-      }
+    <div id="header-placeholder"></div>
 
-      nav {
-        width: 100%;
-        background-color: #3658b3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 15px 0;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 100;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-      }
+    <div class="header-title" style="margin-top: 110px;">
+        DOCUMENTO OFICIAL SONIC FEST
+    </div>
 
-      nav a {
-        color: white;
-        text-decoration: none;
-        font-size: 1.2rem;
-        font-weight: bold;
-        margin: 0 30px;
-        transition: color 0.2s, transform 0.2s;
-      }
-
-      nav a:hover {
-        color: #ffcc00;
-        transform: scale(1.05);
-      }
-
-      /* --- DESPLEGABLE FOTOS --- */
-      .faq-section {
-        background: rgba(0, 0, 0, 0.55);
-        border-radius: 20px;
-        padding: 15px 20px;
-        width: 90%;
-        max-width: 600px;
-        margin-top: 110px;
-        backdrop-filter: blur(5px);
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-      }
-
-      details {
-        border-top: 1px solid #6ee2ff;
-        border-bottom: 1px solid #6ee2ff;
-        padding: 10px 0;
-      }
-      summary {
-        list-style: none;
-        cursor: pointer;
-        font-weight: bold;
-        font-size: 1.3rem;
-        text-transform: uppercase;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: #b8e6ff;
-      }
-      summary::after {
-        content: "+";
-        font-size: 1.5rem;
-        color: #6ee2ff;
-        transition: transform 0.3s ease;
-      }
-      details[open] summary::after {
-        content: "–";
-        transform: rotate(180deg);
-      }
-      details a {
-        color: #6ee2ff;
-        text-decoration: underline;
-        font-weight: bold;
-      }
-
-      /* GALERÍA */
-      .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 30px;
-        justify-content: center;
-        gap: 8px;
-      }
-
-      .gallery img, .gallery video {
-        width: 180px;
-        height: auto;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-      }
-
-      a.button {
-        display: inline-block;
-        background-color: #ffcc00;
-        color: black;
-        text-decoration: none;
-        padding: 15px 30px;
-        border-radius: 25px;
-        font-weight: bold;
-        font-size: 1.2rem;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-        transition: transform 0.2s ease, background 0.2s ease;
-        margin: 30px 0 10px;
-      }
-
-      a.button:hover {
-        background-color: #ffd633;
-        transform: scale(1.05);
-      }
-
-      footer {
-        font-size: 0.9rem;
-        color: white;
-        margin: 20px 0;
-      }
-    </style>
-  </head>
-
-  <body>
-    <nav>
-      <a href="https://sonicfest.com.ar/prox.html">⚡PRÓXIMOS EVENTOS</a>
-      <a href="https://sonicfest.com.ar/fiestas.html">📷FIESTAS PASADAS</a>
-      <a href="https://sonicfest.com.ar/tienda.html">🛒 TIENDA</a>
-    </nav>
-
-    <!-- DESPLEGABLE AGREGADO -->
     <div class="faq-section">
       <details>
-        <summary>📸 FOTOS FIESTAS 2024 Y 2025</summary>
-        <p> 👉 <a href="https://www.sonicfest.com.ar/fotoscolombo" target="_blank">SONIC FEST CASA COLOMBO 23/3/2024</a> </p>
-        <p> 👉 <a href="https://www.sonicfest.com.ar/fotosmatienzo" target="_blank">SONIC ADVENTURE FEST 3/3/2025</a> </p>
-        <p> 👉 <a href="https://www.sonicfest.com.ar/FotosUniclub" target="_blank">SONIC FEST RIDERS PARTY - UNICLUB -  23/11/2025</a> </p>
-
+        <summary>📸 ARCHIVO DE FOTOS 2024 - 2025</summary>
+        <div style="padding: 15px; line-height: 1.8;">
+            <p> 👉 <a href="https://www.sonicfest.com.ar/fotoscolombo">SONIC FEST CASA COLOMBO (23/3/2024)</a> </p>
+            <p> 👉 <a href="https://www.sonicfest.com.ar/fotosmatienzo">SONIC ADVENTURE FEST (3/3/2025)</a> </p>
+            <p> 👉 <a href="https://www.sonicfest.com.ar/FotosUniclub">SONIC FEST RIDERS PARTY (23/11/2025)</a> </p>
+        </div>
       </details>
     </div>
 
-    <div class="gallery">
-      <img src="Images/A0.png" alt="Sonic Fest Argentina flyer fiesta gamer Buenos Aires sonic fest documento">
-      <img src="Images/A1.png" alt="Fiesta temática de Sonic en Argentina fans comunidad">
-      <img src="Images/A2.png" alt="Sonic Fest evento cosplay música baile Buenos Aires">
-      <img src="Images/A5.png" alt="Sonic Argentina fiesta oficial fanparty comunidad gamer sonic fest documento">
-      <img src="Images/A6.png" alt="Fiesta de Sonic Fest Buenos Aires DJ y cosplay">
-      <img src="Images/A7.png" alt="Encuentro de fans Sonic Argentina evento fiesta sonic fest documento">
-      <img src="Images/A8.png" alt="Sonic Fest noche gamer música videojuegos Argentina">
-      <img src="Images/A9.png" alt="Flyer Sonic Fest evento especial Buenos Aires Argentina sonic fest documento">
+    <div class="gallery-grid" style="margin-top: 30px;">
+      <img src="Images/A0.png" alt="Flyer Sonic Fest" class="gallery-image">
+      <img src="Images/A1.png" alt="Fiesta temática Sonic" class="gallery-image">
+      <img src="Images/A2.png" alt="Evento cosplay" class="gallery-image">
+      <img src="Images/A5.png" alt="Comunidad gamer" class="gallery-image">
+      <img src="Images/A6.png" alt="DJ y cosplay" class="gallery-image">
+      <img src="Images/A7.png" alt="Encuentro fans" class="gallery-image">
+      <img src="Images/A8.png" alt="Música y videojuegos" class="gallery-image">
+      <img src="Images/A9.png" alt="Flyer especial" class="gallery-image">
 
-      <img src="Images/B1.jpg" alt="Foto fiesta Sonic Fest Argentina público bailando">
-      <img src="Images/B2.jpg" alt="Cosplay Sonic en evento Sonic Fest Buenos Aires">
-      <img src="Images/B3.jpg" alt="Escenario y luces Sonic Fest Argentina fiesta gamer sonic fest documento">
+      <img src="Images/B1.jpg" alt="Público bailando" class="gallery-image">
+      <img src="Images/B2.jpg" alt="Cosplay Sonic" class="gallery-image">
+      <img src="Images/B3.jpg" alt="Escenario Sonic Fest" class="gallery-image">
 
-      <video src="Images/V1.mp4" controls title="Video fiesta Sonic Fest Argentina"></video>
-      <video src="Images/V2.mp4" controls title="Evento Sonic Buenos Aires fans sonic fest documento"></video>
-      <video src="Images/V3.mp4" controls title="Sonic Fest música y cosplay Argentina"></video>
-      <video src="Images/V4.mp4" controls title="Noche gamer Sonic Fest DOCUMENTO"></video>
-      <video src="Images/V5.mp4" controls title="Fiesta temática Sonic Argentina"></video>
-      <video src="Images/V6.mp4" controls title="Sonic Fest DJ Set Buenos Aires sonic fest documento"></video>
-      <video src="Images/V7.mp4" controls title="Fans de Sonic celebrando en Argentina"></video>
+      <video src="Images/V1.mp4" controls class="gallery-image" style="object-fit: cover; height: 100%;"></video>
+      <video src="Images/V2.mp4" controls class="gallery-image" style="object-fit: cover; height: 100%;"></video>
+      <video src="Images/V3.mp4" controls class="gallery-image" style="object-fit: cover; height: 100%;"></video>
+      <video src="Images/V4.mp4" controls class="gallery-image" style="object-fit: cover; height: 100%;"></video>
+      <video src="Images/V5.mp4" controls class="gallery-image" style="object-fit: cover; height: 100%;"></video>
+      <video src="Images/V6.mp4" controls class="gallery-image" style="object-fit: cover; height: 100%;"></video>
+      <video src="Images/V7.mp4" controls class="gallery-image" style="object-fit: cover; height: 100%;"></video>
     </div>
 
-    <a class="button" href="https://sonicfest.com.ar">PÁGINA PRINCIPAL</a>
+    <a class="button" href="https://sonicfest.com.ar" style="display:block; max-width:400px; margin:50px auto;">
+        ← IR A SONIC FEST
+    </a>
 
-  <div id="footer-sonic"></div>
+    <div id="footer-placeholder"></div>
 
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
