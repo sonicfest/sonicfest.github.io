@@ -501,3 +501,227 @@ footer {
   .about-title { font-size: 2rem; }
   .about-content { padding: 25px 15px; }
 }
+
+
+
+/* =========================================
+   ESTILOS ESPECÍFICOS PARA PÁGINA THE BADNIKS
+   ========================================= */
+
+/* Fondo específico de Badniks (sobrescribe el general) */
+body::before {
+  background: url('Images/Badniks/badniks.jpg') repeat !important;
+  background-size: 500px 500px !important;
+}
+
+/* Barra de navegación negra (a pedido específico) */
+nav {
+  background-color: #000000 !important;
+}
+
+/* Título principal más grande y con glow amarillo */
+.header-title {
+  color: #ffcc00;
+  font-size: 3rem;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+  letter-spacing: 2px;
+}
+
+/* Contenedor principal estilo Badniks (similar al about pero adaptado) */
+.content-section {
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 800px;
+  width: 90%;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+  margin-bottom: 30px;
+  text-align: justify;
+  color: white;
+  text-transform: uppercase;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.content-section h2 {
+  color: #ffcc00;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 0px #000;
+  border-bottom: 2px solid #ffcc00;
+  padding-bottom: 10px;
+}
+
+.content-section h3 {
+  color: #6ee2ff;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Imágenes de la banda */
+.band-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 25px auto;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Links con efecto glow (YouTube e Instagram) - sobrescriben los generales */
+.glow-link {
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  padding: 0 5px;
+  display: inline-block;
+}
+
+.glow-yt {
+  color: #ff4d4d;
+  text-shadow: 0 0 8px red;
+}
+
+.glow-yt:hover {
+  color: #fff;
+  background-color: #ff0000;
+  box-shadow: 0 0 15px red;
+  border-radius: 5px;
+}
+
+.glow-ig {
+  color: #fd5d93;
+  text-shadow: 0 0 8px #ff00cc;
+}
+
+.glow-ig:hover {
+  color: #fff;
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  box-shadow: 0 0 15px #ff00cc;
+  border-radius: 5px;
+}
+
+/* Acordeón de Shows */
+.shows-container {
+  margin-top: 40px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+
+details {
+  background-color: rgba(255, 255, 255, 0.05);
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: background-color 0.3s;
+}
+
+details:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+summary {
+  list-style: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #e0e0e0;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  content: '+';
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffcc00;
+  transition: transform 0.3s;
+}
+
+details[open] summary::after {
+  content: '–';
+  transform: rotate(180deg);
+}
+
+details[open] summary {
+  color: #ffcc00;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Videos incrustados */
+.video-list {
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.youtube-embed {
+  width: 100%;
+  max-width: 560px;
+  position: relative;
+  padding-bottom: 0;
+}
+
+.youtube-embed iframe {
+  width: 100%;
+  height: 315px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(255, 204, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  display: block;
+}
+
+/* Botón volver */
+a.button-back {
+  display: inline-block;
+  background-color: #ffcc00;
+  color: black;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, background 0.2s ease;
+  margin-top: 30px;
+}
+
+a.button-back:hover {
+  background-color: #ffd633;
+  transform: scale(1.05);
+}
+
+/* Media queries específicas para Badniks */
+@media (max-width: 600px) {
+  .header-title { 
+    font-size: 2rem; 
+    margin-top: 80px; 
+  }
+  nav a { 
+    margin: 0 10px; 
+    font-size: 0.9rem; 
+  }
+  .content-section { 
+    padding: 20px; 
+  }
+  .youtube-embed iframe {
+    height: 250px;
+  }
+}
