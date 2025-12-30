@@ -1,3 +1,15 @@
+
+.youtube-embed {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.numbers-highlight {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #ffcc00;
+  margin: 20px 0;
+}
 .section-title {
   color: #ffcc00;
   text-align: center;
@@ -233,4 +245,5 @@ footer {
 .gallery-image:hover {
   transform: scale(1.03);
 }
+
 
