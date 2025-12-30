@@ -504,23 +504,42 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =========================================
    ESTILOS ESPECÍFICOS PARA PÁGINA THE BADNIKS
+   (Modificado para no romper el resto del sitio)
    ========================================= */
 
-/* Fondo específico de Badniks (sobrescribe el general) */
-body::before {
-  background: url('Images/Badniks/badniks.jpg') repeat !important;
+/* IMPORTANTE: Para que estos estilos funcionen, 
+   se agrega class="page-badniks" al tag <body> 
+   en archivos HTML de Badniks.
+*/
+
+/* Fondo específico de Badniks - Solo aplica si existe la clase .page-badniks */
+body.page-badniks::before {
+  background: url('../Images/Badniks/badniks.jpg') repeat !important;
   background-size: 500px 500px !important;
 }
 
-/* Barra de navegación negra (a pedido específico) */
-nav {
+/* Barra de navegación negra - Solo en Badniks */
+body.page-badniks nav {
   background-color: #000000 !important;
 }
 
-/* Título principal más grande y con glow amarillo */
-.header-title {
+/* Título principal con glow amarillo - Solo en Badniks */
+body.page-badniks .header-title {
   color: #ffcc00;
   font-size: 3rem;
   margin-top: 100px;
@@ -530,7 +549,7 @@ nav {
   letter-spacing: 2px;
 }
 
-/* Contenedor principal estilo Badniks (similar al about pero adaptado) */
+/* Contenedor principal estilo Badniks */
 .content-section {
   background: rgba(0, 0, 0, 0.75);
   border-radius: 20px;
@@ -577,18 +596,15 @@ nav {
   border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Links con efecto glow (YouTube e Instagram) - sobrescriben los generales */
-.glow-link {
+/* Links con efecto glow específicos */
+.glow-yt {
+  color: #ff4d4d;
+  text-shadow: 0 0 8px red;
   text-decoration: none;
   font-weight: bold;
   transition: all 0.3s ease;
   padding: 0 5px;
   display: inline-block;
-}
-
-.glow-yt {
-  color: #ff4d4d;
-  text-shadow: 0 0 8px red;
 }
 
 .glow-yt:hover {
@@ -598,38 +614,27 @@ nav {
   border-radius: 5px;
 }
 
-.glow-ig {
-  color: #fd5d93;
-  text-shadow: 0 0 8px #ff00cc;
-}
-
-.glow-ig:hover {
-  color: #fff;
-  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-  box-shadow: 0 0 15px #ff00cc;
-  border-radius: 5px;
-}
-
-/* Acordeón de Shows */
+/* Acordeón de Shows (Cambiamos el nombre para no chocar con el general) */
 .shows-container {
   margin-top: 40px;
   border-top: 1px solid #444;
   padding-top: 20px;
 }
 
-details {
+.shows-container details {
   background-color: rgba(255, 255, 255, 0.05);
   margin-bottom: 10px;
   border-radius: 8px;
   overflow: hidden;
   transition: background-color 0.3s;
+  border: none; /* Quita el borde celeste del FAQ general */
 }
 
-details:hover {
+.shows-container details:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-summary {
+.shows-container summary {
   list-style: none;
   padding: 15px 20px;
   cursor: pointer;
@@ -641,11 +646,7 @@ summary {
   color: #e0e0e0;
 }
 
-summary::-webkit-details-marker {
-  display: none;
-}
-
-summary::after {
+.shows-container summary::after {
   content: '+';
   font-size: 1.5rem;
   font-weight: bold;
@@ -653,14 +654,9 @@ summary::after {
   transition: transform 0.3s;
 }
 
-details[open] summary::after {
+.shows-container details[open] summary::after {
   content: '–';
   transform: rotate(180deg);
-}
-
-details[open] summary {
-  color: #ffcc00;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 /* Videos incrustados */
@@ -672,14 +668,7 @@ details[open] summary {
   gap: 20px;
 }
 
-.youtube-embed {
-  width: 100%;
-  max-width: 560px;
-  position: relative;
-  padding-bottom: 0;
-}
-
-.youtube-embed iframe {
+.video-list .youtube-embed iframe {
   width: 100%;
   height: 315px;
   border-radius: 10px;
@@ -710,18 +699,14 @@ a.button-back:hover {
 
 /* Media queries específicas para Badniks */
 @media (max-width: 600px) {
-  .header-title { 
+  body.page-badniks .header-title { 
     font-size: 2rem; 
     margin-top: 80px; 
-  }
-  nav a { 
-    margin: 0 10px; 
-    font-size: 0.9rem; 
   }
   .content-section { 
     padding: 20px; 
   }
-  .youtube-embed iframe {
+  .video-list .youtube-embed iframe {
     height: 250px;
   }
 }
