@@ -369,3 +369,135 @@ footer {
   }
 }
 
+
+/* =========================================
+   ESTILOS PARA PÁGINA ABOUT (¿QUÉ ES SONIC FEST?)
+   ========================================= */
+
+/* Contenedor principal tipo "Badniks" - fondo oscuro con blur */
+.about-content {
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  padding: 40px 30px;
+  max-width: 900px;
+  width: 90%;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 25px rgba(0,0,0,0.7);
+  margin: 30px auto 50px auto;
+  text-align: justify;
+  text-transform: uppercase;
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.about-content p {
+  line-height: 1.7;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.about-content strong {
+  color: #ffcc00;
+}
+
+/* Títulos dentro del about */
+.about-content h2 {
+  color: #ffcc00;
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 40px 0 20px;
+  border-bottom: 2px solid #ffcc00;
+  padding-bottom: 10px;
+}
+
+.about-content h3 {
+  color: #6ee2ff;
+  font-size: 1.4rem;
+  margin: 30px 0 15px;
+  text-shadow: 0 0 8px rgba(110, 226, 255, 0.4);
+}
+
+/* Imágenes en about */
+.about-image {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin: 30px auto;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.6);
+  border: 2px solid rgba(255,255,255,0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-image:hover {
+  transform: scale(1.02);
+}
+
+/* Timeline de evolución */
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.timeline li {
+  margin-bottom: 20px;
+  border-left: 3px solid #ffcc00;
+  padding-left: 20px;
+  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  border-radius: 0 10px 10px 0;
+}
+
+/* Enlaces con efecto glow (para about) */
+.glow-link {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.glow-web { color: #ffcc00; text-shadow: 0 0 8px #ffcc00; }
+.glow-web:hover { color: #000; background: #ffcc00; box-shadow: 0 0 15px #ffcc00; }
+
+.glow-ig { color: #fd5d93; text-shadow: 0 0 8px #ff00cc; }
+.glow-ig:hover { color: #fff; background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); box-shadow: 0 0 15px #ff00cc; }
+
+.glow-red { color: #ff4d4d; text-shadow: 0 0 8px red; }
+.glow-red:hover { color: #fff; background: #ff0000; box-shadow: 0 0 15px red; }
+
+/* Título grande con glow (opcional, si querés uno más épico) */
+.about-title {
+  color: #ffcc00;
+  font-size: 3rem;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+  letter-spacing: 2px;
+  animation: glowPulse 3s infinite alternate;
+}
+
+@keyframes glowPulse {
+  from { text-shadow: 0 0 10px rgba(255, 204, 0, 0.5); }
+  to { text-shadow: 0 0 25px rgba(255, 204, 0, 1); }
+}
+
+/* Responsive para about */
+@media (max-width: 768px) {
+  .about-title { font-size: 2.4rem; margin-top: 90px; }
+  .about-content { padding: 30px 20px; }
+  .about-content h2 { font-size: 1.6rem; }
+}
+
+@media (max-width: 600px) {
+  .about-title { font-size: 2rem; }
+  .about-content { padding: 25px 15px; }
+}
