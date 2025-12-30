@@ -246,4 +246,53 @@ footer {
   transform: scale(1.03);
 }
 
+/* --- CORRECCIONES PARA CELULARES (RESPONSIVE) --- */
+/* Esto asegura que nada se salga del ancho de la pantalla */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; /* Oculta el desplazamiento horizontal sobrante */
+}
+
+/* Ajuste de la Barra de Navegación en celulares */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap; /* Permite que los botones bajen si no entran */
+    padding: 10px 0;
+    height: auto;    /* Permite que la barra crezca si los botones se apilan */
+  }
+
+  nav a {
+    margin: 5px 10px; /* Reduce el espacio entre botones */
+    font-size: 0.85rem; /* Achica un poco la letra para que entren */
+    white-space: nowrap; /* Evita que el texto de un botón se parta */
+  }
+  
+  /* Ajuste del Título Principal */
+  .header-title {
+    font-size: 1.5rem; /* Título más chico en celular */
+    margin-top: 80px;  /* Ajuste por si el menú ocupa más espacio */
+    padding: 0 10px;
+  }
+}
+
+/* Ajuste de la Galería y Contenedores */
+@media (max-width: 600px) {
+  /* Hacemos que la grilla sea de 1 sola columna o columnas más chicas */
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    padding: 0 15px; /* Margen lateral para que no toque los bordes */
+  }
+  
+  /* Asegura que ninguna imagen sea más ancha que el celular */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Ajuste del acordeón y textos */
+  .faq-section {
+    width: 95%; /* Ocupa casi todo el ancho disponible */
+    padding: 15px;
+  }
+}
 
