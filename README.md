@@ -16,4 +16,4 @@
 
 ---
 
-© **2025 SONIC FEST®**
+© **2026 SONIC FEST®**
