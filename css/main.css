@@ -710,3 +710,68 @@ a.button-back:hover {
     height: 250px;
   }
 }
+
+
+
+
+/* =========================================
+   ESTILOS ESPECÍFICOS PARA SONIC EXPO FEST
+   ========================================= */
+
+/* Fondo específico para Expo */
+body.page-expo::before {
+  background: url('../Images/EXPO.png') repeat !important;
+  background-size: auto !important;
+}
+
+/* Barra de navegación Roja para Expo */
+body.page-expo nav {
+  background-color: #ff003c !important;
+}
+
+/* Título con animación de brillo */
+body.page-expo .header-title {
+  font-size: 2.5rem;
+  color: #ffcc00;
+  text-shadow: 0 0 10px rgba(255,204,0,0.7);
+  animation: glowTitle 3s ease-in-out infinite alternate;
+}
+
+@keyframes glowTitle {
+  from { text-shadow: 0 0 10px rgba(255,204,0,0.5); }
+  to { text-shadow: 0 0 25px rgba(255,255,100,1); }
+}
+
+/* Logo de la Expo */
+.expo-logo {
+  width: 250px;
+  max-width: 80%;
+  margin: 20px 0;
+  filter: drop-shadow(0 0 10px rgba(255,204,0,0.6));
+}
+
+/* Ajustes del Acordeón para que sea Amarillo (estilo Expo) */
+body.page-expo details {
+  border-top: 1px solid #ffcc00;
+  border-bottom: 1px solid #ffcc00;
+}
+
+body.page-expo summary {
+  color: #ffcc00;
+}
+
+body.page-expo summary::after {
+  color: #ffcc00;
+}
+
+/* Media Query específica para el título de Expo en celulares */
+@media (max-width: 600px) {
+  body.page-expo .header-title {
+    font-size: 1.8rem;
+    margin-top: 80px;
+  }
+}
+
+
+
+
