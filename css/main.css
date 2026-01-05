@@ -773,5 +773,43 @@ body.page-expo summary::after {
 }
 
 
+/* =========================================
+   REFUERZO PARA GALERÍAS Y INFO DE EVENTOS
+   ========================================= */
+
+/* Para que las imágenes de la galería no se deformen y midan lo mismo */
+.gallery-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* Recorta la imagen para llenar el espacio sin estirarse */
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+/* Estilos para el texto dentro del desplegable de INFO */
+.info-list p {
+    margin-bottom: 12px !important;
+    border-bottom: 1px dashed rgba(255, 204, 0, 0.3);
+    padding-bottom: 8px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.info-list p:last-child {
+    border-bottom: none;
+}
+
+/* Caja de resaltado para fechas o frases importantes */
+.highlight-box {
+    background: rgba(255, 204, 0, 0.1);
+    padding: 15px;
+    border-radius: 12px;
+    margin: 15px 0;
+    font-style: italic;
+    text-align: center;
+    color: #ffcc00;
+    border: 1px solid rgba(255, 204, 0, 0.2);
+}
 
 
