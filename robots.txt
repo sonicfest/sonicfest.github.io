@@ -1,1 +1,9 @@
+User-agent: *
+Allow: /
+
+# Evitar que se indexen archivos de configuración internos
+Disallow: /CNAME
+Disallow: /README.md
+Disallow: /BingSiteAuth.xml
+
 Sitemap: https://sonicfest.com.ar/sitemap.xml
