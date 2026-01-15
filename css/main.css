@@ -812,4 +812,70 @@ body.page-expo summary::after {
     border: 1px solid rgba(255, 204, 0, 0.2);
 }
 
+/* --- SECCIÓN DE DONACIONES SONIC FEST --- */
+.donation-container {
+    background: linear-gradient(135deg, #0056b3 0%, #002d5c 100%); /* Azul Sonic */
+    border: 3px solid #ffcc00; /* Dorado Anillo */
+    border-radius: 20px;
+    padding: 40px 20px;
+    text-align: center;
+    margin: 60px auto;
+    max-width: 700px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+    font-family: 'Righteous', sans-serif;
+    clear: both; /* Asegura que no se encime con galerías */
+}
+
+.donation-title {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #000;
+}
+
+.donation-text {
+    color: #ffffff;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.donation-text strong {
+    color: #ffcc00; /* Resalta la palabra autogestionado */
+}
+
+.btn-donate {
+    display: inline-block;
+    background-color: #00c853; /* Verde vida */
+    color: white !important;
+    padding: 18px 40px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,200,83,0.4);
+}
+
+.btn-donate:hover {
+    background-color: #00e676;
+    transform: scale(1.1) rotate(-1deg);
+    box-shadow: 0 8px 20px rgba(0,240,100,0.6);
+}
+
+.heart-icon {
+    display: block;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    animation: pulse 1.5s infinite;
+}
+
+/* Animación de latido para el corazón */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
 
