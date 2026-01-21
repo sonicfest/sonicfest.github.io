@@ -1,13 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documento de la Sonic Fest - Sonic Fest Documento- Documento</title>
+  <meta name="description" content="Documento oficial: Política de seguridad, convivencia y ámbito de responsabilidad de Sonic Fest Argentina. Protocolos y canales de denuncia.">
   
-  <title>Sonic Fest - Política de Seguridad y Compromiso con la Comunidad</title>
-  <meta name="description" content="Política oficial de Sonic Fest sobre seguridad, convivencia, protocolo de veto y canales de denuncia para la comunidad." />
-  <meta name="robots" content="index, follow">
-
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-29W3Y5CDRT"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -15,238 +13,183 @@
     gtag('js', new Date());
     gtag('config', 'G-29W3Y5CDRT');
   </script>
+
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
   
+  <link rel="stylesheet" href="css/main.css">
+
   <style>
-    :root{
-      --max-img-width: 600px;
-      --gap: 1rem;
-      --text-color: #111;
-      --muted: #555;
-      --bg: #fff;
-      --primary-color: #0056b3; 
-      --accent-color: #e63946;
-    }
-    html,body{
-      height:100%;
-      margin:0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      color:var(--text-color);
-      background:var(--bg);
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.6;
-    }
-    .container{
-      max-width:1000px;
-      margin:28px auto;
-      padding:20px;
-    }
-    h1{
-      font-size:2.0rem;
-      margin:0 0 8px 0;
-      display:flex;
-      align-items:center;
-      gap:.5rem;
-      color: var(--primary-color);
-      border-bottom: 2px solid #eee;
-      padding-bottom: 10px;
-    }
-    h2{
-      font-size:1.4rem;
-      margin:30px 0 10px 0;
-      color: var(--text-color);
-      display:block;
-      border-left: 4px solid var(--primary-color);
-      padding-left: 10px;
-    }
-    h3 {
-      font-size: 1.15rem;
-      margin: 20px 0 5px 0;
-      color: var(--muted);
-    }
-    p {
-      margin-bottom: 18px;
-    }
-    .highlight-box {
-      background-color: #f8f9fa;
-      border: 1px solid #e9ecef;
-      padding: 20px;
-      border-radius: 8px;
+    .security-table {
+      width: 100%;
+      border-collapse: collapse;
       margin: 20px 0;
+      color: white;
+      font-size: 0.95rem;
     }
-    table {
-      width:100%;
-      border-collapse:collapse;
-      margin-top:20px;
-      border: 1px solid #ddd;
+    .security-table th {
+      background-color: #ffcc00;
+      color: black;
+      padding: 10px;
+      text-transform: uppercase;
     }
-    thead th {
-      text-align:center;
-      padding:12px 8px;
-      font-weight:700;
-      background-color: #f8f8f8;
-      border-bottom:1px solid #ccc;
+    .security-table td {
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 10px;
+      vertical-align: top;
     }
-    tbody td {
-      vertical-align:top;
-      padding:14px 8px;
-      border-bottom:1px solid #f2f2f2;
+    .security-table tr:nth-child(even) {
+      background-color: rgba(255,255,255,0.05);
     }
-    .highlight-responsibility {
-        font-weight: bold;
-        color: var(--primary-color);
-    }
-    .alert-text {
-        color: var(--accent-color);
-        font-weight: bold;
-    }
-    .img-cell {
-      text-align:center;
-      width:50%;
-    }
-    .img-cell img{
-      max-width:100%;
-      width:100%;
-      height:auto;
-      max-width: var(--max-img-width);
-      border-radius:6px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-    }
-    .desc-cell {
-      padding-left:14px;
-      color:var(--muted);
-    }
-    @media (max-width:720px){
-      table, thead, tbody, tr, td {
-        display:block;
-        width:100%;
+    @media (max-width: 600px) {
+      .security-table, .security-table thead, .security-table tbody, .security-table th, .security-table td, .security-table tr { 
+        display: block; 
       }
-      thead { display:none; }
-      tr { margin-bottom:var(--gap); border-bottom:1px solid #eee; padding-bottom:12px; }
-      .img-cell, .desc-cell { width:100%; padding:0; text-align:left; }
-      .desc-cell { margin-top:8px; }
-    }
-    footer{
-      margin-top:40px;
-      padding-top:12px;
-      border-top:1px dashed #eee;
-      color:var(--muted);
-      font-size:0.95rem;
-      text-align: center;
+      .security-table thead tr { position: absolute; top: -9999px; left: -9999px; }
+      .security-table td { 
+        border: none;
+        border-bottom: 1px solid #444; 
+        position: relative;
+        padding-left: 50%; 
+        text-align: right;
+      }
+      .security-table td:before { 
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+        color: #ffcc00;
+      }
+      .security-table td:nth-of-type(1):before { content: "Situación"; }
+      .security-table td:nth-of-type(2):before { content: "Responsabilidad"; }
+      .security-table td:nth-of-type(3):before { content: "Acción"; }
     }
   </style>
 </head>
-<body>
-  <main class="container">
-    <header>
-      <h1>🛡️ POLÍTICA DE SEGURIDAD Y CONVIVENCIA - SONIC FEST</h1>
-    </header>
+<body class="page-about"> 
 
-    <h2>I. Declaración de Principios</h2>
-    <p>En <strong>Sonic Fest</strong>, nuestra prioridad es la integridad física y emocional de los miembros de la comunidad. Entendemos que la seguridad de un evento no se limita solo a sus paredes, sino al compromiso ético de quienes lo organizan. Por ello, establecemos protocolos claros de acción y prevención.</p>
+  <div id="header-placeholder"></div>
 
-    <h2>II. Control Directo en Eventos Oficiales</h2>
-    <p>Garantizamos un entorno seguro en toda actividad publicada oficialmente en <a href="https://sonicfest.com.ar/about">sonicfest.com.ar/about</a>, aplicando los siguientes estándares:</p>
+  <h1 class="about-title" style="font-size: 2.2rem; line-height: 1.2;">POLÍTICA DE SEGURIDAD Y CONVIVENCIA</h1>
+
+  <section class="about-content">
+    
+    <h2>I. DECLARACIÓN DE PRINCIPIOS</h2>
+    <p>
+      En <strong>Sonic Fest</strong>, nuestra prioridad es la integridad física y emocional de los miembros de la comunidad de Sonic en Argentina. Entendemos que un evento no son solo sus paredes, sino las personas que lo integran. Por ello, establecemos este protocolo para garantizar espacios seguros y mecanismos de acción claros ante conductas inapropiadas.
+    </p>
+
+    <h2>II. CONTROL DIRECTO EN EVENTOS OFICIALES</h2>
+    <p>
+      Sonic Fest asume la responsabilidad plena de la seguridad operativa en los eventos publicados en <a href="https://sonicfest.com.ar/about" class="glow-link glow-web">sonicfest.com.ar/about</a>. En dichos recintos garantizamos:
+    </p>
     <ul>
-      <li><strong>Seguridad Operativa:</strong> Personal capacitado y control de acceso en recintos privados.</li>
-      <li><strong>Staff Identificado:</strong> Equipo preparado para asistir ante cualquier situación de incomodidad o riesgo.</li>
-      <li><strong>Tolerancia Cero:</strong> Expulsión inmediata ante actos de acoso, violencia o faltas de respeto dentro del evento.</li>
+      <li><strong>Personal de Seguridad Capacitado:</strong> Control de acceso y vigilancia permanente.</li>
+      <li><strong>Identificación de Staff:</strong> Equipo preparado para intervenir ante cualquier situación de incomodidad o riesgo.</li>
+      <li><strong>Protocolo de Expulsión:</strong> Acción inmediata ante cualquier acto de acoso, violencia o falta de respeto dentro del recinto.</li>
     </ul>
 
-    <h2>III. Compromiso Ético y Protocolo de Veto Permanente</h2>
-    <p>Si bien Sonic Fest no tiene jurisdicción legal sobre espacios públicos o reuniones privadas autoconvocadas ("juntadas"), mantenemos un compromiso de <strong>"Cero Indiferencia"</strong>:</p>
+    <img src="Anteriores/Uniclub/Z2.png" alt="Seguridad en Sonic Fest" class="about-image">
+
+    <h2>III. COMPROMISO ÉTICO EN ÁMBITOS EXTERNOS</h2>
+    <h3 style="margin-top: 0; text-align:center; font-size: 1rem;">(EL "CERO OMISIÓN")</h3>
+    
+    <p>
+      Si bien Sonic Fest no tiene jurisdicción legal sobre lo que ocurre en espacios públicos o reuniones privadas ("juntadas"), <strong>nos negamos a ser indiferentes</strong>. No podemos vigilar la calle, pero sí decidimos quién entra a nuestra casa. Por lo tanto:
+    </p>
+
     <div class="highlight-box">
-      <p><strong>1. Extensión del Derecho de Admisión:</strong> Personas con denuncias fundadas por acoso o conductas violentas en ámbitos privados o digitales serán ingresadas de forma permanente en nuestra <strong>Lista de Veto</strong>.</p>
-      <p><strong>2. Conducta del Staff:</strong> Todo miembro de nuestro equipo debe mantener una conducta ejemplar 24/7. Cualquier denuncia externa sobre un integrante del staff activará una investigación y su desvinculación inmediata si se comprueba la falta.</p>
+      <p style="margin-bottom: 15px;">
+        🚫 <strong>Extensión del Derecho de Admisión:</strong> Cualquier persona que cuente con denuncias fundadas por acoso, abuso o conductas violentas en el ámbito privado o digital, será ingresada de forma permanente en nuestra <strong>Lista de Veto</strong>.
+      </p>
+      <p style="margin-bottom: 0;">
+        👮 <strong>Conducta del Staff:</strong> Todo miembro del equipo de Sonic Fest debe mantener una conducta ejemplar. Cualquier denuncia sobre un integrante del staff, incluso fuera del horario del evento, activará una suspensión inmediata y una investigación interna.
+      </p>
     </div>
 
-    <h2>IV. Canal de Denuncia y Acompañamiento</h2>
-    <p>Habilitamos una vía directa para reportar incidentes que afecten la integridad de la comunidad:</p>
-    <div style="background-color: #e9ecef; padding: 15px; border-radius: 5px; text-align: center;">
-      <p><strong>Escríbenos a:</strong> <a href="mailto:contacto@sonicfest.com.ar" class="highlight-responsibility">contacto@sonicfest.com.ar</a></p>
-      <p style="font-size: 0.9rem;">Tu denuncia será tratada con absoluta <strong>confidencialidad</strong>. Adjuntar pruebas o testimonios nos ayuda a justificar legalmente la aplicación del derecho de admisión.</p>
+    <h2>IV. PROTOCOLO DE DENUNCIA Y ACOMPAÑAMIENTO</h2>
+    <p>
+      Para que ningún incidente quede impune por falta de canales oficiales, habilitamos nuestra vía de contacto directa:
+    </p>
+
+    <div style="background-color: rgba(220, 53, 69, 0.2); padding: 25px; border-radius: 15px; border: 2px solid #dc3545; text-align: center; margin: 30px 0;">
+        <h3 style="margin: 0 0 15px 0; color: white;">CANAL DE DENUNCIAS</h3>
+        <a class="button" href="mailto:contacto@sonicfest.com.ar" style="background-color: #dc3545; color: white; border: none;">
+            📩 CONTACTO@SONICFEST.COM.AR
+        </a>
+        <p style="font-size: 0.95rem; margin-top: 20px; color: #ffcccc;">
+            Si fuiste víctima o testigo de una situación inapropiada (ya sea en una plaza, grupo de chat o evento previo), te pedimos que nos escribas.
+        </p>
+        <ul style="text-align: left; margin-top: 15px; color: white; font-size: 0.9rem;">
+            <li><strong>Confidencialidad:</strong> Tu identidad será protegida y solo será conocida por el comité organizador.</li>
+            <li><strong>Pruebas:</strong> Te solicitamos adjuntar capturas o testimonios para justificar el veto permanente.</li>
+        </ul>
     </div>
 
-    <h2>V. Resumen de Ámbitos y Acciones</h2>
-    <table aria-label="Resumen de acciones de seguridad">
+    <h2>V. RESUMEN DE ACCIÓN SEGÚN ÁMBITO</h2>
+    
+    <table class="security-table">
       <thead>
         <tr>
-          <th>Ámbito</th>
+          <th>Situación</th>
           <th>Responsabilidad</th>
-          <th>Acción de Sonic Fest</th>
+          <th>Acción de la Organización</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><strong>Evento Oficial</strong></td>
-          <td class="highlight-responsibility">Total</td>
-          <td>Intervención inmediata, expulsión y asistencia a la víctima.</td>
+          <td>Acoso dentro del evento</td>
+          <td style="color: #ffcc00; font-weight: bold;">Total</td>
+          <td>Expulsión inmediata y entrega a las autoridades si corresponde.</td>
         </tr>
         <tr>
-          <td><strong>Juntadas / Espacios Públicos</strong></td>
-          <td class="highlight-responsibility">Ética / Admisión</td>
-          <td>Recepción de reportes y aplicación de <strong>Veto Permanente</strong>.</td>
+          <td>Incidente en Juntada/Plaza</td>
+          <td style="color: #6ee2ff; font-weight: bold;">Ética / Admisión</td>
+          <td>Recepción de denuncia y aplicación de Veto Permanente para futuros eventos.</td>
         </tr>
         <tr>
-          <td><strong>Grupos Digitales</strong></td>
-          <td class="highlight-responsibility">Moderación</td>
-          <td>Expulsión de canales oficiales y evaluación de antecedentes.</td>
+          <td>Conducta en Grupos de Chat</td>
+          <td style="color: #6ee2ff; font-weight: bold;">Moderación / Admisión</td>
+          <td>Expulsión de canales oficiales y evaluación de ingreso al evento físico.</td>
+        </tr>
+        <tr>
+          <td>Seguridad Física en la Calle</td>
+          <td style="color: #999;">Nula (Jurisdicción Policial)</td>
+          <td>Asesoramiento a la víctima para realizar la denuncia penal correspondiente.</td>
         </tr>
       </tbody>
     </table>
 
-    <div style="text-align: center; margin-top: 40px;">
-      <a style="background-color: #0056b3; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold;" href="https://sonicfest.com.ar">Volver a la Web Oficial</a>
+    <h2>VI. COMPROMISO DE TRANSPARENCIA</h2>
+    <p>
+      Sonic Fest no es solo una productora; es un nodo de la comunidad. Nos comprometemos a no ignorar los antecedentes de los asistentes. Preferimos un evento con menos gente, pero con personas que respeten los límites de los demás.
+    </p>
+
+    <div style="text-align: center; margin: 40px 0; font-size: 1.2rem; color: #ffcc00; font-style: italic;">
+      "Juzguen a Sonic Fest por la firmeza con la que cerramos nuestras puertas a quienes dañan a la comunidad."
     </div>
 
-    <h2 style="margin-top: 50px;">📸 Material Institucional y Documentación Visual</h2>
-    <p>Registro visual de la comunidad y documentación de referencia para eventos oficiales.</p>
+    <h2 style="border-top: 1px dashed #555; padding-top: 30px; margin-top: 50px;">MATERIAL DOCUMENTAL</h2>
+    <p>Registro visual de referencia institucional.</p>
+    
+    <div style="display: flex; flex-direction: column; gap: 20px;">
+        <img src="Images/Reglas1.png" alt="Sonic Fest documento" class="about-image" style="margin: 0 auto;">
+        <img src="Images/Reglas3.png" alt="Documento oficial" class="about-image" style="margin: 0 auto;">
+        <img src="Images/Reglas8.png" alt="Juntadas seguras" class="about-image" style="margin: 0 auto;">
+    </div>
 
-    <table aria-label="Material institucional y documentación visual">
-      <thead>
-        <tr>
-          <th>Imagen</th>
-          <th>Descripción</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="img-cell">
-            <img src="Images/Reglas0.png" width="600" alt="Convenciones de Sonic en Argentina">
-          </td>
-          <td class="desc-cell">Material institucional utilizado en convenciones y encuentros oficiales de Sonic en Argentina.</td>
-        </tr>
-        <tr>
-          <td class="img-cell">
-            <img src="Images/Reglas1.png" width="600" alt="Sonic Fest documento">
-          </td>
-          <td class="desc-cell">Imagen asociada a aclaración oficial del término “Sonic Fest documento” en contexto institucional.</td>
-        </tr>
-        <tr>
-          <td class="img-cell">
-            <img src="Images/Reglas3.png" width="600" alt="Documento de la Sonic Fest">
-          </td>
-          <td class="desc-cell">Recurso visual utilizado para documentación oficial y referencia verificada.</td>
-        </tr>
-        <tr>
-          <td class="img-cell">
-            <img src="Images/Reglas8.png" width="600" alt="Sonic Fest juntadas argentina">
-          </td>
-          <td class="desc-cell">Registro visual de encuentros y reuniones abiertas de la comunidad.</td>
-        </tr>
-        <tr>
-          <td class="img-cell">
-            <img src="Images/Reglas9.png" width="600" alt="documento de la Sonic Fest boliche Argentina">
-          </td>
-          <td class="desc-cell">Imagen relacionada con eventos nocturnos temáticos organizados oficialmente.</td>
-        </tr>
-      </tbody>
-    </table>
+  </section>
 
-    <footer>
-      <p>© **2025-2026 SONIC FEST®**</p>
-      <p>Comprometidos con crear espacios donde el único protagonista sea el respeto.</p>
-    </footer>
-  </main>
+  <div id="botones-placeholder"></div>
+  <div id="donaciones-placeholder"></div>
+  <div id="footer-placeholder"></div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
