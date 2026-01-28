@@ -940,3 +940,72 @@ body.page-expo summary::after {
     transform: scale(1.05);
 }
 
+
+/* Contenedor de las Cards */
+.links-container {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* La Card Individual */
+.event-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(110, 226, 255, 0.3);
+    border-radius: 12px;
+    padding: 15px 20px;
+    text-decoration: none !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+/* Efecto al pasar el mouse */
+.event-card:hover {
+    background: rgba(110, 226, 255, 0.15);
+    transform: translateX(8px);
+    border-color: #6ee2ff;
+    box-shadow: 0 4px 15px rgba(110, 226, 255, 0.2);
+}
+
+/* Estilo para eventos RECIENTES */
+.event-card.recent {
+    border: 2px solid #ffcc00;
+    background: rgba(255, 204, 0, 0.1);
+}
+
+.event-card.recent:hover {
+    background: rgba(255, 204, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(255, 204, 0, 0.3);
+}
+
+/* Texto dentro de la Card */
+.event-name {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.event-date {
+    color: #bbb;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Etiqueta Badge */
+.badge {
+    background: #ffcc00;
+    color: #000;
+    font-size: 0.75rem;
+    padding: 2px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
