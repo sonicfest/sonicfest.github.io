@@ -712,7 +712,36 @@ a.button-back:hover {
 }
 
 
+/* =========================================
+   ESTILOS EX-INTEGRANTES
+   ========================================= */
 
+.ex-members-title {
+    margin-top: 80px !important;
+    border-color: #666 !important;
+    color: #aaa !important; /* Un tono más apagado para diferenciar */
+}
+
+.ex-member-card {
+    opacity: 0.9;
+    padding: 20px;
+    border-bottom: 1px dashed #444;
+}
+
+/* Efecto blanco y negro para la foto del ex-integrante */
+.band-image.grayscale {
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+    border: 1px solid #444;
+}
+
+.band-image.grayscale:hover {
+    filter: grayscale(0%);
+}
+
+.ex-member-card h3 {
+    color: #bbbbbb !important; /* Título menos brillante */
+}
 
 /* =========================================
    ESTILOS ESPECÍFICOS PARA SONIC EXPO FEST
@@ -910,3 +939,4 @@ body.page-expo summary::after {
     text-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff;
     transform: scale(1.05);
 }
+
