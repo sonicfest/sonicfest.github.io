@@ -309,6 +309,13 @@ footer {
   margin-top: 40px;
 }
 
+
+.gallery-image.full {
+  height: auto;
+  object-fit: contain;
+}
+
+
 /* =========================================
    MEDIA QUERIES (RESPONSIVE CELULARES)
    ========================================= */
@@ -1012,6 +1019,7 @@ body.page-expo summary::after {
     margin-bottom: 8px;
     text-transform: uppercase;
 }
+
 
 
 
