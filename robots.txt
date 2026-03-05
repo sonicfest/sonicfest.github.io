@@ -7,3 +7,4 @@ Disallow: /README.md
 Disallow: /BingSiteAuth.xml
 
 Sitemap: https://sonicfest.com.ar/sitemap.xml
+Sitemap: https://sonicfest.com.ar/sitemap-images.xml
