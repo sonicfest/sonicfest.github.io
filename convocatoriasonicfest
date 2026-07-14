@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Artistas - Sonic Expo Fest Generations</title>
+  <meta name="description" content="Galería oficial de la convocatoria de artistas para Sonic Expo Fest Generations Edition. Mirá los increíbles dibujos de la comunidad.">
+
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="page-expo">
+
+  <div id="header-placeholder"></div>
+
+  <h1 class="header-title about-title">
+    CONVOCATORIA DE ARTISTAS
+  </h1>
+
+  <section class="about-content">
+
+    <p style="text-align:center; font-size:1.2rem;">
+      🎮 <strong>SONIC EXPO FEST – EDICIÓN ARTISTAS</strong><br>
+      ¡Queremos agradecer de todo corazón a cada una de las personas que se sumaron y participaron en esta gran convocatoria! 
+      Para formar parte, todos los artistas pasaron por nuestro servidor de Discord oficial, donde se armó una comunidad increíble.
+    </p>
+
+    <!-- Caja de agradecimiento y gestión especial -->
+    <div class="contact-box" style="border-left: 4px solid #0056b3;">
+      <h3>handshake Agradecimiento Especial a Gestión y Organización</h3>
+      <p>
+        Llevar esto adelante no hubiera sido posible sin el trabajo enorme de:
+      </p>
+      <ul style="text-align: left; max-width: 600px; margin: auto; line-height: 1.6;">
+        <li><strong>KayllatheCat:</strong> Quien se encargó minuciosamente del registro y de controlar cada Sonic a dibujar y dibujado, llevando un orden impecable.</li>
+        <li><strong>Manolo (Rustikart):</strong> Quien trabajó codo a codo en el registro junto a Kaylla y se encargó además de la creación y configuración de todos los canales dedicados en nuestro Discord.</li>
+      </ul>
+      <p style="margin-top: 15px; font-weight: bold;">
+        ¡Gracias a ellos dos por encargarse de toda la gestión del proyecto!
+      </p>
+    </div>
+
+    <hr style="margin: 40px 0; border: 0; border-top: 1px dashed #ccc;">
+
+    <h2>🎨 GALERÍA DE DIBUJOS PRESENTADOS</h2>
+    <p style="text-align:center; margin-bottom: 30px;">
+      A continuación, les presentamos las obras de los artistas que le dieron vida a esta convocatoria:
+    </p>
+
+    <!-- SECCIÓN DE DIBUJOS (Uno por uno) -->
+    <div class="faq-section" style="margin:auto; max-width: 700px;">
+
+      <!-- 1. SANIC -->
+      <div class="artist-work" style="margin-bottom: 50px; text-align: center;">
+        <h3 style="font-size: 1.4rem; margin-bottom: 10px;">1. Sanic, dibujado por SonicFestOk</h3>
+        <img src="Images/Expo/STANDABAJOPRUEBA.png" alt="Dibujo de Sanic por SonicFestOk" class="about-image" style="display: block; margin: 15px auto;">
+        <a href="https://instagram.com/sonicfestok" target="_blank" style="color: #0056b3; text-decoration: underline; font-weight: bold; display: block; margin-top: 10px;">
+          📸 Redes Sociales del Artista
+        </a>
+      </div>
+
+      <!-- 2. BABY SONIC -->
+      <div class="artist-work" style="margin-bottom: 50px; text-align: center;">
+        <h3 style="font-size: 1.4rem; margin-bottom: 10px;">2. Baby Sonic, dibujado por Marta</h3>
+        <img src="Images/Expo/STANDARRIBAPRUEBA.png" alt="Dibujo de Baby Sonic por Marta" class="about-image" style="display: block; margin: 15px auto;">
+        <a href="https://instagram.com/marta" target="_blank" style="color: #0056b3; text-decoration: underline; font-weight: bold; display: block; margin-top: 10px;">
+          📸 Redes Sociales del Artista
+        </a>
+      </div>
+
+      <!-- 3. TU PRÓXIMO DIBUJO (Guía para ir copiando y pegando) -->
+      <!--
+      <div class="artist-work" style="margin-bottom: 50px; text-align: center;">
+        <h3 style="font-size: 1.4rem; margin-bottom: 10px;">3. NOMBRE DEL PERSONAJE, dibujado por NOMBRE</h3>
+        <img src="RUTA_DE_LA_IMAGEN" alt="..." class="about-image" style="display: block; margin: 15px auto;">
+        <a href="LINK_A_SU_RED" target="_blank" style="color: #0056b3; text-decoration: underline; font-weight: bold; display: block; margin-top: 10px;">
+          📸 Redes Sociales del Artista
+        </a>
+      </div>
+      -->
+
+    </div>
+
+  </section>
+
+  <div id="botones-placeholder"></div>
+  <div id="donaciones-placeholder"></div>
+  <div id="footer-placeholder"></div>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
